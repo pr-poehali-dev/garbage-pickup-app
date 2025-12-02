@@ -83,6 +83,30 @@ const Index = () => {
     setMobileMenuOpen(false);
   };
 
+  const updateCalculation = () => {
+    const tariffSelect = document.getElementById('calc-tariff');
+    const timesInput = document.getElementById('calc-times') as HTMLInputElement;
+    const resultElement = document.getElementById('calc-result');
+    
+    if (!tariffSelect || !timesInput || !resultElement) return;
+    
+    const selectedTariffId = tariffSelect.getAttribute('data-value') || 'one-time-5kg';
+    const times = parseInt(timesInput.value) || 1;
+    
+    const selectedTariff = tariffs.find(t => t.id === selectedTariffId);
+    if (!selectedTariff) return;
+    
+    let totalPrice = 0;
+    
+    if (selectedTariff.period) {
+      totalPrice = parseInt(selectedTariff.price);
+    } else {
+      totalPrice = parseInt(selectedTariff.price) * times;
+    }
+    
+    resultElement.textContent = `${totalPrice} ₽`;
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
@@ -262,6 +286,72 @@ const Index = () => {
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <h3 className="text-3xl font-bold text-center mb-4 text-secondary">
+            Калькулятор стоимости
+          </h3>
+          <p className="text-center text-muted-foreground mb-12">
+            Рассчитайте стоимость вывоза мусора на месяц
+          </p>
+          
+          <Card className="shadow-xl">
+            <CardContent className="pt-6">
+              <div className="space-y-6">
+                <div className="space-y-2">
+                  <Label htmlFor="calc-tariff">Выберите тариф</Label>
+                  <Select 
+                    defaultValue="one-time-5kg" 
+                    onValueChange={(value) => {
+                      const select = document.getElementById('calc-tariff') as HTMLSelectElement;
+                      if (select) select.setAttribute('data-value', value);
+                      updateCalculation();
+                    }}
+                  >
+                    <SelectTrigger id="calc-tariff">
+                      <SelectValue placeholder="Выберите тариф" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {tariffs.map((tariff) => (
+                        <SelectItem key={tariff.id} value={tariff.id}>
+                          {tariff.name} — {tariff.price} ₽{tariff.period || ''}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="calc-times">Количество вывозов в месяц</Label>
+                  <Input
+                    id="calc-times"
+                    type="number"
+                    min="1"
+                    max="31"
+                    defaultValue="4"
+                    onChange={updateCalculation}
+                    placeholder="Введите количество"
+                  />
+                </div>
+
+                <div className="bg-primary/5 rounded-lg p-6 text-center">
+                  <p className="text-muted-foreground mb-2">Итоговая стоимость в месяц:</p>
+                  <p className="text-4xl font-bold text-primary" id="calc-result">200 ₽</p>
+                </div>
+
+                <Button 
+                  className="w-full bg-primary hover:bg-primary/90 py-6"
+                  onClick={() => scrollToSection('contract')}
+                >
+                  Оформить договор
+                  <Icon name="ArrowRight" size={20} className="ml-2" />
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
