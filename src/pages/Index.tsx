@@ -79,10 +79,11 @@ const Index = () => {
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-              <Icon name="Trash2" size={24} className="text-white" />
-            </div>
-            <h1 className="text-2xl font-bold text-secondary">Мусорок</h1>
+            <img 
+              src="https://cdn.poehali.dev/files/e874aa52-8b3e-4c07-acd3-a414ac9f3d84.jpg" 
+              alt="Мусорок логотип" 
+              className="h-12 object-contain"
+            />
           </div>
           <nav className="hidden md:flex gap-6">
             <Button variant="ghost" onClick={() => scrollToSection('tariffs')}>
@@ -100,8 +101,12 @@ const Index = () => {
 
       <section className="py-20 px-4 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
         <div className="container mx-auto text-center max-w-3xl">
-          <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 animate-scale-in">
-            <Icon name="Trash2" size={40} className="text-white" />
+          <div className="mx-auto mb-6 animate-scale-in">
+            <img 
+              src="https://cdn.poehali.dev/files/e874aa52-8b3e-4c07-acd3-a414ac9f3d84.jpg" 
+              alt="Мусорок логотип" 
+              className="h-24 mx-auto object-contain"
+            />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-secondary">
             Вывоз мусора от двери до бака
@@ -245,11 +250,12 @@ const Index = () => {
 
       <footer className="bg-secondary text-white py-8 px-4">
         <div className="container mx-auto text-center">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-              <Icon name="Trash2" size={18} className="text-white" />
-            </div>
-            <span className="text-xl font-bold">Мусорок</span>
+          <div className="flex items-center justify-center mb-4">
+            <img 
+              src="https://cdn.poehali.dev/files/e874aa52-8b3e-4c07-acd3-a414ac9f3d84.jpg" 
+              alt="Мусорок логотип" 
+              className="h-12 object-contain brightness-0 invert"
+            />
           </div>
           <p className="text-white/80">Сервис вывоза мусора от двери до бака</p>
         </div>
