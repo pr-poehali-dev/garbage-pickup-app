@@ -216,6 +216,85 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 px-4 bg-gradient-to-br from-primary/5 to-background">
+        <div className="container mx-auto max-w-6xl">
+          <h3 className="text-3xl font-bold text-center mb-4 text-secondary">
+            Отзывы наших клиентов
+          </h3>
+          <p className="text-center text-muted-foreground mb-12">
+            Более 500 довольных клиентов уже пользуются нашим сервисом
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="hover-scale">
+              <CardContent className="pt-6">
+                <div className="flex gap-1 mb-4">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Icon key={star} name="Star" size={18} className="text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  "Отличный сервис! Больше не нужно таскать тяжёлые мешки через весь подъезд. Ребята приходят точно по расписанию."
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                    <Icon name="User" size={20} className="text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Мария К.</p>
+                    <p className="text-sm text-muted-foreground">Еженедельный тариф</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-scale">
+              <CardContent className="pt-6">
+                <div className="flex gap-1 mb-4">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Icon key={star} name="Star" size={18} className="text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  "Очень удобно для пожилых людей. Моя бабушка в восторге — теперь ей не нужно спускаться с 5 этажа с мусором."
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                    <Icon name="User" size={20} className="text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Алексей Н.</p>
+                    <p className="text-sm text-muted-foreground">Ежедневный тариф</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-scale">
+              <CardContent className="pt-6">
+                <div className="flex gap-1 mb-4">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Icon key={star} name="Star" size={18} className="text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  "Пользуемся уже полгода. Цена адекватная, сервис на высоте. Всем рекомендую, особенно молодым семьям с детьми."
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                    <Icon name="User" size={20} className="text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Ольга П.</p>
+                    <p className="text-sm text-muted-foreground">Еженедельный тариф</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section id="contract" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto max-w-2xl">
           <h3 className="text-3xl font-bold text-center mb-4 text-secondary">
