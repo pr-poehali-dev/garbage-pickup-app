@@ -10,6 +10,7 @@ import { useToast } from '@/hooks/use-toast';
 
 const Index = () => {
   const { toast } = useToast();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -72,6 +73,7 @@ const Index = () => {
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    setMobileMenuOpen(false);
   };
 
   return (
@@ -93,11 +95,51 @@ const Index = () => {
               Договор
             </Button>
           </nav>
-          <Button onClick={() => scrollToSection('contract')} className="bg-primary hover:bg-primary/90">
-            Оформить
-          </Button>
+          <div className="flex items-center gap-3">
+            <Button onClick={() => scrollToSection('contract')} className="bg-primary hover:bg-primary/90 hidden md:flex">
+              Оформить
+            </Button>
+            <Button 
+              variant="ghost" 
+              size="icon"
+              className="md:hidden"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <Icon name={mobileMenuOpen ? 'X' : 'Menu'} size={24} />
+            </Button>
+          </div>
         </div>
       </header>
+
+      {mobileMenuOpen && (
+        <div className="md:hidden fixed inset-0 top-[73px] z-40 bg-white/95 backdrop-blur-md animate-fade-in">
+          <nav className="container mx-auto px-4 py-8 flex flex-col gap-4">
+            <Button 
+              variant="ghost" 
+              className="w-full justify-start text-lg py-6"
+              onClick={() => scrollToSection('tariffs')}
+            >
+              <Icon name="DollarSign" size={20} className="mr-3" />
+              Тарифы
+            </Button>
+            <Button 
+              variant="ghost" 
+              className="w-full justify-start text-lg py-6"
+              onClick={() => scrollToSection('contract')}
+            >
+              <Icon name="FileText" size={20} className="mr-3" />
+              Договор
+            </Button>
+            <Button 
+              className="w-full bg-primary hover:bg-primary/90 text-lg py-6 mt-4"
+              onClick={() => scrollToSection('contract')}
+            >
+              <Icon name="Send" size={20} className="mr-2" />
+              Оформить заявку
+            </Button>
+          </nav>
+        </div>
+      )}
 
       <section className="py-20 px-4 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
         <div className="container mx-auto text-center max-w-3xl">
