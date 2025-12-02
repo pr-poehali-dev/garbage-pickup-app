@@ -21,11 +21,11 @@ const Index = () => {
 
   const tariffs = [
     {
-      id: 'one-time-10kg',
-      name: 'Разовый вывоз до 10 кг',
+      id: 'one-time',
+      name: 'Разовый вывоз',
       price: '100',
       icon: 'Package',
-      features: ['До 10 кг', 'Без абонплаты', 'Быстрый вывоз']
+      features: ['Без абонплаты', 'Быстрый вывоз', 'Любой объём']
     },
     {
       id: 'weekly',
