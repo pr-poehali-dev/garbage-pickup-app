@@ -234,11 +234,11 @@ const Index = () => {
 
             <div className="text-center p-6 rounded-lg hover:bg-primary/5 transition-colors">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Heart" size={32} className="text-primary" />
+                <Icon name="Smile" size={32} className="text-primary" />
               </div>
-              <h4 className="font-bold text-lg mb-2">Забота о природе</h4>
+              <h4 className="font-bold text-lg mb-2">Удобство</h4>
               <p className="text-sm text-muted-foreground">
-                Сортируем отходы и заботимся об экологии вашего района
+                Вынесем мусор в удобное для вас время без лишних хлопот
               </p>
             </div>
           </div>
