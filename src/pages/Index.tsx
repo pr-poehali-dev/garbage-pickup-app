@@ -251,7 +251,7 @@ const Index = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-3">
+                  <ul className="space-y-3 mb-6">
                     {tariff.features.map((feature) => (
                       <li key={feature} className="flex items-start gap-2">
                         <Icon name="CheckCircle2" size={20} className="text-primary mt-0.5 flex-shrink-0" />
@@ -259,6 +259,19 @@ const Index = () => {
                       </li>
                     ))}
                   </ul>
+                  <Button 
+                    className="w-full bg-[#90C850] hover:bg-[#7AB840] text-white"
+                    onClick={() => {
+                      if (tariff.id === 'daily') {
+                        scrollToSection('contract');
+                      } else {
+                        window.open('https://t.me/musorok', '_blank');
+                      }
+                    }}
+                  >
+                    {tariff.id === 'daily' ? 'Оформить договор' : 'Оплатить'}
+                    <Icon name={tariff.id === 'daily' ? 'FileText' : 'CreditCard'} size={18} className="ml-2" />
+                  </Button>
                 </CardContent>
               </Card>
             ))}
