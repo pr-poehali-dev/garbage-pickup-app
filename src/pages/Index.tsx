@@ -33,7 +33,7 @@ const Index = () => {
       price: '180',
       period: '/неделя',
       icon: 'Calendar',
-      features: ['Понедельник', 'Среда', 'Пятница']
+      features: ['Понедельник', 'Среда', 'Суббота']
     },
     {
       id: 'daily',
