@@ -23,7 +23,7 @@ const Index = () => {
     {
       id: 'one-time',
       name: 'Разовый вывоз',
-      price: '100',
+      price: '70',
       icon: 'Package',
       features: ['Без абонплаты', 'Быстрый вывоз', 'Любой объём']
     },
