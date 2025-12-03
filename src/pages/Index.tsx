@@ -110,6 +110,7 @@ const Index = () => {
               alt="Мусорок логотип" 
               className="h-12 object-contain"
             />
+            <span className="text-2xl font-bold text-[#90C850]">Мусорок</span>
           </div>
           <div className="hidden md:flex items-center gap-3">
             <Button 
