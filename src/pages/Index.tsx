@@ -365,7 +365,17 @@ const Index = () => {
               className="h-12 object-contain"
             />
           </div>
-          <p className="text-white/80">Сервис выноса мусора от двери до контейнера</p>
+          <p className="text-white/80 mb-3">Сервис выноса мусора от двери до контейнера</p>
+          <div className="flex items-center justify-center gap-4 text-sm text-white/80">
+            <a href="tel:+73532296728" className="hover:text-white flex items-center gap-2">
+              <Icon name="Phone" size={16} />
+              +7 (3532) 296728
+            </a>
+            <a href="https://t.me/musorok" target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center gap-2">
+              <Icon name="Send" size={16} />
+              @musorok
+            </a>
+          </div>
         </div>
       </footer>
     </div>
