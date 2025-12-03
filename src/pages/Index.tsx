@@ -175,6 +175,7 @@ const Index = () => {
               alt="Мусорок логотип" 
               className="h-24 mx-auto object-contain"
             />
+            <h1 className="text-5xl md:text-6xl font-bold text-[#90C850] mt-4">Мусорок</h1>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-secondary">
             Вынесем ваш мусор от двери до контейнера
@@ -293,12 +294,13 @@ const Index = () => {
 
       <footer className="bg-secondary text-white py-8 px-4">
         <div className="container mx-auto text-center">
-          <div className="flex items-center justify-center mb-4">
+          <div className="flex items-center justify-center gap-3 mb-4">
             <img 
               src="https://cdn.poehali.dev/files/e874aa52-8b3e-4c07-acd3-a414ac9f3d84.jpg" 
               alt="Мусорок логотип" 
               className="h-12 object-contain brightness-0 invert"
             />
+            <span className="text-2xl font-bold text-white">Мусорок</span>
           </div>
           <p className="text-white/80">Сервис вывоза мусора от двери до бака</p>
         </div>
