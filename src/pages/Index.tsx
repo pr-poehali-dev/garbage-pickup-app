@@ -273,6 +273,23 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-12 px-4 bg-amber-50 border-y border-amber-200">
+        <div className="container mx-auto max-w-4xl">
+          <div className="flex items-start gap-4 bg-white p-6 rounded-lg border border-amber-300">
+            <div className="flex-shrink-0">
+              <Icon name="AlertCircle" size={32} className="text-amber-600" />
+            </div>
+            <div>
+              <h4 className="font-bold text-lg mb-2 text-amber-900">Важная информация</h4>
+              <p className="text-amber-800">
+                Мы выносим только <strong>бытовой мусор</strong> весом до 10 кг. 
+                Строительный мусор, крупногабаритные отходы и опасные материалы не принимаем.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-4xl">
           <h3 className="text-3xl font-bold text-center mb-4 text-secondary">
