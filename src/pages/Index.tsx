@@ -211,7 +211,7 @@ const Index = () => {
               </div>
               <h4 className="font-bold text-lg mb-2">Экономия времени</h4>
               <p className="text-sm text-muted-foreground">
-                Не тратьте время на походы к баку — мы всё сделаем за вас
+                Не тратьте время на походы к баку — мы всё сделаем за вас без лишних хлопот
               </p>
             </div>
 
