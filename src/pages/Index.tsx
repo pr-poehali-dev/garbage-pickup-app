@@ -220,7 +220,7 @@ const Index = () => {
               </div>
               <h4 className="font-bold text-lg mb-2">Чистота в подъезде</h4>
               <p className="text-sm text-muted-foreground">
-                Мусор забираем аккуратно, не оставляя следов и запахов
+                Вынесем мусор, не оставляя следов
               </p>
             </div>
 
