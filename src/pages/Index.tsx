@@ -111,27 +111,28 @@ const Index = () => {
               className="h-12 object-contain"
             />
           </div>
-          <nav className="hidden md:flex gap-6">
-            <Button variant="ghost" onClick={() => scrollToSection('tariffs')}>
-              Тарифы
-            </Button>
-            <Button variant="ghost" onClick={() => scrollToSection('contract')}>
-              Договор
-            </Button>
-          </nav>
-          <div className="flex items-center gap-3">
-            <Button onClick={() => scrollToSection('contract')} className="bg-primary hover:bg-primary/90 hidden md:flex">
-              Оформить
+          <div className="hidden md:flex items-center gap-3">
+            <Button 
+              onClick={() => scrollToSection('contract')} 
+              className="bg-[#90C850] hover:bg-[#7AB840] text-white"
+            >
+              Оформить разовый вынос
             </Button>
             <Button 
-              variant="ghost" 
-              size="icon"
-              className="md:hidden"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              onClick={() => scrollToSection('tariffs')} 
+              className="bg-[#90C850] hover:bg-[#7AB840] text-white"
             >
-              <Icon name={mobileMenuOpen ? 'X' : 'Menu'} size={24} />
+              Оформить тариф
             </Button>
           </div>
+          <Button 
+            variant="ghost" 
+            size="icon"
+            className="md:hidden"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            <Icon name={mobileMenuOpen ? 'X' : 'Menu'} size={24} />
+          </Button>
         </div>
       </header>
 
