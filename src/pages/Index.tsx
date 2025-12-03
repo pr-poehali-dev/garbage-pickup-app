@@ -175,7 +175,7 @@ const Index = () => {
             />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-secondary">
-            Вывоз мусора от двери до бака
+            Вынесем ваш мусор от двери до контейнера
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
             Забудьте о неудобстве выноса мусора. Мы заберем его прямо у вашей двери и доставим до контейнера
