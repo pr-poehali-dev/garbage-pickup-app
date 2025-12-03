@@ -302,7 +302,7 @@ const Index = () => {
             />
             <span className="text-2xl font-bold text-white">Мусорок</span>
           </div>
-          <p className="text-white/80">Сервис вывоза мусора от двери до бака</p>
+          <p className="text-white/80">Сервис выноса мусора от двери до контейнера</p>
         </div>
       </footer>
     </div>
