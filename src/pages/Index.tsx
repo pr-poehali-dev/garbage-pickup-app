@@ -204,7 +204,7 @@ const Index = () => {
             Мы делаем вашу жизнь комфортнее, избавляя от рутинной задачи выноса мусора
           </p>
           
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <div className="text-center p-6 rounded-lg hover:bg-primary/5 transition-colors">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Icon name="Clock" size={32} className="text-primary" />
@@ -222,16 +222,6 @@ const Index = () => {
               <h4 className="font-bold text-lg mb-2">Чистота в подъезде</h4>
               <p className="text-sm text-muted-foreground">
                 Вынесем мусор, не оставляя следов
-              </p>
-            </div>
-
-            <div className="text-center p-6 rounded-lg hover:bg-primary/5 transition-colors">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Smile" size={32} className="text-primary" />
-              </div>
-              <h4 className="font-bold text-lg mb-2">Удобство</h4>
-              <p className="text-sm text-muted-foreground">
-                Вынесем мусор в удобное для вас время без лишних хлопот
               </p>
             </div>
           </div>
