@@ -290,6 +290,66 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="contract" className="py-20 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-2xl">
+          <h3 className="text-3xl font-bold text-center mb-4 text-secondary">
+            Оформить тариф "Месяц"
+          </h3>
+          <p className="text-center text-muted-foreground mb-8">
+            Заполните форму для заключения договора
+          </p>
+          
+          <Card className="shadow-xl">
+            <CardContent className="pt-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="space-y-2">
+                  <Label htmlFor="name">Ваше имя</Label>
+                  <Input
+                    id="name"
+                    placeholder="Иван Иванов"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="phone">Телефон</Label>
+                  <Input
+                    id="phone"
+                    type="tel"
+                    placeholder="+7 (999) 123-45-67"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="address">Адрес</Label>
+                  <Textarea
+                    id="address"
+                    placeholder="Город, улица, дом, квартира"
+                    value={formData.address}
+                    onChange={(e) => setFormData({ ...formData, address: e.target.value })}
+                    rows={3}
+                  />
+                </div>
+
+                <div className="bg-primary/5 rounded-lg p-4">
+                  <p className="text-sm text-muted-foreground mb-1">Выбранный тариф:</p>
+                  <p className="text-lg font-bold text-primary">Месяц — 650 ₽/месяц</p>
+                  <p className="text-sm text-muted-foreground mt-2">Понедельник, среда, суббота • До 10 кг за раз</p>
+                </div>
+
+                <Button type="submit" className="w-full bg-[#90C850] hover:bg-[#7AB840] text-white py-6 text-lg">
+                  Отправить заявку
+                  <Icon name="Send" size={20} className="ml-2" />
+                </Button>
+              </form>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       <footer className="bg-secondary text-white py-8 px-4">
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center mb-4">
