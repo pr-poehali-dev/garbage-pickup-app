@@ -33,7 +33,7 @@ const Index = () => {
       price: '180',
       period: '/неделя',
       icon: 'Calendar',
-      features: ['Понедельник', 'Среда', 'Суббота', 'До 10 кг за раз', 'Только бытовой мусор']
+      features: ['Пн, Ср, Сб: 10:00-17:00', 'До 10 кг за раз', 'Только бытовой мусор']
     },
     {
       id: 'daily',
@@ -41,7 +41,7 @@ const Index = () => {
       price: '650',
       period: '/месяц',
       icon: 'CalendarCheck',
-      features: ['Вынос мусора еженедельно', 'Понедельник, среда, суббота', 'До 10 кг за раз', 'Только бытовой мусор', 'Заключаем договор']
+      features: ['Вынос мусора еженедельно', 'Пн, Ср, Сб: 10:00-17:00', 'До 10 кг за раз', 'Только бытовой мусор', 'Заключаем договор']
     }
   ];
 
@@ -181,8 +181,11 @@ const Index = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-secondary">
             Вынесем ваш мусор от двери до контейнера
           </h2>
-          <p className="text-xl text-muted-foreground mb-8">
+          <p className="text-xl text-muted-foreground mb-4">
             Забудьте о неудобстве. Заберем мусор у двери и отнесем до контейнера за вас
+          </p>
+          <p className="text-lg text-primary font-semibold">
+            График выноса: понедельник, среда, суббота с 10:00 до 17:00
           </p>
           <Button 
             size="lg" 
@@ -365,7 +368,8 @@ const Index = () => {
               className="h-12 object-contain"
             />
           </div>
-          <p className="text-white/80 mb-3">Сервис выноса мусора от двери до контейнера</p>
+          <p className="text-white/80 mb-2">Сервис выноса мусора от двери до контейнера</p>
+          <p className="text-white/70 text-sm mb-3">График: понедельник, среда, суббота 10:00-17:00</p>
           <div className="flex items-center justify-center gap-4 text-sm text-white/80">
             <a href="tel:+73532296728" className="hover:text-white flex items-center gap-2">
               <Icon name="Phone" size={16} />
