@@ -111,15 +111,31 @@ const Index = () => {
               className="h-12 object-contain"
             />
           </div>
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-4">
+            <a href="tel:+79033901093" className="flex items-center gap-2 text-foreground hover:text-primary transition-colors">
+              <Icon name="Phone" size={20} />
+              <span className="font-semibold">+7 903 390-10-93</span>
+            </a>
+            <div className="flex items-center gap-2">
+              <Button 
+                size="icon"
+                variant="ghost"
+                onClick={() => window.open('https://wa.me/79033901093', '_blank')}
+                className="hover:bg-green-100"
+              >
+                <Icon name="MessageCircle" size={20} className="text-green-600" />
+              </Button>
+              <Button 
+                size="icon"
+                variant="ghost"
+                onClick={() => window.open('https://t.me/+79033901093', '_blank')}
+                className="hover:bg-blue-100"
+              >
+                <Icon name="Send" size={20} className="text-blue-600" />
+              </Button>
+            </div>
             <Button 
-              onClick={() => window.open('https://t.me/musorok', '_blank')} 
-              className="bg-[#90C850] hover:bg-[#7AB840] text-white"
-            >
-              Оформить разовый вынос
-            </Button>
-            <Button 
-              onClick={() => window.open('https://t.me/musorok', '_blank')} 
+              onClick={() => scrollToSection('contract')} 
               className="bg-[#90C850] hover:bg-[#7AB840] text-white"
             >
               Оформить тариф
@@ -139,6 +155,28 @@ const Index = () => {
       {mobileMenuOpen && (
         <div className="md:hidden fixed inset-0 top-[73px] z-40 bg-white/95 backdrop-blur-md animate-fade-in">
           <nav className="container mx-auto px-4 py-8 flex flex-col gap-4">
+            <a href="tel:+79033901093" className="flex items-center justify-center gap-3 text-lg font-semibold py-4 bg-primary/10 rounded-lg">
+              <Icon name="Phone" size={24} />
+              +7 903 390-10-93
+            </a>
+            <div className="flex gap-2">
+              <Button 
+                variant="outline"
+                className="flex-1 py-6"
+                onClick={() => window.open('https://wa.me/79033901093', '_blank')}
+              >
+                <Icon name="MessageCircle" size={20} className="mr-2 text-green-600" />
+                WhatsApp
+              </Button>
+              <Button 
+                variant="outline"
+                className="flex-1 py-6"
+                onClick={() => window.open('https://t.me/+79033901093', '_blank')}
+              >
+                <Icon name="Send" size={20} className="mr-2 text-blue-600" />
+                Telegram
+              </Button>
+            </div>
             <Button 
               variant="ghost" 
               className="w-full justify-start text-lg py-6"
@@ -148,18 +186,10 @@ const Index = () => {
               Тарифы
             </Button>
             <Button 
-              variant="ghost" 
-              className="w-full justify-start text-lg py-6"
-              onClick={() => scrollToSection('contract')}
-            >
-              <Icon name="FileText" size={20} className="mr-3" />
-              Договор
-            </Button>
-            <Button 
               className="w-full bg-primary hover:bg-primary/90 text-lg py-6 mt-4"
               onClick={() => scrollToSection('contract')}
             >
-              <Icon name="Send" size={20} className="mr-2" />
+              <Icon name="FileText" size={20} className="mr-2" />
               Оформить заявку
             </Button>
           </nav>
@@ -184,9 +214,35 @@ const Index = () => {
           <p className="text-xl text-muted-foreground mb-4">
             Забудьте о неудобстве. Заберем мусор у двери и отнесем до контейнера за вас
           </p>
-          <p className="text-lg text-primary font-semibold">
+          <p className="text-lg text-primary font-semibold mb-6">
             График выноса: понедельник, среда, суббота с 10:00 до 17:00
           </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+            <a href="tel:+79033901093" className="flex items-center gap-2 text-lg font-semibold px-6 py-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <Icon name="Phone" size={24} className="text-primary" />
+              +7 903 390-10-93
+            </a>
+            <div className="flex gap-2">
+              <Button 
+                size="lg"
+                variant="outline"
+                className="bg-white"
+                onClick={() => window.open('https://wa.me/79033901093', '_blank')}
+              >
+                <Icon name="MessageCircle" size={20} className="mr-2 text-green-600" />
+                WhatsApp
+              </Button>
+              <Button 
+                size="lg"
+                variant="outline"
+                className="bg-white"
+                onClick={() => window.open('https://t.me/+79033901093', '_blank')}
+              >
+                <Icon name="Send" size={20} className="mr-2 text-blue-600" />
+                Telegram
+              </Button>
+            </div>
+          </div>
           <Button 
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-lg px-8 py-6"
@@ -351,6 +407,96 @@ const Index = () => {
                 Строительный мусор, крупногабаритные отходы и опасные материалы не принимаем.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="py-16 px-4 bg-primary/5">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h3 className="text-3xl font-bold mb-8">
+            Свяжитесь с нами
+          </h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6 text-center">
+                <Icon name="Phone" size={48} className="mx-auto mb-4 text-primary" />
+                <h4 className="font-semibold mb-2">Позвоните</h4>
+                <a href="tel:+79033901093" className="text-lg font-bold text-primary hover:underline">
+                  +7 903 390-10-93
+                </a>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6 text-center">
+                <Icon name="MessageCircle" size={48} className="mx-auto mb-4 text-green-600" />
+                <h4 className="font-semibold mb-2">WhatsApp</h4>
+                <Button 
+                  variant="link"
+                  className="text-lg font-bold text-green-600"
+                  onClick={() => window.open('https://wa.me/79033901093', '_blank')}
+                >
+                  Написать
+                </Button>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6 text-center">
+                <Icon name="Send" size={48} className="mx-auto mb-4 text-blue-600" />
+                <h4 className="font-semibold mb-2">Telegram</h4>
+                <Button 
+                  variant="link"
+                  className="text-lg font-bold text-blue-600"
+                  onClick={() => window.open('https://t.me/+79033901093', '_blank')}
+                >
+                  Написать
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="py-16 px-4 bg-primary/5">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h3 className="text-3xl font-bold mb-8">
+            Свяжитесь с нами
+          </h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6 text-center">
+                <Icon name="Phone" size={48} className="mx-auto mb-4 text-primary" />
+                <h4 className="font-semibold mb-2">Позвоните</h4>
+                <a href="tel:+79033901093" className="text-lg font-bold text-primary hover:underline">
+                  +7 903 390-10-93
+                </a>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6 text-center">
+                <Icon name="MessageCircle" size={48} className="mx-auto mb-4 text-green-600" />
+                <h4 className="font-semibold mb-2">WhatsApp</h4>
+                <Button 
+                  variant="link"
+                  className="text-lg font-bold text-green-600"
+                  onClick={() => window.open('https://wa.me/79033901093', '_blank')}
+                >
+                  Написать
+                </Button>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6 text-center">
+                <Icon name="Send" size={48} className="mx-auto mb-4 text-blue-600" />
+                <h4 className="font-semibold mb-2">Telegram</h4>
+                <Button 
+                  variant="link"
+                  className="text-lg font-bold text-blue-600"
+                  onClick={() => window.open('https://t.me/+79033901093', '_blank')}
+                >
+                  Написать
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
