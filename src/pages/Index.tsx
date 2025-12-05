@@ -324,7 +324,11 @@ const Index = () => {
                       if (tariff.id === 'daily') {
                         scrollToSection('contract');
                       } else {
-                        window.open('https://t.me/musorok', '_blank');
+                        scrollToSection('tariffs');
+                        setTimeout(() => {
+                          const qrSection = document.querySelector('[alt="QR-код для оплаты"]');
+                          qrSection?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }, 100);
                       }
                     }}
                   >
