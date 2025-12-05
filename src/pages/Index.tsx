@@ -292,8 +292,21 @@ const Index = () => {
                 <img 
                   src="https://cdn.poehali.dev/files/b285c592-4989-413d-afb7-33395df2a728.jpg" 
                   alt="QR-код для оплаты" 
-                  className="w-64 h-64 rounded-lg shadow-md mb-6"
+                  className="w-64 h-64 rounded-lg shadow-md mb-4"
                 />
+                <Button
+                  variant="outline"
+                  className="mb-6"
+                  onClick={() => {
+                    const link = document.createElement('a');
+                    link.href = 'https://cdn.poehali.dev/files/b285c592-4989-413d-afb7-33395df2a728.jpg';
+                    link.download = 'qr-kod-oplata-musorok.jpg';
+                    link.click();
+                  }}
+                >
+                  <Icon name="Download" size={18} className="mr-2" />
+                  Скачать QR-код
+                </Button>
                 <div className="bg-white p-6 rounded-lg border border-border w-full">
                   <h4 className="font-semibold mb-3 text-center">Как оплатить:</h4>
                   <ol className="space-y-2 text-sm text-muted-foreground">
@@ -412,8 +425,22 @@ const Index = () => {
                 <img 
                   src="https://cdn.poehali.dev/files/b285c592-4989-413d-afb7-33395df2a728.jpg" 
                   alt="QR-код для оплаты" 
-                  className="w-48 h-48 rounded-lg shadow-md mb-4"
+                  className="w-48 h-48 rounded-lg shadow-md mb-3"
                 />
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="mb-3"
+                  onClick={() => {
+                    const link = document.createElement('a');
+                    link.href = 'https://cdn.poehali.dev/files/b285c592-4989-413d-afb7-33395df2a728.jpg';
+                    link.download = 'qr-kod-oplata-musorok.jpg';
+                    link.click();
+                  }}
+                >
+                  <Icon name="Download" size={16} className="mr-1" />
+                  Скачать
+                </Button>
                 <div className="bg-white p-4 rounded-lg border border-border w-full">
                   <h4 className="font-semibold mb-2 text-sm">Как оплатить:</h4>
                   <ol className="space-y-1 text-xs text-muted-foreground">
