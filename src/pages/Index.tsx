@@ -279,6 +279,49 @@ const Index = () => {
               </Card>
             ))}
           </div>
+
+          <div className="mt-16 max-w-2xl mx-auto">
+            <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-white">
+              <CardHeader>
+                <CardTitle className="text-center text-2xl">Оплата по QR-коду</CardTitle>
+                <CardDescription className="text-center">
+                  Быстрая и удобная оплата через приложение банка
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="flex flex-col items-center">
+                <img 
+                  src="https://cdn.poehali.dev/files/b285c592-4989-413d-afb7-33395df2a728.jpg" 
+                  alt="QR-код для оплаты" 
+                  className="w-64 h-64 rounded-lg shadow-md mb-6"
+                />
+                <div className="bg-white p-6 rounded-lg border border-border w-full">
+                  <h4 className="font-semibold mb-3 text-center">Как оплатить:</h4>
+                  <ol className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex gap-2">
+                      <span className="font-semibold text-primary">1.</span>
+                      <span>В приложении вашего банка выберите способ оплатить QR-кодом</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="font-semibold text-primary">2.</span>
+                      <span>Наведите камеру на QR-код</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="font-semibold text-primary">3.</span>
+                      <span>Нажмите кнопку "ВСЕ ВЕРНО"</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="font-semibold text-primary">4.</span>
+                      <span>Далее нажмите "ОПЛАТИТЬ" и введите сумму перевода</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="font-semibold text-primary">5.</span>
+                      <span>Подтвердите оплату</span>
+                    </li>
+                  </ol>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
@@ -300,7 +343,7 @@ const Index = () => {
       </section>
 
       <section id="contract" className="py-20 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-2xl">
+        <div className="container mx-auto max-w-4xl">
           <h3 className="text-3xl font-bold text-center mb-4 text-secondary">
             Оформить тариф "Месяц"
           </h3>
@@ -308,54 +351,97 @@ const Index = () => {
             Заполните форму для заключения договора
           </p>
           
-          <Card className="shadow-xl">
-            <CardContent className="pt-6">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name">Ваше имя</Label>
-                  <Input
-                    id="name"
-                    placeholder="Иван Иванов"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  />
-                </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="shadow-xl">
+              <CardContent className="pt-6">
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="space-y-2">
+                    <Label htmlFor="name">Ваше имя</Label>
+                    <Input
+                      id="name"
+                      placeholder="Иван Иванов"
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    />
+                  </div>
 
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Телефон</Label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    placeholder="+7 (999) 123-45-67"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  />
-                </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="phone">Телефон</Label>
+                    <Input
+                      id="phone"
+                      type="tel"
+                      placeholder="+7 (999) 123-45-67"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    />
+                  </div>
 
-                <div className="space-y-2">
-                  <Label htmlFor="address">Адрес</Label>
-                  <Textarea
-                    id="address"
-                    placeholder="Город, улица, дом, квартира"
-                    value={formData.address}
-                    onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                    rows={3}
-                  />
-                </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="address">Адрес</Label>
+                    <Textarea
+                      id="address"
+                      placeholder="Город, улица, дом, квартира"
+                      value={formData.address}
+                      onChange={(e) => setFormData({ ...formData, address: e.target.value })}
+                      rows={3}
+                    />
+                  </div>
 
-                <div className="bg-primary/5 rounded-lg p-4">
-                  <p className="text-sm text-muted-foreground mb-1">Выбранный тариф:</p>
-                  <p className="text-lg font-bold text-primary">Месяц — 650 ₽/месяц</p>
-                  <p className="text-sm text-muted-foreground mt-2">Понедельник, среда, суббота • До 10 кг за раз</p>
-                </div>
+                  <div className="bg-primary/5 rounded-lg p-4">
+                    <p className="text-sm text-muted-foreground mb-1">Выбранный тариф:</p>
+                    <p className="text-lg font-bold text-primary">Месяц — 650 ₽/месяц</p>
+                    <p className="text-sm text-muted-foreground mt-2">Понедельник, среда, суббота • До 10 кг за раз</p>
+                  </div>
 
-                <Button type="submit" className="w-full bg-[#90C850] hover:bg-[#7AB840] text-white py-6 text-lg">
-                  Отправить заявку
-                  <Icon name="Send" size={20} className="ml-2" />
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+                  <Button type="submit" className="w-full bg-[#90C850] hover:bg-[#7AB840] text-white py-6 text-lg">
+                    Отправить заявку
+                    <Icon name="Send" size={20} className="ml-2" />
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-white shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-center">Оплата по QR-коду</CardTitle>
+                <CardDescription className="text-center">
+                  Оплатите после оформления заявки
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="flex flex-col items-center">
+                <img 
+                  src="https://cdn.poehali.dev/files/b285c592-4989-413d-afb7-33395df2a728.jpg" 
+                  alt="QR-код для оплаты" 
+                  className="w-48 h-48 rounded-lg shadow-md mb-4"
+                />
+                <div className="bg-white p-4 rounded-lg border border-border w-full">
+                  <h4 className="font-semibold mb-2 text-sm">Как оплатить:</h4>
+                  <ol className="space-y-1 text-xs text-muted-foreground">
+                    <li className="flex gap-1">
+                      <span className="font-semibold text-primary">1.</span>
+                      <span>Откройте приложение банка</span>
+                    </li>
+                    <li className="flex gap-1">
+                      <span className="font-semibold text-primary">2.</span>
+                      <span>Выберите оплату QR-кодом</span>
+                    </li>
+                    <li className="flex gap-1">
+                      <span className="font-semibold text-primary">3.</span>
+                      <span>Наведите на код</span>
+                    </li>
+                    <li className="flex gap-1">
+                      <span className="font-semibold text-primary">4.</span>
+                      <span>Нажмите "ВСЕ ВЕРНО", затем "ОПЛАТИТЬ"</span>
+                    </li>
+                    <li className="flex gap-1">
+                      <span className="font-semibold text-primary">5.</span>
+                      <span>Введите сумму и подтвердите</span>
+                    </li>
+                  </ol>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
