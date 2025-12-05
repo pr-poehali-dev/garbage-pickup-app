@@ -630,9 +630,9 @@ const Index = () => {
           <p className="text-white/80 mb-2">Сервис выноса мусора от двери до контейнера</p>
           <p className="text-white/70 text-sm mb-3">График: понедельник, среда, суббота 10:00-17:00</p>
           <div className="flex items-center justify-center gap-4 text-sm text-white/80">
-            <a href="tel:+73532296728" className="hover:text-white flex items-center gap-2">
+            <a href="tel:+79033901093" className="hover:text-white flex items-center gap-2">
               <Icon name="Phone" size={16} />
-              +7 (3532) 296728
+              +7 903 390-10-93
             </a>
             <a href="https://t.me/musorok" target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center gap-2">
               <Icon name="Send" size={16} />
