@@ -613,10 +613,6 @@ const Index = () => {
               <Icon name="Phone" size={16} />
               +7 903 390-10-93
             </a>
-            <a href="https://t.me/musorok" target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center gap-2">
-              <Icon name="Send" size={16} />
-              @musorok
-            </a>
           </div>
         </div>
       </footer>
