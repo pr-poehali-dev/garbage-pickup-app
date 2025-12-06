@@ -205,9 +205,6 @@ const Index = () => {
               alt="Логотип Мусорок" 
               className="h-52 mx-auto object-contain"
             />
-            <p className="text-lg font-bold text-secondary tracking-wider mt-4 uppercase">
-              Вынос мусора в срок
-            </p>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-secondary">
             Вынесем ваш мусор от двери до контейнера
