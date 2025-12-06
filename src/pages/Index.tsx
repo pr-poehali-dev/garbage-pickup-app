@@ -536,15 +536,18 @@ const Index = () => {
 
       <footer className="bg-secondary text-white py-8 px-4">
         <div className="container mx-auto text-center">
-          <div className="flex items-center justify-center mb-4">
+          <div className="flex items-center justify-center mb-6">
             <img 
               src="https://cdn.poehali.dev/files/fa5fb18d-7ab2-471a-9709-a7e63d3cbaa5.jpg" 
               alt="Логотип Мусорок" 
-              className="h-12 object-contain"
+              className="h-32 object-contain mix-blend-multiply bg-white rounded-lg p-2"
             />
           </div>
-          <p className="text-white/80 mb-2">Сервис выноса мусора от двери до контейнера</p>
-          <p className="text-white/70 text-sm mb-3">График: понедельник, среда, суббота 10:00-17:00</p>
+          <p className="text-white text-lg mb-1">Сервис выноса мусора</p>
+          <p className="text-white text-lg mb-4">от двери до контейнера</p>
+          <p className="text-white/90 font-semibold mb-1">График работы</p>
+          <p className="text-white/80 mb-1">понедельник, среда, суббота</p>
+          <p className="text-white/80 mb-4">с 10:00 до 17:00</p>
           <div className="flex items-center justify-center gap-4 text-sm text-white/80">
             <a href="tel:+79033901093" className="hover:text-white flex items-center gap-2">
               <Icon name="Phone" size={16} />
