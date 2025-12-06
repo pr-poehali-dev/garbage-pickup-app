@@ -228,11 +228,11 @@ const Index = () => {
               </Button>
               <Button 
                 size="lg"
-                className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-6 text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
-                onClick={() => window.open('https://t.me/+79033901093', '_blank')}
+                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 py-6 text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+                onClick={() => window.open('https://vk.me/join/your_max_link', '_blank')}
               >
-                <Icon name="Send" size={20} className="mr-2 text-blue-600" />
-                Telegram
+                <Icon name="MessageSquare" size={24} className="mr-2" />
+                Max
               </Button>
             </div>
           </div>
