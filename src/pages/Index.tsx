@@ -209,14 +209,14 @@ const Index = () => {
           <p className="text-2xl md:text-3xl text-muted-foreground mb-4 font-medium">
             Забудьте о неудобстве. Заберем мусор у двери и отнесем до контейнера за вас
           </p>
+          <a href="tel:+79033901093" className="inline-flex items-center gap-3 text-2xl font-bold px-8 py-4 bg-primary text-primary-foreground rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all mb-6">
+            <Icon name="Phone" size={28} />
+            +7 903 390-10-93
+          </a>
           <p className="text-lg text-primary font-semibold mb-6">
             График выноса: понедельник, среда, суббота с 10:00 до 17:00
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-            <a href="tel:+79033901093" className="flex items-center gap-3 text-2xl font-bold px-8 py-4 bg-primary text-primary-foreground rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all">
-              <Icon name="Phone" size={28} />
-              +7 903 390-10-93
-            </a>
             <div className="flex gap-3">
               <Button 
                 size="lg"
