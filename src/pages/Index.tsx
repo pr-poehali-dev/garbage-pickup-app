@@ -209,7 +209,7 @@ const Index = () => {
           <p className="text-2xl md:text-3xl text-muted-foreground mb-4 font-medium">
             Забудьте о неудобстве. Заберем мусор у двери и отнесем до контейнера за вас
           </p>
-          <a href="tel:+79033901093" className="inline-flex items-center gap-3 text-2xl font-bold px-8 py-4 bg-primary text-primary-foreground rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all mb-6">
+          <a href="tel:+79033901093" className="inline-flex items-center gap-2 text-2xl font-bold text-primary mb-6 hover:scale-105 transition-all whitespace-nowrap">
             <Icon name="Phone" size={28} />
             +7 903 390-10-93
           </a>
