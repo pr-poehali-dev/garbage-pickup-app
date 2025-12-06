@@ -213,24 +213,22 @@ const Index = () => {
             График выноса: понедельник, среда, суббота с 10:00 до 17:00
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-            <a href="tel:+79033901093" className="flex items-center gap-2 text-lg font-semibold px-6 py-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <Icon name="Phone" size={24} className="text-primary" />
+            <a href="tel:+79033901093" className="flex items-center gap-3 text-2xl font-bold px-8 py-4 bg-primary text-primary-foreground rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all">
+              <Icon name="Phone" size={28} />
               +7 903 390-10-93
             </a>
-            <div className="flex gap-2">
+            <div className="flex gap-3">
               <Button 
                 size="lg"
-                variant="outline"
-                className="bg-white"
+                className="bg-green-600 hover:bg-green-700 text-white px-6 py-6 text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
                 onClick={() => window.open('https://wa.me/79033901093', '_blank')}
               >
-                <Icon name="MessageCircle" size={20} className="mr-2 text-green-600" />
+                <Icon name="MessageCircle" size={24} className="mr-2" />
                 WhatsApp
               </Button>
               <Button 
                 size="lg"
-                variant="outline"
-                className="bg-white"
+                className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-6 text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
                 onClick={() => window.open('https://t.me/+79033901093', '_blank')}
               >
                 <Icon name="Send" size={20} className="mr-2 text-blue-600" />
