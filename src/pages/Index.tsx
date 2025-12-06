@@ -153,23 +153,21 @@ const Index = () => {
               +7 903 390-10-93
             </a>
             <Button 
-              variant="outline"
-              className="w-full py-6"
+              className="w-full py-6 bg-[#90C850] hover:bg-[#7AB840] text-white"
               onClick={() => window.open('https://wa.me/79033901093', '_blank')}
             >
-              <Icon name="MessageCircle" size={20} className="mr-2 text-green-600" />
+              <Icon name="MessageCircle" size={20} className="mr-2" />
               WhatsApp
             </Button>
             <Button 
-              variant="ghost" 
-              className="w-full justify-start text-lg py-6"
+              className="w-full justify-start text-lg py-6 bg-[#90C850] hover:bg-[#7AB840] text-white"
               onClick={() => scrollToSection('tariffs')}
             >
               <Icon name="DollarSign" size={20} className="mr-3" />
               Тарифы
             </Button>
             <Button 
-              className="w-full bg-primary hover:bg-primary/90 text-lg py-6 mt-4"
+              className="w-full bg-[#90C850] hover:bg-[#7AB840] text-lg py-6 mt-4 text-white"
               onClick={() => scrollToSection('contract')}
             >
               <Icon name="FileText" size={20} className="mr-2" />
@@ -202,7 +200,7 @@ const Index = () => {
             <div className="flex gap-3">
               <Button 
                 size="lg"
-                className="bg-green-600 hover:bg-green-700 text-white px-6 py-6 text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+                className="bg-[#90C850] hover:bg-[#7AB840] text-white px-6 py-6 text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
                 onClick={() => window.open('https://wa.me/79033901093', '_blank')}
               >
                 <Icon name="MessageCircle" size={24} className="mr-2" />
@@ -210,7 +208,7 @@ const Index = () => {
               </Button>
               <Button 
                 size="lg"
-                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 py-6 text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+                className="bg-[#90C850] hover:bg-[#7AB840] text-white px-6 py-6 text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
                 onClick={() => window.open('https://vk.me/join/your_max_link', '_blank')}
               >
                 <Icon name="MessageSquare" size={24} className="mr-2" />
@@ -220,7 +218,7 @@ const Index = () => {
           </div>
           <Button 
             size="lg" 
-            className="bg-primary hover:bg-primary/90 text-lg px-8 py-6"
+            className="bg-[#90C850] hover:bg-[#7AB840] text-white text-lg px-8 py-6"
             onClick={() => scrollToSection('tariffs')}
           >
             Посмотреть тарифы
@@ -330,8 +328,7 @@ const Index = () => {
                   className="w-64 h-64 rounded-lg shadow-md mb-4"
                 />
                 <Button
-                  variant="outline"
-                  className="mb-6"
+                  className="mb-6 bg-[#90C850] hover:bg-[#7AB840] text-white"
                   onClick={() => {
                     const link = document.createElement('a');
                     link.href = 'https://cdn.poehali.dev/files/b285c592-4989-413d-afb7-33395df2a728.jpg';
@@ -410,8 +407,7 @@ const Index = () => {
                 <Icon name="MessageCircle" size={48} className="mx-auto mb-4 text-green-600" />
                 <h4 className="font-semibold mb-2">WhatsApp</h4>
                 <Button 
-                  variant="link"
-                  className="text-lg font-bold text-green-600"
+                  className="text-lg font-bold bg-[#90C850] hover:bg-[#7AB840] text-white"
                   onClick={() => window.open('https://wa.me/79033901093', '_blank')}
                 >
                   Написать
@@ -423,8 +419,7 @@ const Index = () => {
                 <Icon name="Send" size={48} className="mx-auto mb-4 text-blue-600" />
                 <h4 className="font-semibold mb-2">Telegram</h4>
                 <Button 
-                  variant="link"
-                  className="text-lg font-bold text-blue-600"
+                  className="text-lg font-bold bg-[#90C850] hover:bg-[#7AB840] text-white"
                   onClick={() => window.open('https://t.me/+79033901093', '_blank')}
                 >
                   Написать
@@ -455,8 +450,7 @@ const Index = () => {
                 <Icon name="MessageCircle" size={48} className="mx-auto mb-4 text-green-600" />
                 <h4 className="font-semibold mb-2">WhatsApp</h4>
                 <Button 
-                  variant="link"
-                  className="text-lg font-bold text-green-600"
+                  className="text-lg font-bold bg-[#90C850] hover:bg-[#7AB840] text-white"
                   onClick={() => window.open('https://wa.me/79033901093', '_blank')}
                 >
                   Написать
@@ -468,8 +462,7 @@ const Index = () => {
                 <Icon name="Send" size={48} className="mx-auto mb-4 text-blue-600" />
                 <h4 className="font-semibold mb-2">Telegram</h4>
                 <Button 
-                  variant="link"
-                  className="text-lg font-bold text-blue-600"
+                  className="text-lg font-bold bg-[#90C850] hover:bg-[#7AB840] text-white"
                   onClick={() => window.open('https://t.me/+79033901093', '_blank')}
                 >
                   Написать
@@ -553,9 +546,8 @@ const Index = () => {
                   className="w-48 h-48 rounded-lg shadow-md mb-3"
                 />
                 <Button
-                  variant="outline"
                   size="sm"
-                  className="mb-3"
+                  className="mb-3 bg-[#90C850] hover:bg-[#7AB840] text-white"
                   onClick={() => {
                     const link = document.createElement('a');
                     link.href = 'https://cdn.poehali.dev/files/b285c592-4989-413d-afb7-33395df2a728.jpg';
