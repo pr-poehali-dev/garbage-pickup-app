@@ -106,7 +106,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img 
-              src="https://cdn.poehali.dev/files/df1f6f41-122d-43f9-a00c-955dc49a2aac.jpg" 
+              src="https://cdn.poehali.dev/files/fa5fb18d-7ab2-471a-9709-a7e63d3cbaa5.jpg" 
               alt="Логотип Мусорок" 
               className="h-12 object-contain"
             />
@@ -200,7 +200,7 @@ const Index = () => {
         <div className="container mx-auto text-center max-w-3xl">
           <div className="mx-auto mb-6 animate-scale-in">
             <img 
-              src="https://cdn.poehali.dev/files/df1f6f41-122d-43f9-a00c-955dc49a2aac.jpg" 
+              src="https://cdn.poehali.dev/files/fa5fb18d-7ab2-471a-9709-a7e63d3cbaa5.jpg" 
               alt="Логотип Мусорок" 
               className="h-24 mx-auto object-contain"
             />
@@ -626,7 +626,7 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center mb-4">
             <img 
-              src="https://cdn.poehali.dev/files/df1f6f41-122d-43f9-a00c-955dc49a2aac.jpg" 
+              src="https://cdn.poehali.dev/files/fa5fb18d-7ab2-471a-9709-a7e63d3cbaa5.jpg" 
               alt="Логотип Мусорок" 
               className="h-12 object-contain"
             />
