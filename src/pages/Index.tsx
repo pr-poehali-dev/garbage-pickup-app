@@ -108,7 +108,8 @@ const Index = () => {
             <img 
               src="https://cdn.poehali.dev/files/fa5fb18d-7ab2-471a-9709-a7e63d3cbaa5.jpg" 
               alt="Логотип Мусорок" 
-              className="h-24 object-contain"
+              className="h-24 object-contain cursor-pointer hover:opacity-80 transition-opacity"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             />
           </div>
           <div className="hidden md:flex items-center gap-4">
