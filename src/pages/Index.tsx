@@ -186,14 +186,14 @@ const Index = () => {
               className="h-96 mx-auto object-contain mix-blend-multiply"
             />
           </div>
-          <p className="text-2xl md:text-3xl text-muted-foreground mb-4 font-medium">
+          <p className="text-2xl md:text-3xl text-black mb-4 font-medium">
             Забудьте о неудобстве. Заберем мусор у двери и отнесем до контейнера за вас
           </p>
-          <a href="tel:+79033901093" className="inline-flex items-center gap-2 text-2xl font-bold text-primary mb-6 hover:scale-105 transition-all whitespace-nowrap">
+          <a href="tel:+79033901093" className="inline-flex items-center gap-2 text-2xl font-bold bg-[#90C850] hover:bg-[#7AB840] text-white px-6 py-3 rounded-lg mb-6 hover:scale-105 transition-all whitespace-nowrap">
             <Icon name="Phone" size={28} />
             +7 903 390-10-93
           </a>
-          <p className="text-lg text-primary font-semibold mb-6">
+          <p className="text-lg text-black font-semibold mb-6">
             График выноса: понедельник, среда, суббота с 10:00 до 17:00
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
