@@ -392,7 +392,7 @@ const Index = () => {
           <h3 className="text-3xl font-bold mb-8">
             Свяжитесь с нами
           </h3>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="pt-6 text-center">
                 <Icon name="Phone" size={48} className="mx-auto mb-4 text-primary" />
@@ -409,61 +409,6 @@ const Index = () => {
                 <Button 
                   className="text-lg font-bold bg-[#90C850] hover:bg-[#7AB840] text-white"
                   onClick={() => window.open('https://wa.me/79033901093', '_blank')}
-                >
-                  Написать
-                </Button>
-              </CardContent>
-            </Card>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6 text-center">
-                <Icon name="Send" size={48} className="mx-auto mb-4 text-blue-600" />
-                <h4 className="font-semibold mb-2">Telegram</h4>
-                <Button 
-                  className="text-lg font-bold bg-[#90C850] hover:bg-[#7AB840] text-white"
-                  onClick={() => window.open('https://t.me/+79033901093', '_blank')}
-                >
-                  Написать
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" className="py-16 px-4 bg-primary/5">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h3 className="text-3xl font-bold mb-8">
-            Свяжитесь с нами
-          </h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6 text-center">
-                <Icon name="Phone" size={48} className="mx-auto mb-4 text-primary" />
-                <h4 className="font-semibold mb-2">Позвоните</h4>
-                <a href="tel:+79033901093" className="text-lg font-bold text-primary hover:underline">
-                  +7 903 390-10-93
-                </a>
-              </CardContent>
-            </Card>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6 text-center">
-                <Icon name="MessageCircle" size={48} className="mx-auto mb-4 text-green-600" />
-                <h4 className="font-semibold mb-2">WhatsApp</h4>
-                <Button 
-                  className="text-lg font-bold bg-[#90C850] hover:bg-[#7AB840] text-white"
-                  onClick={() => window.open('https://wa.me/79033901093', '_blank')}
-                >
-                  Написать
-                </Button>
-              </CardContent>
-            </Card>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6 text-center">
-                <Icon name="Send" size={48} className="mx-auto mb-4 text-blue-600" />
-                <h4 className="font-semibold mb-2">Telegram</h4>
-                <Button 
-                  className="text-lg font-bold bg-[#90C850] hover:bg-[#7AB840] text-white"
-                  onClick={() => window.open('https://t.me/+79033901093', '_blank')}
                 >
                   Написать
                 </Button>
