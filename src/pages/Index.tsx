@@ -113,7 +113,7 @@ const Index = () => {
             />
           </div>
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:+79033901093" className="flex items-center gap-2 text-foreground hover:text-primary transition-colors">
+            <a href="tel:+79033901093" className="flex items-center gap-2 bg-[#90C850] hover:bg-[#7AB840] text-white px-4 py-2 rounded-md transition-colors">
               <Icon name="Phone" size={20} />
               <span className="font-semibold">+7 903 390-10-93</span>
             </a>
