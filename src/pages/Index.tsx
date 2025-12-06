@@ -203,7 +203,7 @@ const Index = () => {
             <img 
               src="https://cdn.poehali.dev/files/fa5fb18d-7ab2-471a-9709-a7e63d3cbaa5.jpg" 
               alt="Логотип Мусорок" 
-              className="h-52 mx-auto object-contain"
+              className="h-72 mx-auto object-contain"
             />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-secondary">
