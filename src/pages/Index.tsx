@@ -126,14 +126,6 @@ const Index = () => {
               >
                 <Icon name="MessageCircle" size={20} className="text-green-600" />
               </Button>
-              <Button 
-                size="icon"
-                variant="ghost"
-                onClick={() => window.open('https://t.me/+79033901093', '_blank')}
-                className="hover:bg-blue-100"
-              >
-                <Icon name="Send" size={20} className="text-blue-600" />
-              </Button>
             </div>
             <Button 
               onClick={() => scrollToSection('contract')} 
@@ -160,24 +152,14 @@ const Index = () => {
               <Icon name="Phone" size={24} />
               +7 903 390-10-93
             </a>
-            <div className="flex gap-2">
-              <Button 
-                variant="outline"
-                className="flex-1 py-6"
-                onClick={() => window.open('https://wa.me/79033901093', '_blank')}
-              >
-                <Icon name="MessageCircle" size={20} className="mr-2 text-green-600" />
-                WhatsApp
-              </Button>
-              <Button 
-                variant="outline"
-                className="flex-1 py-6"
-                onClick={() => window.open('https://t.me/+79033901093', '_blank')}
-              >
-                <Icon name="Send" size={20} className="mr-2 text-blue-600" />
-                Telegram
-              </Button>
-            </div>
+            <Button 
+              variant="outline"
+              className="w-full py-6"
+              onClick={() => window.open('https://wa.me/79033901093', '_blank')}
+            >
+              <Icon name="MessageCircle" size={20} className="mr-2 text-green-600" />
+              WhatsApp
+            </Button>
             <Button 
               variant="ghost" 
               className="w-full justify-start text-lg py-6"
