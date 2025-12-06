@@ -206,9 +206,6 @@ const Index = () => {
               className="h-96 mx-auto object-contain mix-blend-multiply"
             />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-secondary">
-            Вынесем ваш мусор от двери до контейнера
-          </h2>
           <p className="text-xl text-muted-foreground mb-4">
             Забудьте о неудобстве. Заберем мусор у двери и отнесем до контейнера за вас
           </p>
