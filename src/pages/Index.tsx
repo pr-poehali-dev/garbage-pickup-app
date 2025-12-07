@@ -203,7 +203,7 @@ const Index = () => {
               onClick={() => window.open('https://vk.me/join/your_max_link', '_blank')}
             >
               <Icon name="MessageSquare" size={24} className="mr-2" />
-              Max (Telegram)
+              Max
             </Button>
           </div>
           <Button 
