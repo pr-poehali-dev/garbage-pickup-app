@@ -188,8 +188,7 @@ const Index = () => {
           </div>
           <div className="text-2xl md:text-3xl text-black mb-4 font-medium space-y-2">
             <p>Забудьте о неудобстве.</p>
-            <p>Заберём ваш мусор у двери</p>
-            <p>и отнесем до контейнера</p>
+            <p>Заберём ваш мусор у&nbsp;двери и&nbsp;отнесем до&nbsp;контейнера</p>
           </div>
           <a href="tel:+79033901093" className="inline-flex items-center gap-2 text-2xl font-bold bg-[#90C850] hover:bg-[#7AB840] text-white px-6 py-3 rounded-lg mb-6 hover:scale-105 transition-all whitespace-nowrap">
             <Icon name="Phone" size={28} />
