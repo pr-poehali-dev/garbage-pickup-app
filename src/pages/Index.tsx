@@ -200,8 +200,8 @@ const Index = () => {
               className="max-w-full h-auto mx-auto"
             />
           </div>
-          <a href="tel:+79033901093" className="inline-flex items-center gap-2 text-2xl font-bold bg-[#90C850] hover:bg-[#7AB840] text-white px-6 py-3 rounded-lg mb-6 hover:scale-105 transition-all whitespace-nowrap">
-            <Icon name="Phone" size={28} />
+          <a href="tel:+79033901093" className="inline-flex items-center gap-3 text-4xl font-bold bg-[#90C850] hover:bg-[#7AB840] text-white px-8 py-4 rounded-lg mb-6 hover:scale-105 transition-all whitespace-nowrap">
+            <Icon name="Phone" size={40} />
             +7 903 390-10-93
           </a>
           
@@ -209,7 +209,7 @@ const Index = () => {
             <img 
               src="https://cdn.poehali.dev/files/1000018686.jpg" 
               alt="Связаться с нами" 
-              className="max-w-full h-auto mx-auto rounded-3xl shadow-lg"
+              className="max-w-md h-auto mx-auto rounded-3xl shadow-lg"
             />
           </div>
           
