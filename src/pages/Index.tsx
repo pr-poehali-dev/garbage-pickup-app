@@ -221,30 +221,30 @@ const Index = () => {
 
       <section className="pt-2 pb-8 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <h3 className="text-3xl font-bold text-center mb-4 text-secondary">
+          <h3 className="text-3xl font-bold text-center mb-2 text-secondary leading-tight">
             Почему выбирают нас
           </h3>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-muted-foreground mb-6 max-w-2xl mx-auto leading-tight">
             Мы делаем вашу жизнь комфортнее, избавляя от рутинной задачи выноса мусора
           </p>
           
-          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            <div className="text-center p-6 rounded-lg hover:bg-primary/5 transition-colors">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+            <div className="text-center p-4 rounded-lg hover:bg-primary/5 transition-colors">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2">
                 <Icon name="Clock" size={32} className="text-primary" />
               </div>
-              <h4 className="font-bold text-lg mb-2">Экономия времени</h4>
-              <p className="text-sm text-muted-foreground">
+              <h4 className="font-bold text-lg mb-1 leading-tight">Экономия времени</h4>
+              <p className="text-sm text-muted-foreground leading-tight">
                 Не тратьте время на походы к баку — мы всё сделаем за вас без лишних хлопот
               </p>
             </div>
 
-            <div className="text-center p-6 rounded-lg hover:bg-primary/5 transition-colors">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center p-4 rounded-lg hover:bg-primary/5 transition-colors">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2">
                 <Icon name="Sparkles" size={32} className="text-primary" />
               </div>
-              <h4 className="font-bold text-lg mb-2">Чистота в подъезде</h4>
-              <p className="text-sm text-muted-foreground">
+              <h4 className="font-bold text-lg mb-1 leading-tight">Чистота в подъезде</h4>
+              <p className="text-sm text-muted-foreground leading-tight">
                 Вынесем мусор, не оставляя следов
               </p>
             </div>
