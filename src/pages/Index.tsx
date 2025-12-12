@@ -537,11 +537,11 @@ const Index = () => {
               +7 903 390-10-93
             </a>
           </div>
-          <div className="mt-4">
+          <div className="mt-4 flex justify-center">
             <img 
               src="https://cdn.poehali.dev/files/1000018686.jpg" 
               alt="Связаться с нами" 
-              className="max-w-sm h-auto mx-auto rounded-3xl"
+              className="w-64 h-auto rounded-3xl"
             />
           </div>
         </div>
