@@ -179,7 +179,7 @@ const Index = () => {
 
       <section className="py-20 px-4 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
         <div className="container mx-auto text-center max-w-3xl">
-          <div className="mx-auto mb-2 animate-scale-in">
+          <div className="mx-auto mb-0 animate-scale-in">
             <img 
               src="https://cdn.poehali.dev/files/fa5fb18d-7ab2-471a-9709-a7e63d3cbaa5.jpg" 
               alt="Логотип Мусорок" 
