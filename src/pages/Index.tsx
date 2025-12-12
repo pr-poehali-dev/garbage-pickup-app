@@ -547,6 +547,7 @@ const Index = () => {
               className="w-32 h-auto rounded-2xl"
             />
           </div>
+          <p className="mt-3 text-white text-base">Служба поддержки</p>
         </div>
       </footer>
     </div>
