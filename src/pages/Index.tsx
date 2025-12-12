@@ -222,7 +222,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="pt-2 pb-8 px-4 bg-white">
+      <section className="pt-0 pb-8 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <h3 className="text-3xl font-bold text-center mb-2 text-secondary leading-tight">
             Почему выбирают нас
