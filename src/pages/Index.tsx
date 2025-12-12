@@ -184,7 +184,7 @@ const Index = () => {
         </div>
       )}
 
-      <section className="pt-8 pb-20 px-4 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+      <section className="pt-0 pb-20 px-4 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
         <div className="container mx-auto text-center max-w-3xl">
           <div className="mx-auto -mb-4 animate-scale-in">
             <img 
