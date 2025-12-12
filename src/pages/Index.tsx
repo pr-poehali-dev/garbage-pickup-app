@@ -541,7 +541,7 @@ const Index = () => {
             <img 
               src="https://cdn.poehali.dev/files/1000018686.jpg" 
               alt="Связаться с нами" 
-              className="w-64 h-auto rounded-3xl"
+              className="w-32 h-auto rounded-2xl"
             />
           </div>
         </div>
