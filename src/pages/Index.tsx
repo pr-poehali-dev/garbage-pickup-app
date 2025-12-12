@@ -384,7 +384,7 @@ const Index = () => {
           <h3 className="text-3xl font-bold mb-8">
             Свяжитесь с нами
           </h3>
-          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+          <div className="max-w-md mx-auto">
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="pt-6 text-center">
                 <Icon name="Phone" size={48} className="mx-auto mb-4 text-primary" />
@@ -402,18 +402,6 @@ const Index = () => {
                 <div className="mt-4 bg-white text-black font-semibold text-lg py-2 px-4 rounded-lg">
                   Написать
                 </div>
-              </CardContent>
-            </Card>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6 text-center">
-                <Icon name="MessageCircle" size={48} className="mx-auto mb-4 text-green-600" />
-                <h4 className="font-semibold mb-2">WhatsApp</h4>
-                <Button 
-                  className="text-lg font-bold bg-[#90C850] hover:bg-[#7AB840] text-white"
-                  onClick={() => window.open('https://wa.me/79033901093', '_blank')}
-                >
-                  Написать
-                </Button>
               </CardContent>
             </Card>
           </div>
