@@ -209,7 +209,7 @@ const Index = () => {
             <img 
               src="https://cdn.poehali.dev/files/1000018686.jpg" 
               alt="Связаться с нами" 
-              className="w-72 h-auto mx-auto rounded-3xl shadow-lg"
+              className="w-64 h-auto mx-auto rounded-3xl shadow-lg"
             />
           </div>
           
