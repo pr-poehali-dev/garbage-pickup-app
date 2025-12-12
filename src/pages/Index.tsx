@@ -573,6 +573,8 @@ const Index = () => {
             <CardContent>
               <form onSubmit={(e) => {
                 e.preventDefault();
+                const message = `Обращение в службу поддержки:%0A%0AИмя: ${supportForm.name}%0AАдрес: ${supportForm.address}%0AСообщение: ${supportForm.message}%0AТелефон: ${supportForm.phone}`;
+                window.open(`https://wa.me/79619246475?text=${message}`, '_blank');
                 toast({
                   title: "Заявка отправлена!",
                   description: "Мы свяжемся с вами в ближайшее время.",
