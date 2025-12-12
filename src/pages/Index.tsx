@@ -252,12 +252,12 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="tariffs" className="py-20 px-4">
+      <section id="tariffs" className="pt-4 pb-8 px-4">
         <div className="container mx-auto">
-          <h3 className="text-3xl font-bold text-center mb-12 text-secondary">
+          <h3 className="text-3xl font-bold text-center mb-6 text-secondary leading-tight">
             Выберите подходящий тариф
           </h3>
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto">
             {tariffs.map((tariff, idx) => (
               <Card 
                 key={tariff.id} 
