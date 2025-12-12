@@ -193,7 +193,7 @@ const Index = () => {
               className="h-96 mx-auto object-contain mix-blend-multiply"
             />
           </div>
-          <div className="mb-6">
+          <div className="mb-6 text-center">
             <img 
               src="https://cdn.poehali.dev/files/1000018694.png" 
               alt="Вынесем Ваш мусор от Вашей двери до мусорного контейнера" 
