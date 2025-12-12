@@ -195,7 +195,7 @@ const Index = () => {
           </div>
           <div className="mb-6">
             <img 
-              src="https://cdn.poehali.dev/files/1000018689.jpg" 
+              src="https://cdn.poehali.dev/files/1000018694.png" 
               alt="Вынесем Ваш мусор от Вашей двери до мусорного контейнера" 
               className="max-w-full h-auto mx-auto"
             />
