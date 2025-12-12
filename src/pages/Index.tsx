@@ -194,6 +194,15 @@ const Index = () => {
             <Icon name="Phone" size={28} />
             +7 903 390-10-93
           </a>
+          
+          <div className="mb-6">
+            <img 
+              src="https://cdn.poehali.dev/files/1000018686.jpg" 
+              alt="Связаться с нами" 
+              className="max-w-full h-auto mx-auto rounded-3xl shadow-lg"
+            />
+          </div>
+          
           <div className="text-lg text-black font-semibold mb-6 uppercase">
             <p>График выноса:</p>
             <p>понедельник, среда, суббота</p>
