@@ -392,6 +392,13 @@ const Index = () => {
                 <a href="tel:+79033901093" className="text-lg font-bold text-primary hover:underline">
                   +7 903 390-10-93
                 </a>
+                <div className="mt-4">
+                  <img 
+                    src="https://cdn.poehali.dev/files/1000018686.jpg" 
+                    alt="Связаться с нами" 
+                    className="max-w-full h-auto mx-auto rounded-2xl"
+                  />
+                </div>
               </CardContent>
             </Card>
             <Card className="hover:shadow-lg transition-shadow">
