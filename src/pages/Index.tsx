@@ -379,7 +379,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact" className="py-16 px-4 bg-primary/5">
+      <section id="contact" className="pt-4 pb-8 px-4 bg-primary/5">
         <div className="container mx-auto max-w-4xl text-center">
           <h3 className="text-3xl font-bold mb-8">
             Свяжитесь с нами
