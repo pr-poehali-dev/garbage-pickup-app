@@ -208,16 +208,6 @@ const Index = () => {
             <p>понедельник, среда, суббота</p>
             <p>с 10:00 до 17:00</p>
           </div>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-            <Button 
-              size="lg"
-              className="bg-[#90C850] hover:bg-[#7AB840] text-white px-6 py-6 text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
-              onClick={() => window.open('https://vk.me/join/your_max_link', '_blank')}
-            >
-              <Icon name="MessageSquare" size={24} className="mr-2" />
-              Max
-            </Button>
-          </div>
           <Button 
             size="lg" 
             className="bg-[#90C850] hover:bg-[#7AB840] text-white text-lg px-8 py-6"
