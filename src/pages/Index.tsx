@@ -194,7 +194,7 @@ const Index = () => {
             <Icon name="Phone" size={28} />
             +7 903 390-10-93
           </a>
-          <p className="text-lg text-black font-semibold mb-6">
+          <p className="text-lg text-black font-semibold mb-6 uppercase">
             График выноса: понедельник, среда, суббота с 10:00 до 17:00
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
