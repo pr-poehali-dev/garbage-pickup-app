@@ -399,6 +399,9 @@ const Index = () => {
                     className="max-w-full h-auto mx-auto rounded-2xl"
                   />
                 </div>
+                <div className="mt-4 bg-white text-black font-semibold text-lg py-2 px-4 rounded-lg">
+                  Написать
+                </div>
               </CardContent>
             </Card>
             <Card className="hover:shadow-lg transition-shadow">
