@@ -193,11 +193,11 @@ const Index = () => {
               className="h-96 mx-auto object-contain mix-blend-multiply"
             />
           </div>
-          <div className="mb-6 text-center">
+          <div className="mb-6 flex justify-center">
             <img 
               src="https://cdn.poehali.dev/files/1000018694.png" 
               alt="Вынесем Ваш мусор от Вашей двери до мусорного контейнера" 
-              className="max-w-md h-auto mx-auto"
+              className="max-w-sm h-auto"
             />
           </div>
           <a href="tel:+79033901093" className="inline-flex items-center gap-2 text-xl font-bold bg-[#90C850] hover:bg-[#7AB840] text-white px-6 py-3 rounded-lg mb-6 hover:scale-105 transition-all whitespace-nowrap">
