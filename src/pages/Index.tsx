@@ -186,11 +186,21 @@ const Index = () => {
 
       <section className="pt-0 pb-20 px-4 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
         <div className="container mx-auto text-center max-w-3xl">
-          <div className="mx-auto -mb-4 animate-scale-in">
+          <div className="mx-auto -mb-4 animate-scale-in relative">
+            <img 
+              src="https://cdn.poehali.dev/files/1000018696.png" 
+              alt="Переработка" 
+              className="absolute left-0 top-1/2 -translate-y-1/2 w-20 h-20 opacity-30"
+            />
             <img 
               src="https://cdn.poehali.dev/files/fa5fb18d-7ab2-471a-9709-a7e63d3cbaa5.jpg" 
               alt="Логотип Мусорок" 
               className="h-96 mx-auto object-contain mix-blend-multiply"
+            />
+            <img 
+              src="https://cdn.poehali.dev/files/1000018696.png" 
+              alt="Переработка" 
+              className="absolute right-0 top-1/2 -translate-y-1/2 w-20 h-20 opacity-30"
             />
           </div>
           <div className="mb-6 flex justify-center">
