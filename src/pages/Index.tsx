@@ -315,7 +315,11 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="mt-16 max-w-2xl mx-auto">
+          <div className="mt-16 text-center">
+            <h3 className="text-4xl font-bold text-secondary mb-8">Уважаемые клиенты</h3>
+          </div>
+
+          <div className="mt-8 max-w-2xl mx-auto">
             <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-white">
               <CardHeader>
                 <CardTitle className="text-center text-2xl">Оплата по QR-коду</CardTitle>
