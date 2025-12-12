@@ -11,6 +11,13 @@ import { useToast } from '@/hooks/use-toast';
 const Index = () => {
   const { toast } = useToast();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [supportModalOpen, setSupportModalOpen] = useState(false);
+  const [supportForm, setSupportForm] = useState({
+    name: '',
+    address: '',
+    message: '',
+    phone: ''
+  });
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -547,9 +554,89 @@ const Index = () => {
               className="w-32 h-auto rounded-2xl"
             />
           </div>
-          <p className="mt-3 text-white text-base">Служба поддержки</p>
+          <button 
+            onClick={() => setSupportModalOpen(true)}
+            className="mt-3 text-white text-base hover:text-white/80 transition-colors cursor-pointer underline"
+          >
+            Служба поддержки
+          </button>
         </div>
       </footer>
+
+      {supportModalOpen && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" onClick={() => setSupportModalOpen(false)}>
+          <Card className="max-w-md w-full" onClick={(e) => e.stopPropagation()}>
+            <CardHeader>
+              <CardTitle className="text-2xl">Служба поддержки</CardTitle>
+              <CardDescription>Заполните форму и мы с вами свяжемся</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <form onSubmit={(e) => {
+                e.preventDefault();
+                toast({
+                  title: "Заявка отправлена!",
+                  description: "Мы свяжемся с вами в ближайшее время.",
+                });
+                setSupportForm({ name: '', address: '', message: '', phone: '' });
+                setSupportModalOpen(false);
+              }} className="space-y-4">
+                <div className="space-y-2">
+                  <Label htmlFor="support-name">Имя</Label>
+                  <Input
+                    id="support-name"
+                    required
+                    value={supportForm.name}
+                    onChange={(e) => setSupportForm({ ...supportForm, name: e.target.value })}
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="support-address">Адрес</Label>
+                  <Input
+                    id="support-address"
+                    required
+                    value={supportForm.address}
+                    onChange={(e) => setSupportForm({ ...supportForm, address: e.target.value })}
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="support-message">Сообщение (не более 200 символов)</Label>
+                  <Textarea
+                    id="support-message"
+                    required
+                    maxLength={200}
+                    value={supportForm.message}
+                    onChange={(e) => setSupportForm({ ...supportForm, message: e.target.value })}
+                    rows={3}
+                  />
+                  <p className="text-xs text-muted-foreground text-right">{supportForm.message.length}/200</p>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="support-phone">Номер телефона для связи</Label>
+                  <Input
+                    id="support-phone"
+                    type="tel"
+                    required
+                    value={supportForm.phone}
+                    onChange={(e) => setSupportForm({ ...supportForm, phone: e.target.value })}
+                  />
+                </div>
+
+                <div className="flex gap-2">
+                  <Button type="submit" className="flex-1 bg-[#90C850] hover:bg-[#7AB840]">
+                    Отправить
+                  </Button>
+                  <Button type="button" variant="outline" onClick={() => setSupportModalOpen(false)}>
+                    Отмена
+                  </Button>
+                </div>
+              </form>
+            </CardContent>
+          </Card>
+        </div>
+      )}
     </div>
   );
 };
