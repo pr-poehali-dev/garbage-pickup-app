@@ -573,11 +573,12 @@ const Index = () => {
             <CardContent>
               <form onSubmit={(e) => {
                 e.preventDefault();
-                const message = `Обращение в службу поддержки:%0A%0AИмя: ${supportForm.name}%0AАдрес: ${supportForm.address}%0AСообщение: ${supportForm.message}%0AТелефон: ${supportForm.phone}`;
-                window.open(`https://wa.me/79619246475?text=${message}`, '_blank');
+                const subject = encodeURIComponent('Обращение в службу поддержки');
+                const body = encodeURIComponent(`Имя: ${supportForm.name}\nАдрес: ${supportForm.address}\nСообщение: ${supportForm.message}\nТелефон: ${supportForm.phone}`);
+                window.location.href = `mailto:musorok056@yandex.ru?subject=${subject}&body=${body}`;
                 toast({
-                  title: "Заявка отправлена!",
-                  description: "Мы свяжемся с вами в ближайшее время.",
+                  title: "Открываем почтовый клиент...",
+                  description: "Отправьте письмо через ваше почтовое приложение.",
                 });
                 setSupportForm({ name: '', address: '', message: '', phone: '' });
                 setSupportModalOpen(false);
