@@ -55,10 +55,10 @@ const Index = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!formData.name || !formData.phone || !formData.address || !formData.tariff || !formData.duration) {
+    if (!formData.name || !formData.phone || !formData.address) {
       toast({
         title: 'Заполните все поля',
-        description: 'Пожалуйста, укажите все данные для заключения договора',
+        description: 'Пожалуйста, укажите имя, телефон и адрес',
         variant: 'destructive'
       });
       return;
