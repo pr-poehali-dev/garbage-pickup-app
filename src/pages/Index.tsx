@@ -190,7 +190,7 @@ const Index = () => {
             <img 
               src="https://cdn.poehali.dev/files/1000018696.png" 
               alt="Переработка" 
-              className="absolute left-0 top-8 w-24 h-24 opacity-20"
+              className="absolute -left-4 top-8 w-24 h-24 opacity-20"
             />
             <img 
               src="https://cdn.poehali.dev/files/fa5fb18d-7ab2-471a-9709-a7e63d3cbaa5.jpg" 
