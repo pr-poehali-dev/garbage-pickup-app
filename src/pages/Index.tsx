@@ -456,6 +456,7 @@ const Index = () => {
                       placeholder="Иван Иванов"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      required
                     />
                   </div>
 
@@ -467,6 +468,7 @@ const Index = () => {
                       placeholder="+7 (999) 123-45-67"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      required
                     />
                   </div>
 
@@ -478,6 +480,7 @@ const Index = () => {
                       value={formData.address}
                       onChange={(e) => setFormData({ ...formData, address: e.target.value })}
                       rows={3}
+                      required
                     />
                   </div>
 
