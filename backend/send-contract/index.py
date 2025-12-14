@@ -47,7 +47,33 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
         }
     
     bot_token = os.environ.get('TELEGRAM_BOT_TOKEN')
-    chat_id = '79033901093'
+    
+    get_chat_url = f"https://api.telegram.org/bot{bot_token}/getUpdates"
+    chat_id = None
+    
+    try:
+        with urllib.request.urlopen(get_chat_url) as response:
+            updates = json.loads(response.read().decode('utf-8'))
+            if updates.get('ok') and len(updates.get('result', [])) > 0:
+                for update in reversed(updates['result']):
+                    if 'message' in update and 'chat' in update['message']:
+                        chat_id = str(update['message']['chat']['id'])
+                        break
+    except:
+        pass
+    
+    if not chat_id:
+        return {
+            'statusCode': 500,
+            'headers': {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            },
+            'body': json.dumps({
+                'error': 'Could not find chat ID. Please send /start to the bot first.',
+                'bot_username': 'Check your bot username from @BotFather'
+            })
+        }
     
     message = f"""🔔 Новая заявка на договор!
 
@@ -60,8 +86,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     
     data = urllib.parse.urlencode({
         'chat_id': chat_id,
-        'text': message,
-        'parse_mode': 'HTML'
+        'text': message
     }).encode('utf-8')
     
     req = urllib.request.Request(telegram_url, data=data, method='POST')
@@ -82,12 +107,18 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             else:
                 return {
                     'statusCode': 500,
-                    'headers': {'Content-Type': 'application/json'},
+                    'headers': {
+                        'Content-Type': 'application/json',
+                        'Access-Control-Allow-Origin': '*'
+                    },
                     'body': json.dumps({'error': 'Telegram API error', 'details': result})
                 }
     except Exception as e:
         return {
             'statusCode': 500,
-            'headers': {'Content-Type': 'application/json'},
+            'headers': {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            },
             'body': json.dumps({'error': str(e)})
         }
