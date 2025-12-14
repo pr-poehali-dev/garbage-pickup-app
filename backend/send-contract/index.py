@@ -6,7 +6,7 @@ from typing import Dict, Any
 
 def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     '''
-    Отправляет уведомление о новой заявке на договор в Telegram
+    Отправляет уведомление о новой заявке на договор в Telegram бот
     Args: event - HTTP запрос с данными формы (name, phone, address, tariff)
           context - контекст выполнения функции
     Returns: HTTP ответ с результатом отправки
