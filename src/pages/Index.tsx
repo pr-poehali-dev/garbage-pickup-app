@@ -107,9 +107,25 @@ const Index = () => {
       const contractResult = await contractResponse.json();
 
       if (contractResponse.ok && contractResult.success) {
+        const byteCharacters = atob(pdfBase64);
+        const byteNumbers = new Array(byteCharacters.length);
+        for (let i = 0; i < byteCharacters.length; i++) {
+          byteNumbers[i] = byteCharacters.charCodeAt(i);
+        }
+        const byteArray = new Uint8Array(byteNumbers);
+        const blob = new Blob([byteArray], { type: 'application/pdf' });
+        const url = URL.createObjectURL(blob);
+        
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `Договор_${formData.name.replace(/\s+/g, '_')}.pdf`;
+        link.click();
+        
+        URL.revokeObjectURL(url);
+
         toast({
           title: 'Договор отправлен!',
-          description: 'Подписанный договор успешно отправлен. Мы свяжемся с вами в ближайшее время.'
+          description: 'Подписанный договор скачан на ваше устройство и отправлен нам. Мы свяжемся с вами в ближайшее время.'
         });
         
         setFormData({ name: '', phone: '', address: '', tariff: '', duration: '' });
