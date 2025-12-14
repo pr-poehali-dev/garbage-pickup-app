@@ -7,6 +7,8 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import Icon from '@/components/ui/icon';
 import { useToast } from '@/hooks/use-toast';
+import ContractSignature from '@/components/ContractSignature';
+import { generateContractPDFBase64 } from '@/utils/generateContractPDF';
 
 const Index = () => {
   const { toast } = useToast();
@@ -25,6 +27,8 @@ const Index = () => {
     tariff: '',
     duration: ''
   });
+  const [showSignature, setShowSignature] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const tariffs = [
     {
@@ -64,12 +68,16 @@ const Index = () => {
       return;
     }
 
+    setShowSignature(true);
+  };
+
+  const handleSignatureComplete = async (signatureDataUrl: string) => {
+    setIsSubmitting(true);
+    
     try {
-      const response = await fetch('https://functions.poehali.dev/8f3c5a51-eb00-4694-b4fd-0d5f889f4ecc', {
+      await fetch('https://functions.poehali.dev/8f3c5a51-eb00-4694-b4fd-0d5f889f4ecc', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name: formData.name,
           phone: formData.phone,
@@ -78,25 +86,38 @@ const Index = () => {
         })
       });
 
-      const result = await response.json();
+      const pdfBase64 = generateContractPDFBase64({
+        clientName: formData.name,
+        clientPhone: formData.phone,
+        clientAddress: formData.address,
+        signatureDataUrl
+      });
 
-      if (response.ok && result.success) {
+      const contractResponse = await fetch('https://functions.poehali.dev/32d01596-bea3-4369-8220-59664e79a98d', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          pdf_base64: pdfBase64,
+          client_name: formData.name,
+          client_phone: formData.phone,
+          client_address: formData.address
+        })
+      });
+
+      const contractResult = await contractResponse.json();
+
+      if (contractResponse.ok && contractResult.success) {
         toast({
-          title: 'Заявка отправлена!',
-          description: 'Мы свяжемся с вами в ближайшее время для подтверждения договора'
+          title: 'Договор отправлен!',
+          description: 'Подписанный договор успешно отправлен. Мы свяжемся с вами в ближайшее время.'
         });
         
-        setFormData({
-          name: '',
-          phone: '',
-          address: '',
-          tariff: '',
-          duration: ''
-        });
+        setFormData({ name: '', phone: '', address: '', tariff: '', duration: '' });
+        setShowSignature(false);
       } else {
         toast({
           title: 'Ошибка отправки',
-          description: result.error || 'Попробуйте позже',
+          description: contractResult.error || 'Попробуйте позже',
           variant: 'destructive'
         });
       }
@@ -106,6 +127,8 @@ const Index = () => {
         description: 'Проверьте подключение к интернету',
         variant: 'destructive'
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -521,13 +544,27 @@ const Index = () => {
                     <p className="text-sm text-muted-foreground mt-2">Понедельник, среда, суббота • До 10 кг за раз</p>
                   </div>
 
-                  <Button type="submit" className="w-full bg-[#90C850] hover:bg-[#7AB840] text-white py-6 text-lg">
-                    Отправить заявку
-                    <Icon name="Send" size={20} className="ml-2" />
+                  <Button 
+                    type="submit" 
+                    className="w-full bg-[#90C850] hover:bg-[#7AB840] text-white py-6 text-lg"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? 'Отправка...' : 'Подписать договор'}
+                    <Icon name="FileSignature" size={20} className="ml-2" />
                   </Button>
                 </form>
               </CardContent>
             </Card>
+
+            {showSignature && (
+              <ContractSignature
+                clientName={formData.name}
+                clientPhone={formData.phone}
+                clientAddress={formData.address}
+                onSigned={handleSignatureComplete}
+                onCancel={() => setShowSignature(false)}
+              />
+            )}
 
             <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-white shadow-xl">
               <CardHeader>
