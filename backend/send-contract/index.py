@@ -47,6 +47,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
         }
     
     bot_token = os.environ.get('TELEGRAM_BOT_TOKEN')
+    chat_id = os.environ.get('TELEGRAM_CHAT_ID')
     
     if not bot_token:
         print("ERROR: TELEGRAM_BOT_TOKEN not found in environment")
@@ -59,35 +60,15 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             'body': json.dumps({'error': 'Bot token not configured'})
         }
     
-    get_chat_url = f"https://api.telegram.org/bot{bot_token}/getUpdates"
-    chat_id = None
-    
-    try:
-        print(f"Fetching updates from: {get_chat_url}")
-        with urllib.request.urlopen(get_chat_url) as response:
-            updates = json.loads(response.read().decode('utf-8'))
-            print(f"Updates response: {json.dumps(updates)}")
-            if updates.get('ok') and len(updates.get('result', [])) > 0:
-                for update in reversed(updates['result']):
-                    if 'message' in update and 'chat' in update['message']:
-                        chat_id = str(update['message']['chat']['id'])
-                        print(f"Found chat_id: {chat_id}")
-                        break
-    except Exception as e:
-        print(f"ERROR getting updates: {str(e)}")
-        pass
-    
     if not chat_id:
+        print("ERROR: TELEGRAM_CHAT_ID not found in environment")
         return {
             'statusCode': 500,
             'headers': {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*'
             },
-            'body': json.dumps({
-                'error': 'Could not find chat ID. Please send /start to the bot first.',
-                'bot_username': 'Check your bot username from @BotFather'
-            })
+            'body': json.dumps({'error': 'Chat ID not configured'})
         }
     
     message = f"""🔔 Новая заявка на договор!
