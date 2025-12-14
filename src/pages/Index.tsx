@@ -52,7 +52,7 @@ const Index = () => {
     }
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!formData.name || !formData.phone || !formData.address) {
@@ -64,18 +64,49 @@ const Index = () => {
       return;
     }
 
-    toast({
-      title: 'Заявка отправлена!',
-      description: 'Мы свяжемся с вами в ближайшее время для подтверждения договора'
-    });
-    
-    setFormData({
-      name: '',
-      phone: '',
-      address: '',
-      tariff: '',
-      duration: ''
-    });
+    try {
+      const response = await fetch('https://functions.poehali.dev/8f3c5a51-eb00-4694-b4fd-0d5f889f4ecc', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          phone: formData.phone,
+          address: formData.address,
+          tariff: 'Месяц — 650 ₽/месяц'
+        })
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        toast({
+          title: 'Заявка отправлена!',
+          description: 'Мы свяжемся с вами в ближайшее время для подтверждения договора'
+        });
+        
+        setFormData({
+          name: '',
+          phone: '',
+          address: '',
+          tariff: '',
+          duration: ''
+        });
+      } else {
+        toast({
+          title: 'Ошибка отправки',
+          description: result.error || 'Попробуйте позже',
+          variant: 'destructive'
+        });
+      }
+    } catch (error) {
+      toast({
+        title: 'Ошибка отправки',
+        description: 'Проверьте подключение к интернету',
+        variant: 'destructive'
+      });
+    }
   };
 
   const scrollToSection = (id: string) => {
