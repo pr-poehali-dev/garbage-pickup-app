@@ -11,7 +11,10 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
           context - контекст выполнения функции
     Returns: HTTP ответ с результатом отправки
     '''
+    print(f"=== INCOMING REQUEST ===")
+    print(f"Event: {json.dumps(event)}")
     method: str = event.get('httpMethod', 'POST')
+    print(f"Method: {method}")
     
     if method == 'OPTIONS':
         return {
