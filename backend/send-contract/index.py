@@ -52,6 +52,10 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     bot_token = os.environ.get('TELEGRAM_BOT_TOKEN')
     chat_id = os.environ.get('TELEGRAM_CHAT_ID')
     
+    print(f"Bot token exists: {bool(bot_token)}")
+    print(f"Chat ID exists: {bool(chat_id)}")
+    print(f"Chat ID value: {chat_id}")
+    
     if not bot_token:
         print("ERROR: TELEGRAM_BOT_TOKEN not found in environment")
         return {
@@ -81,6 +85,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
 📍 Адрес: {address}
 💳 Тариф: {tariff}"""
     
+    print(f"Preparing to send message to chat_id: {chat_id}")
     telegram_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     
     data = urllib.parse.urlencode({
@@ -91,10 +96,13 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     req = urllib.request.Request(telegram_url, data=data, method='POST')
     
     try:
+        print(f"Sending request to Telegram API...")
         with urllib.request.urlopen(req) as response:
             result = json.loads(response.read().decode('utf-8'))
+            print(f"Telegram API response: {json.dumps(result)}")
             
             if result.get('ok'):
+                print("SUCCESS: Message sent to Telegram!")
                 return {
                     'statusCode': 200,
                     'headers': {
@@ -104,6 +112,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
                     'body': json.dumps({'success': True, 'message': 'Notification sent'})
                 }
             else:
+                print(f"ERROR: Telegram API returned error: {result}")
                 return {
                     'statusCode': 500,
                     'headers': {
@@ -113,6 +122,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
                     'body': json.dumps({'error': 'Telegram API error', 'details': result})
                 }
     except Exception as e:
+        print(f"EXCEPTION while sending to Telegram: {str(e)}")
         return {
             'statusCode': 500,
             'headers': {
