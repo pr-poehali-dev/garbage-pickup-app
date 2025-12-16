@@ -387,8 +387,8 @@ const Index = () => {
                       }
                     }}
                   >
-                    {tariff.id === 'daily' ? 'Оформить договор' : 'Оплатить'}
-                    <Icon name={tariff.id === 'daily' ? 'FileText' : 'CreditCard'} size={18} className="ml-2" />
+                    {tariff.id === 'daily' ? 'Оформить договор' : tariff.id === 'one-time' ? 'Оформить заказ' : 'Оплатить'}
+                    <Icon name={tariff.id === 'daily' ? 'FileText' : tariff.id === 'one-time' ? 'ShoppingCart' : 'CreditCard'} size={18} className="ml-2" />
                   </Button>
                 </CardContent>
               </Card>
