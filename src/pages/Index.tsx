@@ -315,10 +315,14 @@ const Index = () => {
               href="https://msng.link/o/?89033901093=ma" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-14 h-14 bg-purple-500 hover:bg-purple-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+              className="w-14 h-14 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
               aria-label="Max"
             >
-              <Icon name="Mail" size={28} className="text-white" />
+              <img 
+                src="https://cdn.poehali.dev/files/1000018995.png" 
+                alt="Max" 
+                className="w-full h-full object-cover"
+              />
             </a>
           </div>
           
