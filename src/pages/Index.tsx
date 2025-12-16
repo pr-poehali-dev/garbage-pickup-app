@@ -300,16 +300,7 @@ const Index = () => {
             />
             <div className="flex items-center justify-center gap-4 mt-4">
               <a 
-                href="https://wa.me/79033901093" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
-                aria-label="WhatsApp"
-              >
-                <Icon name="MessageCircle" size={28} className="text-white" />
-              </a>
-              <a 
-                href="https://t.me/79033901093" 
+                href="https://t.me/+79033901093" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-14 h-14 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
@@ -318,11 +309,20 @@ const Index = () => {
                 <Icon name="Send" size={28} className="text-white" />
               </a>
               <a 
-                href="https://msng.link/o/?79033901093=ma" 
+                href="https://wa.me/89033901093" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+                aria-label="WhatsApp"
+              >
+                <Icon name="MessageCircle" size={28} className="text-white" />
+              </a>
+              <a 
+                href="https://msng.link/o/?89033901093=ma" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-14 h-14 bg-purple-500 hover:bg-purple-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
-                aria-label="Max (VK Messenger)"
+                aria-label="Max"
               >
                 <Icon name="Mail" size={28} className="text-white" />
               </a>
