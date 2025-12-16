@@ -292,39 +292,42 @@ const Index = () => {
             +7 903 390-10-93
           </a>
           
-          <div className="mb-6 relative">
+          <div className="mb-6 relative group">
             <img 
               src="https://cdn.poehali.dev/files/1000018686.jpg" 
               alt="Связаться с нами" 
-              className="w-64 h-auto mx-auto rounded-3xl shadow-lg"
+              className="w-64 h-auto mx-auto rounded-3xl shadow-lg cursor-pointer"
             />
-            <div className="absolute inset-0 flex items-center justify-center gap-4">
+            <div className="absolute inset-0 flex items-center justify-center gap-2">
               <a 
                 href="https://wa.me/79033901093" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-16 h-16 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+                className="w-20 h-20 hover:scale-110 transition-transform opacity-0 hover:opacity-100"
                 aria-label="WhatsApp"
+                style={{ position: 'absolute', left: '15%', top: '50%', transform: 'translateY(-50%)' }}
               >
-                <Icon name="MessageCircle" size={32} className="text-green-600" />
+                <span className="sr-only">WhatsApp</span>
               </a>
               <a 
                 href="https://t.me/79033901093" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-16 h-16 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+                className="w-20 h-20 hover:scale-110 transition-transform opacity-0 hover:opacity-100"
                 aria-label="Telegram"
+                style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)' }}
               >
-                <Icon name="Send" size={32} className="text-blue-500" />
+                <span className="sr-only">Telegram</span>
               </a>
               <a 
-                href="viber://chat?number=79033901093" 
+                href="https://msng.link/o?79033901093=ma" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-16 h-16 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
-                aria-label="Viber"
+                className="w-20 h-20 hover:scale-110 transition-transform opacity-0 hover:opacity-100"
+                aria-label="Mail.ru Agent"
+                style={{ position: 'absolute', right: '15%', top: '50%', transform: 'translateY(-50%)' }}
               >
-                <Icon name="Phone" size={32} className="text-purple-600" />
+                <span className="sr-only">Mail.ru Agent</span>
               </a>
             </div>
           </div>
