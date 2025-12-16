@@ -312,9 +312,7 @@ const Index = () => {
               <Icon name="MessageCircle" size={28} className="text-white" />
             </a>
             <a 
-              href="https://msng.link/o/?+79033901093=ma" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="tel:+79033901093" 
               className="w-14 h-14 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
               aria-label="Max"
             >
