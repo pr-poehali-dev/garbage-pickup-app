@@ -292,12 +292,41 @@ const Index = () => {
             +7 903 390-10-93
           </a>
           
-          <div className="mb-6">
+          <div className="mb-6 relative">
             <img 
               src="https://cdn.poehali.dev/files/1000018686.jpg" 
               alt="Связаться с нами" 
               className="w-64 h-auto mx-auto rounded-3xl shadow-lg"
             />
+            <div className="absolute inset-0 flex items-center justify-center gap-4">
+              <a 
+                href="https://wa.me/79033901093" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-16 h-16 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+                aria-label="WhatsApp"
+              >
+                <Icon name="MessageCircle" size={32} className="text-green-600" />
+              </a>
+              <a 
+                href="https://t.me/79033901093" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-16 h-16 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+                aria-label="Telegram"
+              >
+                <Icon name="Send" size={32} className="text-blue-500" />
+              </a>
+              <a 
+                href="viber://chat?number=79033901093" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-16 h-16 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+                aria-label="Viber"
+              >
+                <Icon name="Phone" size={32} className="text-purple-600" />
+              </a>
+            </div>
           </div>
           
           <div className="text-lg text-black font-semibold mb-6 uppercase">
