@@ -827,12 +827,36 @@ const Index = () => {
               +7 903 390-10-93
             </a>
           </div>
-          <div className="mt-4 flex justify-center">
-            <img 
-              src="https://cdn.poehali.dev/files/1000018686.jpg" 
-              alt="Связаться с нами" 
-              className="w-32 h-auto rounded-2xl"
-            />
+          <div className="mt-4 flex items-center justify-center gap-4">
+            <a 
+              href="https://t.me/+79033901093" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-14 h-14 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+              aria-label="Telegram"
+            >
+              <Icon name="Send" size={28} className="text-white" />
+            </a>
+            <a 
+              href="https://wa.me/+79033901093" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+              aria-label="WhatsApp"
+            >
+              <Icon name="MessageCircle" size={28} className="text-white" />
+            </a>
+            <a 
+              href="tel:+79033901093" 
+              className="w-14 h-14 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
+              aria-label="Max"
+            >
+              <img 
+                src="https://cdn.poehali.dev/files/1000018995.png" 
+                alt="Max" 
+                className="w-full h-full object-cover"
+              />
+            </a>
           </div>
           <button 
             onClick={() => setSupportModalOpen(true)}
