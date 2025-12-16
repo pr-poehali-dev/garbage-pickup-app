@@ -29,6 +29,13 @@ const Index = () => {
   });
   const [showSignature, setShowSignature] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [orderForm, setOrderForm] = useState({
+    name: '',
+    phone: '',
+    address: '',
+    tariff: ''
+  });
+  const [showOrderForm, setShowOrderForm] = useState(false);
 
   const tariffs = [
     {
@@ -379,10 +386,10 @@ const Index = () => {
                       if (tariff.id === 'daily') {
                         scrollToSection('contract');
                       } else {
-                        scrollToSection('tariffs');
+                        setOrderForm({ ...orderForm, tariff: tariff.name });
+                        setShowOrderForm(true);
                         setTimeout(() => {
-                          const qrSection = document.querySelector('[alt="QR-код для оплаты"]');
-                          qrSection?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                          document.getElementById('order-form')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
                         }, 100);
                       }
                     }}
@@ -402,6 +409,84 @@ const Index = () => {
               После этого времени вынос мусора будет осуществляться на следующий день.
             </p>
           </div>
+
+          {showOrderForm && (
+            <div id="order-form" className="mt-12 max-w-2xl mx-auto">
+              <Card className="border-2 border-primary/20 shadow-xl">
+                <CardHeader>
+                  <CardTitle className="text-center text-2xl">Оформление заказа</CardTitle>
+                  <CardDescription className="text-center">
+                    Заполните форму для оформления заказа
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <form onSubmit={(e) => {
+                    e.preventDefault();
+                    if (!orderForm.name || !orderForm.phone || !orderForm.address) {
+                      toast({
+                        title: 'Заполните все поля',
+                        description: 'Пожалуйста, укажите имя, телефон и адрес',
+                        variant: 'destructive'
+                      });
+                      return;
+                    }
+                    toast({
+                      title: 'Заказ оформлен!',
+                      description: 'Переходим к оплате...'
+                    });
+                    setTimeout(() => {
+                      const qrSection = document.querySelector('[alt="QR-код для оплаты"]');
+                      qrSection?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }, 1000);
+                  }} className="space-y-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="order-name">Ваше имя</Label>
+                      <Input
+                        id="order-name"
+                        placeholder="Иван Иванов"
+                        value={orderForm.name}
+                        onChange={(e) => setOrderForm({ ...orderForm, name: e.target.value })}
+                        required
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="order-phone">Телефон</Label>
+                      <Input
+                        id="order-phone"
+                        type="tel"
+                        placeholder="+7 (999) 123-45-67"
+                        value={orderForm.phone}
+                        onChange={(e) => setOrderForm({ ...orderForm, phone: e.target.value })}
+                        required
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="order-address">Адрес</Label>
+                      <Textarea
+                        id="order-address"
+                        placeholder="Город, улица, дом, квартира"
+                        value={orderForm.address}
+                        onChange={(e) => setOrderForm({ ...orderForm, address: e.target.value })}
+                        rows={3}
+                        required
+                      />
+                    </div>
+                    <div className="bg-primary/5 rounded-lg p-4">
+                      <p className="text-sm text-muted-foreground mb-1">Выбранный тариф:</p>
+                      <p className="text-lg font-bold text-primary">{orderForm.tariff}</p>
+                    </div>
+                    <Button 
+                      type="submit" 
+                      className="w-full bg-[#90C850] hover:bg-[#7AB840] text-white py-6 text-lg"
+                    >
+                      Оплатить
+                      <Icon name="CreditCard" size={20} className="ml-2" />
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
+            </div>
+          )}
 
           <div className="mt-8 max-w-2xl mx-auto">
             <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-white">
