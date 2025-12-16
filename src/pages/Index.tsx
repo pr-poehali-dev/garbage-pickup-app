@@ -292,41 +292,34 @@ const Index = () => {
             +7 903 390-10-93
           </a>
           
-          <div className="mb-6">
-            <img 
-              src="https://cdn.poehali.dev/files/1000018686.jpg" 
-              alt="Связаться с нами" 
-              className="w-64 h-auto mx-auto rounded-3xl shadow-lg"
-            />
-            <div className="flex items-center justify-center gap-4 mt-4">
-              <a 
-                href="https://t.me/+79033901093" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-14 h-14 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
-                aria-label="Telegram"
-              >
-                <Icon name="Send" size={28} className="text-white" />
-              </a>
-              <a 
-                href="https://wa.me/89033901093" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
-                aria-label="WhatsApp"
-              >
-                <Icon name="MessageCircle" size={28} className="text-white" />
-              </a>
-              <a 
-                href="https://msng.link/o/?89033901093=ma" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-14 h-14 bg-purple-500 hover:bg-purple-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
-                aria-label="Max"
-              >
-                <Icon name="Mail" size={28} className="text-white" />
-              </a>
-            </div>
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <a 
+              href="https://t.me/+79033901093" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-14 h-14 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+              aria-label="Telegram"
+            >
+              <Icon name="Send" size={28} className="text-white" />
+            </a>
+            <a 
+              href="https://wa.me/89033901093" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+              aria-label="WhatsApp"
+            >
+              <Icon name="MessageCircle" size={28} className="text-white" />
+            </a>
+            <a 
+              href="https://msng.link/o/?89033901093=ma" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-14 h-14 bg-purple-500 hover:bg-purple-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+              aria-label="Max"
+            >
+              <Icon name="Mail" size={28} className="text-white" />
+            </a>
           </div>
           
           <div className="text-lg text-black font-semibold mb-6 uppercase">
