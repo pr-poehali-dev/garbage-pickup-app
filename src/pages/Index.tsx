@@ -320,14 +320,14 @@ const Index = () => {
                 <span className="sr-only">Telegram</span>
               </a>
               <a 
-                href="https://msng.link/o?79033901093=ma" 
+                href="https://msng.link/o/?79033901093=ma" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-20 h-20 hover:scale-110 transition-transform opacity-0 hover:opacity-100"
-                aria-label="Mail.ru Agent"
+                aria-label="Max (VK Messenger)"
                 style={{ position: 'absolute', right: '15%', top: '50%', transform: 'translateY(-50%)' }}
               >
-                <span className="sr-only">Mail.ru Agent</span>
+                <span className="sr-only">Max (VK Messenger)</span>
               </a>
             </div>
           </div>
