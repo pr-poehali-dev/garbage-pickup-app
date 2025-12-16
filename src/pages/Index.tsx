@@ -202,14 +202,35 @@ const Index = () => {
               <span className="font-semibold">+7 903 390-10-93</span>
             </a>
             <div className="flex items-center gap-2">
-              <Button 
-                size="icon"
-                variant="ghost"
-                onClick={() => window.open('https://wa.me/79033901093', '_blank')}
-                className="hover:bg-green-100"
+              <a 
+                href="https://t.me/+79033901093" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+                aria-label="Telegram"
               >
-                <Icon name="MessageCircle" size={20} className="text-green-600" />
-              </Button>
+                <Icon name="Send" size={20} className="text-white" />
+              </a>
+              <a 
+                href="https://wa.me/+79033901093" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+                aria-label="WhatsApp"
+              >
+                <Icon name="MessageCircle" size={20} className="text-white" />
+              </a>
+              <a 
+                href="tel:+79033901093" 
+                className="w-10 h-10 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
+                aria-label="Max"
+              >
+                <img 
+                  src="https://cdn.poehali.dev/files/1000018995.png" 
+                  alt="Max" 
+                  className="w-full h-full object-cover"
+                />
+              </a>
             </div>
             <Button 
               onClick={() => scrollToSection('contract')} 
@@ -236,13 +257,37 @@ const Index = () => {
               <Icon name="Phone" size={24} />
               +7 903 390-10-93
             </a>
-            <Button 
-              className="w-full py-6 bg-[#90C850] hover:bg-[#7AB840] text-white"
-              onClick={() => window.open('https://wa.me/79033901093', '_blank')}
-            >
-              <Icon name="MessageCircle" size={20} className="mr-2" />
-              WhatsApp
-            </Button>
+            <div className="flex items-center justify-center gap-4">
+              <a 
+                href="https://t.me/+79033901093" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-14 h-14 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+                aria-label="Telegram"
+              >
+                <Icon name="Send" size={28} className="text-white" />
+              </a>
+              <a 
+                href="https://wa.me/+79033901093" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+                aria-label="WhatsApp"
+              >
+                <Icon name="MessageCircle" size={28} className="text-white" />
+              </a>
+              <a 
+                href="tel:+79033901093" 
+                className="w-14 h-14 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
+                aria-label="Max"
+              >
+                <img 
+                  src="https://cdn.poehali.dev/files/1000018995.png" 
+                  alt="Max" 
+                  className="w-full h-full object-cover"
+                />
+              </a>
+            </div>
             <Button 
               className="w-full justify-start text-lg py-6 bg-[#90C850] hover:bg-[#7AB840] text-white"
               onClick={() => scrollToSection('tariffs')}
@@ -599,15 +644,36 @@ const Index = () => {
                 <a href="tel:+79033901093" className="text-lg font-bold text-primary hover:underline">
                   +7 903 390-10-93
                 </a>
-                <div className="mt-4">
-                  <img 
-                    src="https://cdn.poehali.dev/files/1000018686.jpg" 
-                    alt="Связаться с нами" 
-                    className="max-w-full h-auto mx-auto rounded-2xl"
-                  />
-                </div>
-                <div className="mt-4 bg-white text-black font-semibold text-lg py-2 px-4 rounded-lg">
-                  Написать
+                <div className="flex items-center justify-center gap-4 mt-6">
+                  <a 
+                    href="https://t.me/+79033901093" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-14 h-14 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+                    aria-label="Telegram"
+                  >
+                    <Icon name="Send" size={28} className="text-white" />
+                  </a>
+                  <a 
+                    href="https://wa.me/+79033901093" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+                    aria-label="WhatsApp"
+                  >
+                    <Icon name="MessageCircle" size={28} className="text-white" />
+                  </a>
+                  <a 
+                    href="tel:+79033901093" 
+                    className="w-14 h-14 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
+                    aria-label="Max"
+                  >
+                    <img 
+                      src="https://cdn.poehali.dev/files/1000018995.png" 
+                      alt="Max" 
+                      className="w-full h-full object-cover"
+                    />
+                  </a>
                 </div>
               </CardContent>
             </Card>
