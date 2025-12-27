@@ -488,7 +488,7 @@ const Index = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <form onSubmit={(e) => {
+                  <form onSubmit={async (e) => {
                     e.preventDefault();
                     if (!orderForm.name || !orderForm.phone || !orderForm.address) {
                       toast({
@@ -498,13 +498,41 @@ const Index = () => {
                       });
                       return;
                     }
-                    toast({
-                      title: 'Спасибо, что выбрали нас!',
-                      description: 'Мы свяжемся с вами для подтверждения заказа и оплаты.',
-                      duration: 5000
-                    });
-                    setShowOrderForm(false);
-                    setOrderForm({ name: '', phone: '', address: '', tariff: '' });
+
+                    // Отправляем данные в Telegram
+                    try {
+                      const response = await fetch('https://functions.poehali.dev/8f3c5a51-eb00-4694-b4fd-0d5f889f4ecc', {
+                        method: 'POST',
+                        headers: {
+                          'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                          name: orderForm.name,
+                          phone: orderForm.phone,
+                          address: orderForm.address,
+                          tariff: orderForm.tariff
+                        })
+                      });
+
+                      if (response.ok) {
+                        toast({
+                          title: 'Спасибо, что выбрали нас!',
+                          description: 'Мы свяжемся с вами для подтверждения заказа и оплаты.',
+                          duration: 5000
+                        });
+                        setShowOrderForm(false);
+                        setOrderForm({ name: '', phone: '', address: '', tariff: '' });
+                      } else {
+                        throw new Error('Failed to send notification');
+                      }
+                    } catch (error) {
+                      toast({
+                        title: 'Ошибка отправки',
+                        description: 'Не удалось отправить заявку. Попробуйте позже.',
+                        variant: 'destructive'
+                      });
+                      console.error('Error sending order:', error);
+                    }
                   }} className="space-y-4">
                     <div className="space-y-2">
                       <Label htmlFor="order-name">Ваше имя</Label>
