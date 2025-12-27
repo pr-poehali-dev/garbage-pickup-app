@@ -499,13 +499,12 @@ const Index = () => {
                       return;
                     }
                     toast({
-                      title: 'Заказ оформлен!',
-                      description: 'Переходим к оплате...'
+                      title: 'Спасибо, что выбрали нас!',
+                      description: 'Мы свяжемся с вами для подтверждения заказа и оплаты.',
+                      duration: 5000
                     });
-                    setTimeout(() => {
-                      const qrSection = document.querySelector('[alt="QR-код для оплаты"]');
-                      qrSection?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    }, 1000);
+                    setShowOrderForm(false);
+                    setOrderForm({ name: '', phone: '', address: '', tariff: '' });
                   }} className="space-y-4">
                     <div className="space-y-2">
                       <Label htmlFor="order-name">Ваше имя</Label>
@@ -547,8 +546,8 @@ const Index = () => {
                       type="submit" 
                       className="w-full bg-[#90C850] hover:bg-[#7AB840] text-white py-6 text-lg"
                     >
-                      Оплатить
-                      <Icon name="CreditCard" size={20} className="ml-2" />
+                      Оформить заказ
+                      <Icon name="ShoppingCart" size={20} className="ml-2" />
                     </Button>
                   </form>
                 </CardContent>
