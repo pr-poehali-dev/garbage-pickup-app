@@ -374,6 +374,9 @@ const Index = () => {
             <p>понедельник, среда, суббота</p>
             <p>с 10:00 до 17:00</p>
           </div>
+          <div className="text-2xl text-black font-bold mb-6 uppercase tracking-wide">
+            РАБОТАЕМ ТОЛЬКО В ОРЕНБУРГЕ
+          </div>
           <Button 
             size="lg" 
             className="bg-[#90C850] hover:bg-[#7AB840] text-white text-lg px-8 py-6"
