@@ -1,4 +1,5 @@
 {
+  "payment-webhook": "https://functions.poehali.dev/b5bf6aa2-5a57-4d36-b4e0-d7402af5914d",
   "send-signed-contract": "https://functions.poehali.dev/32d01596-bea3-4369-8220-59664e79a98d",
   "send-contract": "https://functions.poehali.dev/8f3c5a51-eb00-4694-b4fd-0d5f889f4ecc"
 }

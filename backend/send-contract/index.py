@@ -3,6 +3,7 @@ import os
 import urllib.request
 import urllib.parse
 from typing import Dict, Any
+import psycopg2
 
 def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     '''
@@ -42,6 +43,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     address = body_data.get('address', '')
     tariff = body_data.get('tariff', 'Месяц — 650 ₽/месяц')
     support_message = body_data.get('message', '')
+    telegram = body_data.get('telegram', '')
     
     if not name or not phone or not address:
         return {
@@ -49,6 +51,24 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             'headers': {'Content-Type': 'application/json'},
             'body': json.dumps({'error': 'Missing required fields'})
         }
+    
+    # Сохраняем заказ в БД (если это не служба поддержки)
+    if tariff != 'Служба поддержки':
+        try:
+            db_url = os.environ.get('DATABASE_URL')
+            if db_url:
+                conn = psycopg2.connect(db_url)
+                cur = conn.cursor()
+                cur.execute(
+                    "INSERT INTO orders (name, phone, address, telegram, tariff, payment_status) VALUES (%s, %s, %s, %s, %s, %s)",
+                    (name, phone, address, telegram, tariff, 'pending')
+                )
+                conn.commit()
+                cur.close()
+                conn.close()
+                print(f"Order saved to database")
+        except Exception as e:
+            print(f"Error saving to database: {e}")
     
     bot_token = os.environ.get('TELEGRAM_BOT_TOKEN')
     chat_id = os.environ.get('TELEGRAM_CHAT_ID')
@@ -86,6 +106,8 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
 📞 Телефон: {phone}
 📍 Адрес: {address}
 💬 Сообщение: {support_message}"""
+        if telegram:
+            message += f"\n📱 Telegram: {telegram}"
     else:
         message = f"""🔔 Новая заявка на заказ!
 
@@ -93,6 +115,8 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
 📞 Телефон: {phone}
 📍 Адрес: {address}
 💳 Тариф: {tariff}"""
+        if telegram:
+            message += f"\n📱 Telegram: {telegram}"
     
     print(f"Preparing to send message to chat_id: {chat_id}")
     telegram_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"

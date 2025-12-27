@@ -18,7 +18,8 @@ const Index = () => {
     name: '',
     address: '',
     message: '',
-    phone: ''
+    phone: '',
+    telegram: ''
   });
   const [formData, setFormData] = useState({
     name: '',
@@ -33,7 +34,8 @@ const Index = () => {
     name: '',
     phone: '',
     address: '',
-    tariff: ''
+    tariff: '',
+    telegram: ''
   });
   const [showOrderForm, setShowOrderForm] = useState(false);
 
@@ -490,10 +492,10 @@ const Index = () => {
                 <CardContent>
                   <form onSubmit={async (e) => {
                     e.preventDefault();
-                    if (!orderForm.name || !orderForm.phone || !orderForm.address) {
+                    if (!orderForm.name || !orderForm.phone || !orderForm.address || !orderForm.telegram) {
                       toast({
                         title: 'Заполните все поля',
-                        description: 'Пожалуйста, укажите имя, телефон и адрес',
+                        description: 'Пожалуйста, укажите имя, телефон, адрес и Telegram',
                         variant: 'destructive'
                       });
                       return;
@@ -510,7 +512,8 @@ const Index = () => {
                           name: orderForm.name,
                           phone: orderForm.phone,
                           address: orderForm.address,
-                          tariff: orderForm.tariff
+                          tariff: orderForm.tariff,
+                          telegram: orderForm.telegram
                         })
                       });
 
@@ -521,7 +524,7 @@ const Index = () => {
                           duration: 5000
                         });
                         setShowOrderForm(false);
-                        setOrderForm({ name: '', phone: '', address: '', tariff: '' });
+                        setOrderForm({ name: '', phone: '', address: '', tariff: '', telegram: '' });
                       } else {
                         throw new Error('Failed to send notification');
                       }
@@ -565,6 +568,19 @@ const Index = () => {
                         rows={3}
                         required
                       />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="order-telegram">Telegram</Label>
+                      <Input
+                        id="order-telegram"
+                        placeholder="@username или номер телефона"
+                        value={orderForm.telegram}
+                        onChange={(e) => setOrderForm({ ...orderForm, telegram: e.target.value })}
+                        required
+                      />
+                      <p className="text-xs text-muted-foreground">
+                        Для получения уведомления об оплате напишите боту: <a href="https://t.me/YOUR_BOT_USERNAME" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">@YOUR_BOT_USERNAME</a>
+                      </p>
                     </div>
                     <div className="bg-primary/5 rounded-lg p-4">
                       <p className="text-sm text-muted-foreground mb-1">Выбранный тариф:</p>
@@ -784,6 +800,7 @@ const Index = () => {
                       phone: supportForm.phone,
                       address: supportForm.address,
                       message: supportForm.message,
+                      telegram: supportForm.telegram,
                       tariff: 'Служба поддержки'
                     })
                   });
@@ -794,7 +811,7 @@ const Index = () => {
                       description: "Мы свяжемся с вами в ближайшее время для решения вашей проблемы.",
                       duration: 5000
                     });
-                    setSupportForm({ name: '', address: '', message: '', phone: '' });
+                    setSupportForm({ name: '', address: '', message: '', phone: '', telegram: '' });
                     setSupportModalOpen(false);
                   } else {
                     throw new Error('Failed to send support request');
@@ -850,6 +867,19 @@ const Index = () => {
                     value={supportForm.phone}
                     onChange={(e) => setSupportForm({ ...supportForm, phone: e.target.value })}
                   />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="support-telegram">Telegram</Label>
+                  <Input
+                    id="support-telegram"
+                    placeholder="@username или номер телефона"
+                    value={supportForm.telegram}
+                    onChange={(e) => setSupportForm({ ...supportForm, telegram: e.target.value })}
+                  />
+                  <p className="text-xs text-muted-foreground">
+                    Для получения уведомлений напишите боту: <a href="https://t.me/YOUR_BOT_USERNAME" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">@YOUR_BOT_USERNAME</a>
+                  </p>
                 </div>
 
                 <div className="flex gap-2">

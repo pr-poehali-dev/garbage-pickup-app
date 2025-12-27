@@ -1,0 +1,29 @@
+{
+  "tests": [
+    {
+      "name": "Handle payment webhook with telegram (order not found)",
+      "method": "POST",
+      "body": {
+        "telegram": "123456789",
+        "payment_id": "test_payment_123"
+      },
+      "expectedStatus": 404,
+      "expectedBody": {
+        "error": "Order not found"
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Reject webhook without telegram",
+      "method": "POST",
+      "body": {
+        "payment_id": "test_payment_456"
+      },
+      "expectedStatus": 400,
+      "expectedBody": {
+        "error": "string"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
