@@ -48,7 +48,7 @@ const Index = () => {
     {
       id: 'weekly',
       name: 'Неделя',
-      price: '180',
+      price: '250',
       period: '/неделя',
       icon: 'Calendar',
       features: ['Пн, Ср, Сб: 10:00-17:00', 'До 10 кг за раз', 'Только бытовой мусор']
