@@ -41,6 +41,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     phone = body_data.get('phone', '')
     address = body_data.get('address', '')
     tariff = body_data.get('tariff', 'Месяц — 650 ₽/месяц')
+    support_message = body_data.get('message', '')
     
     if not name or not phone or not address:
         return {
@@ -78,7 +79,15 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             'body': json.dumps({'error': 'Chat ID not configured'})
         }
     
-    message = f"""🔔 Новая заявка на договор!
+    if tariff == 'Служба поддержки':
+        message = f"""🆘 Обращение в службу поддержки!
+
+👤 Имя: {name}
+📞 Телефон: {phone}
+📍 Адрес: {address}
+💬 Сообщение: {support_message}"""
+    else:
+        message = f"""🔔 Новая заявка на заказ!
 
 👤 Имя: {name}
 📞 Телефон: {phone}

@@ -770,17 +770,43 @@ const Index = () => {
               <CardDescription>Заполните форму и мы с вами свяжемся</CardDescription>
             </CardHeader>
             <CardContent>
-              <form onSubmit={(e) => {
+              <form onSubmit={async (e) => {
                 e.preventDefault();
-                const subject = encodeURIComponent('Обращение в службу поддержки');
-                const body = encodeURIComponent(`Имя: ${supportForm.name}\nАдрес: ${supportForm.address}\nСообщение: ${supportForm.message}\nТелефон: ${supportForm.phone}`);
-                window.location.href = `mailto:musorok056@yandex.ru?subject=${subject}&body=${body}`;
-                toast({
-                  title: "Открываем почтовый клиент...",
-                  description: "Отправьте письмо через ваше почтовое приложение.",
-                });
-                setSupportForm({ name: '', address: '', message: '', phone: '' });
-                setSupportModalOpen(false);
+                
+                try {
+                  const response = await fetch('https://functions.poehali.dev/8f3c5a51-eb00-4694-b4fd-0d5f889f4ecc', {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                      name: supportForm.name,
+                      phone: supportForm.phone,
+                      address: supportForm.address,
+                      message: supportForm.message,
+                      tariff: 'Служба поддержки'
+                    })
+                  });
+
+                  if (response.ok) {
+                    toast({
+                      title: "Спасибо, что выбираете нас!",
+                      description: "Мы свяжемся с вами в ближайшее время для решения вашей проблемы.",
+                      duration: 5000
+                    });
+                    setSupportForm({ name: '', address: '', message: '', phone: '' });
+                    setSupportModalOpen(false);
+                  } else {
+                    throw new Error('Failed to send support request');
+                  }
+                } catch (error) {
+                  toast({
+                    title: 'Ошибка отправки',
+                    description: 'Не удалось отправить обращение. Попробуйте позже.',
+                    variant: 'destructive'
+                  });
+                  console.error('Error sending support request:', error);
+                }
               }} className="space-y-4">
                 <div className="space-y-2">
                   <Label htmlFor="support-name">Имя</Label>
