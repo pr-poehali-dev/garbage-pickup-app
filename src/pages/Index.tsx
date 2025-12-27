@@ -455,19 +455,15 @@ const Index = () => {
                   <Button 
                     className="w-full bg-[#90C850] hover:bg-[#7AB840] text-white"
                     onClick={() => {
-                      if (tariff.id === 'daily') {
-                        scrollToSection('contract');
-                      } else {
-                        setOrderForm({ ...orderForm, tariff: tariff.name });
-                        setShowOrderForm(true);
-                        setTimeout(() => {
-                          document.getElementById('order-form')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                        }, 100);
-                      }
+                      setOrderForm({ ...orderForm, tariff: tariff.name });
+                      setShowOrderForm(true);
+                      setTimeout(() => {
+                        document.getElementById('order-form')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                      }, 100);
                     }}
                   >
-                    {tariff.id === 'daily' ? 'Оформить договор' : 'Оформить заказ'}
-                    <Icon name={tariff.id === 'daily' ? 'FileText' : 'ShoppingCart'} size={18} className="ml-2" />
+                    Оформить заказ
+                    <Icon name="ShoppingCart" size={18} className="ml-2" />
                   </Button>
                 </CardContent>
               </Card>
