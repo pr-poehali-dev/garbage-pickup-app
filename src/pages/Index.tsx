@@ -472,14 +472,6 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="mt-16 text-center max-w-2xl mx-auto">
-            <h3 className="text-4xl font-bold text-secondary mb-6">Уважаемые клиенты</h3>
-            <p className="text-xl font-semibold text-foreground leading-relaxed">
-              Ваш мусор должен стоять у двери до 10:00.<br />
-              После этого времени вынос мусора будет осуществляться на следующий день.
-            </p>
-          </div>
-
           {showOrderForm && (
             <div id="order-form" className="mt-12 max-w-2xl mx-auto">
               <Card className="border-2 border-primary/20 shadow-xl">
