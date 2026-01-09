@@ -329,9 +329,10 @@ const Index = () => {
           </div>
           <div className="mb-6 flex justify-center">
             <div className="bg-white/90 backdrop-blur-sm border-2 border-[#90C850] rounded-lg p-6 max-w-md text-center shadow-lg">
-              <p className="text-lg font-semibold text-gray-800 leading-relaxed">
-                Уважаемые клиенты. Вынос мусора - два раза в день. С 10.00 до 17.00. Понедельник. Среда. Суббота.
-              </p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-3">Уважаемые клиенты</h2>
+              <p className="text-xl font-semibold text-gray-800 mb-2">Вынос мусора - два раза в день</p>
+              <p className="text-lg text-gray-700 mb-1">С 10.00 до 17.00</p>
+              <p className="text-lg text-gray-700">Понедельник. Среда. Суббота</p>
             </div>
           </div>
           <a href="tel:+79033901093" className="inline-flex items-center gap-2 text-xl font-bold bg-[#90C850] hover:bg-[#7AB840] text-white px-6 py-3 rounded-lg mb-6 hover:scale-105 transition-all whitespace-nowrap">
