@@ -328,11 +328,11 @@ const Index = () => {
             />
           </div>
           <div className="mb-6 flex justify-center">
-            <img 
-              src="https://cdn.poehali.dev/files/1000018694.png" 
-              alt="Вынесем Ваш мусор от Вашей двери до мусорного контейнера" 
-              className="w-80 h-auto"
-            />
+            <div className="bg-white/90 backdrop-blur-sm border-2 border-[#90C850] rounded-lg p-6 max-w-md text-center shadow-lg">
+              <p className="text-lg font-semibold text-gray-800 leading-relaxed">
+                Уважаемые клиенты. Вынос мусора - два раза в день. С 10.00 до 17.00. Понедельник. Среда. Суббота.
+              </p>
+            </div>
           </div>
           <a href="tel:+79033901093" className="inline-flex items-center gap-2 text-xl font-bold bg-[#90C850] hover:bg-[#7AB840] text-white px-6 py-3 rounded-lg mb-6 hover:scale-105 transition-all whitespace-nowrap">
             <Icon name="Phone" size={24} />
