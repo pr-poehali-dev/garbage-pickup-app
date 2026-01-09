@@ -327,14 +327,7 @@ const Index = () => {
               className="absolute right-4 top-8 w-24 h-24 opacity-20"
             />
           </div>
-          <div className="mb-6 flex justify-center">
-            <div className="bg-white/90 backdrop-blur-sm border-2 border-[#90C850] rounded-lg p-6 max-w-md text-center shadow-lg">
-              <h2 className="text-3xl font-bold text-gray-900 mb-3">Уважаемые клиенты</h2>
-              <p className="text-xl font-semibold text-gray-800 mb-2">Вынос мусора - два раза в день</p>
-              <p className="text-lg text-gray-700 mb-1">С 10.00 до 17.00</p>
-              <p className="text-lg text-gray-700">Понедельник. Среда. Суббота</p>
-            </div>
-          </div>
+
           <a href="tel:+79033901093" className="inline-flex items-center gap-2 text-xl font-bold bg-[#90C850] hover:bg-[#7AB840] text-white px-6 py-3 rounded-lg mb-6 hover:scale-105 transition-all whitespace-nowrap">
             <Icon name="Phone" size={24} />
             +7 903 390-10-93
@@ -372,10 +365,11 @@ const Index = () => {
             </a>
           </div>
           
-          <div className="text-lg text-black font-semibold mb-6 uppercase">
-            <p>График выноса:</p>
-            <p>понедельник, среда, суббота</p>
-            <p>с 10:00 до 17:00</p>
+          <div className="bg-white/90 backdrop-blur-sm border-2 border-[#90C850] rounded-lg p-6 max-w-md mx-auto text-center shadow-lg mb-6">
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">Уважаемые клиенты</h2>
+            <p className="text-xl font-semibold text-gray-800 mb-2">Вынос мусора - два раза в день</p>
+            <p className="text-lg text-gray-700 mb-1">С 10.00 до 17.00</p>
+            <p className="text-lg text-gray-700">Понедельник. Среда. Суббота</p>
           </div>
           <div className="text-2xl text-black font-bold mb-6 uppercase tracking-wide">
             РАБОТАЕМ ТОЛЬКО В ОРЕНБУРГЕ
