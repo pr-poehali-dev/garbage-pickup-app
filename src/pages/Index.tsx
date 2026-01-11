@@ -743,7 +743,7 @@ const Index = () => {
           <div className="flex items-center justify-center gap-4 text-white/90">
             <a href="tel:+79033901093" className="hover:text-white flex items-center gap-2 text-xl font-semibold">
               <Icon name="Phone" size={24} />
-              +7 903 390-10-93
+              +7 9033 90 10 93
             </a>
           </div>
           <div className="mt-4 flex items-center justify-center gap-4">
