@@ -374,6 +374,17 @@ const Index = () => {
           <div className="text-2xl text-black font-bold mb-6 uppercase tracking-wide">
             РАБОТАЕМ ТОЛЬКО В ОРЕНБУРГЕ
           </div>
+          
+          <div className="bg-[#90C850] rounded-lg p-6 mb-6 max-w-2xl mx-auto shadow-lg">
+            <h3 className="text-2xl font-bold text-white mb-3 uppercase text-center">ОБСЛУЖИВАЕМ ДОМА</h3>
+            <p className="text-lg text-white text-center leading-relaxed">
+              Гаранькина 27, 25, 23, 21/1
+            </p>
+            <p className="text-lg text-white text-center leading-relaxed">
+              Салмышская 76, 74, 72, 72/2, 72/1, 70, 71/
+            </p>
+          </div>
+          
           <Button 
             size="lg" 
             className="bg-[#90C850] hover:bg-[#7AB840] text-white text-lg px-8 py-6"
