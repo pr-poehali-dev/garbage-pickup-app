@@ -386,6 +386,9 @@ const Index = () => {
             <p className="text-lg text-white text-center leading-relaxed">
               Карпова 1, 3, 5
             </p>
+            <p className="text-sm text-black font-semibold text-center mt-4 uppercase">
+              информация обновляется раз в неделю
+            </p>
           </div>
           
           <Button 
