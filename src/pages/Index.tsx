@@ -201,7 +201,7 @@ const Index = () => {
           <div className="hidden md:flex items-center gap-4">
             <a href="tel:+79033901093" className="flex items-center gap-2 bg-[#90C850] hover:bg-[#7AB840] text-white px-4 py-2 rounded-md transition-colors">
               <Icon name="Phone" size={20} />
-              <span className="font-semibold">+7 903 390-10-93</span>
+              <span className="font-semibold">+7 9033 90 10 93</span>
             </a>
             <div className="flex items-center gap-2">
               <a 
@@ -330,7 +330,7 @@ const Index = () => {
 
           <a href="tel:+79033901093" className="inline-flex items-center gap-2 text-xl font-bold bg-[#90C850] hover:bg-[#7AB840] text-white px-6 py-3 rounded-lg mb-6 hover:scale-105 transition-all whitespace-nowrap">
             <Icon name="Phone" size={24} />
-            +7 903 390-10-93
+            +7 9033 90 10 93
           </a>
           
           <div className="flex items-center justify-center gap-4 mb-6">
@@ -692,7 +692,7 @@ const Index = () => {
                 <Icon name="Phone" size={48} className="mx-auto mb-4 text-primary" />
                 <h4 className="font-semibold mb-2">Позвоните</h4>
                 <a href="tel:+79033901093" className="text-lg font-bold text-primary hover:underline">
-                  +7 903 390-10-93
+                  +7 9033 90 10 93
                 </a>
                 <div className="flex items-center justify-center gap-4 mt-6">
                   <a 
