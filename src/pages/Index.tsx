@@ -383,6 +383,9 @@ const Index = () => {
             <p className="text-lg text-white text-center leading-relaxed">
               Салмышская 76, 74, 72, 72/2, 72/1, 70, 70/1, 70/2, 67/1, 67/2, 67/3, 67/4
             </p>
+            <p className="text-lg text-white text-center leading-relaxed">
+              Карпова 1, 3, 5
+            </p>
           </div>
           
           <Button 
