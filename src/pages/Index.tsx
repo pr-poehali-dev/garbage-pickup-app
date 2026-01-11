@@ -371,8 +371,9 @@ const Index = () => {
             <p className="text-lg text-gray-700 mb-1">С 10.00 до 17.00</p>
             <p className="text-lg text-gray-700">Понедельник. Среда. Суббота</p>
           </div>
-          <div className="text-2xl text-black font-bold mb-6 uppercase tracking-wide">
-            РАБОТАЕМ ТОЛЬКО В ОРЕНБУРГЕ
+          <div className="text-2xl text-black font-bold mb-6 uppercase tracking-wide text-center">
+            <p>РАБОТАЕМ ТОЛЬКО В</p>
+            <p>ОРЕНБУРГЕ</p>
           </div>
           
           <div className="bg-[#90C850] rounded-lg p-6 mb-6 max-w-2xl mx-auto shadow-lg">
