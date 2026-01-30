@@ -748,9 +748,6 @@ const Index = () => {
           <p className="text-white/90 font-semibold mb-1">График работы</p>
           <p className="text-white/80 mb-1">понедельник, среда, суббота</p>
           <p className="text-white/80 mb-4">с 10:00 до 17:00</p>
-          <p className="text-white/90 font-semibold mb-3">Адреса обслуживания</p>
-          <p className="text-white/90 mb-1">ул. Салмышская</p>
-          <p className="text-white/80 mb-4 text-sm leading-relaxed">дома: 58/1, 58, 56, 54/1, 52, 52/1, 52/2, 48, 46/2, 46, 44/2, 44/1, 44, 47/1, 47А, 47, 45/4, 45/3, 45/1, 45, 43/5, 43/3, 43/2, 43/1, 43</p>
           <div className="flex items-center justify-center gap-4 text-white/90">
             <a href="tel:+79033901093" className="hover:text-white flex items-center gap-2 text-xl font-semibold">
               <Icon name="Phone" size={24} />
