@@ -690,6 +690,13 @@ const Index = () => {
           <div className="max-w-md mx-auto">
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="pt-6 text-center">
+                <div className="mb-6 text-left bg-secondary/5 rounded-lg p-4">
+                  <h4 className="font-bold text-lg mb-3 text-center">Адреса обслуживания</h4>
+                  <p className="font-semibold mb-1">ул. Салмышская</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    дома: 58/1, 58, 56, 54/1, 52, 52/1, 52/2, 48, 46/2, 46, 44/2, 44/1, 44, 47/1, 47А, 47, 45/4, 45/3, 45/1, 45, 43/5, 43/3, 43/2, 43/1, 43
+                  </p>
+                </div>
                 <Icon name="Phone" size={48} className="mx-auto mb-4 text-primary" />
                 <h4 className="font-semibold mb-2">Позвоните</h4>
                 <a href="tel:+79033901093" className="text-lg font-bold text-primary hover:underline">
