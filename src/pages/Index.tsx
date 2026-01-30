@@ -388,6 +388,9 @@ const Index = () => {
               <span className="font-bold">КАРПОВА:</span> 1, 3, 5
             </p>
             <p className="text-lg text-white text-center leading-relaxed">
+              <span className="font-bold">ЕСИМОВА:</span> 13/2, 13/1, 13, 11, 9, 7, 3/2, 3/1, 3
+            </p>
+            <p className="text-lg text-white text-center leading-relaxed">
               <span className="font-bold">САЛМЫШСКАЯ:</span> 76, 74, 72, 72/2, 72/1, 70, 70/1, 70/2, 68, 67/1, 67/2, 67/3, 67/4, 66, 64, 62, 58/1, 58, 56, 54/1, 52, 52/1, 52/2, 48, 46/2, 46, 44/2, 44/1, 44, 47/1, 47А, 47, 45/4, 45/3, 45/1, 45, 43/5, 43/3, 43/2, 43/1, 43
             </p>
             <div className="text-sm text-black font-semibold text-center mt-4 uppercase">
