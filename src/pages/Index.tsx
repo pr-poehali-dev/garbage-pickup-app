@@ -394,6 +394,9 @@ const Index = () => {
               <span className="font-bold">ТРАНСПОРТНАЯ:</span> 18, 18/2, 16, 16/1, 16/2, 16/3, 16/4, 16Б, 7
             </p>
             <p className="text-lg text-white text-center leading-relaxed">
+              <span className="font-bold">ПР-Д СЕВЕРНЫЙ:</span> 16, 16/1
+            </p>
+            <p className="text-lg text-white text-center leading-relaxed">
               <span className="font-bold">САЛМЫШСКАЯ:</span> 76, 74, 72, 72/2, 72/1, 70, 70/1, 70/2, 68, 67/1, 67/2, 67/3, 67/4, 66, 64, 62, 58/1, 58, 56, 54/1, 52, 52/1, 52/2, 48, 46/2, 46, 44/2, 44/1, 44, 47/1, 47А, 47, 45/4, 45/3, 45/1, 45, 43/5, 43/3, 43/2, 43/1, 43
             </p>
             <div className="text-sm text-black font-semibold text-center mt-4 uppercase">
