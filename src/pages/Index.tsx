@@ -379,16 +379,16 @@ const Index = () => {
           <div className="bg-[#90C850] rounded-lg p-6 mb-6 max-w-2xl mx-auto shadow-lg">
             <h3 className="text-2xl font-bold text-white mb-3 uppercase text-center">ОБСЛУЖИВАЕМ ДОМА</h3>
             <p className="text-lg text-white text-center leading-relaxed">
-              Высотная 2, 4, 6, 8, 10, 10/1, 12
+              ВЫСОТНАЯ: 2, 4, 6, 8, 10, 10/1, 12
             </p>
             <p className="text-lg text-white text-center leading-relaxed">
-              Гаранькина 27, 25, 23, 21/1
+              ГАРАНЬКИНА: 27, 25, 23, 21/1
             </p>
             <p className="text-lg text-white text-center leading-relaxed">
-              Карпова 1, 3, 5
+              КАРПОВА: 1, 3, 5
             </p>
             <p className="text-lg text-white text-center leading-relaxed">
-              Салмышская 76, 74, 72, 72/2, 72/1, 70, 70/1, 70/2, 68, 67/1, 67/2, 67/3, 67/4, 66, 64, 62, 58/1, 58, 56, 54/1, 52, 52/1, 52/2, 48, 46/2, 46, 44/2, 44/1, 44, 47/1, 47А, 47, 45/4, 45/3, 45/1, 45, 43/5, 43/3, 43/2, 43/1, 43
+              САЛМЫШСКАЯ: 76, 74, 72, 72/2, 72/1, 70, 70/1, 70/2, 68, 67/1, 67/2, 67/3, 67/4, 66, 64, 62, 58/1, 58, 56, 54/1, 52, 52/1, 52/2, 48, 46/2, 46, 44/2, 44/1, 44, 47/1, 47А, 47, 45/4, 45/3, 45/1, 45, 43/5, 43/3, 43/2, 43/1, 43
             </p>
             <div className="text-sm text-black font-semibold text-center mt-4 uppercase">
               <p>информация обновляется</p>
