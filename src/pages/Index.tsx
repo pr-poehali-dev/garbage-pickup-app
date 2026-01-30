@@ -741,6 +741,9 @@ const Index = () => {
           <p className="text-white/90 font-semibold mb-1">График работы</p>
           <p className="text-white/80 mb-1">понедельник, среда, суббота</p>
           <p className="text-white/80 mb-4">с 10:00 до 17:00</p>
+          <p className="text-white/90 font-semibold mb-1">Адреса офисов</p>
+          <p className="text-white/80 mb-1">ул. Ленина, д. 45</p>
+          <p className="text-white/80 mb-4">ул. Советская, д. 12А</p>
           <div className="flex items-center justify-center gap-4 text-white/90">
             <a href="tel:+79033901093" className="hover:text-white flex items-center gap-2 text-xl font-semibold">
               <Icon name="Phone" size={24} />
