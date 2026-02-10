@@ -697,56 +697,6 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact" className="pt-4 pb-8 px-4 bg-primary/5">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h3 className="text-3xl font-bold mb-8">
-            Свяжитесь с нами
-          </h3>
-          <div className="max-w-md mx-auto">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6 text-center">
-                <Icon name="Phone" size={48} className="mx-auto mb-4 text-primary" />
-                <h4 className="font-semibold mb-2">Позвоните</h4>
-                <a href="tel:+79033901093" className="text-lg font-bold text-primary hover:underline">
-                  +7 9033 90 10 93
-                </a>
-                <div className="flex items-center justify-center gap-4 mt-6">
-                  <a 
-                    href="https://t.me/+79033901093" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="w-14 h-14 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
-                    aria-label="Telegram"
-                  >
-                    <Icon name="Send" size={28} className="text-white" />
-                  </a>
-                  <a 
-                    href="https://wa.me/+79033901093" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
-                    aria-label="WhatsApp"
-                  >
-                    <Icon name="MessageCircle" size={28} className="text-white" />
-                  </a>
-                  <a 
-                    href="tel:+79033901093" 
-                    className="w-14 h-14 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
-                    aria-label="Max"
-                  >
-                    <img 
-                      src="https://cdn.poehali.dev/files/1000018995.png" 
-                      alt="Max" 
-                      className="w-full h-full object-cover"
-                    />
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
 
 
       <footer className="bg-secondary text-white py-8 px-4">
