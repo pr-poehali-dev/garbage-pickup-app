@@ -376,6 +376,40 @@ const Index = () => {
             <p>ТОЛЬКО В ОРЕНБУРГЕ</p>
           </div>
           
+          <div className="bg-[#90C850] rounded-lg p-6 mb-6 max-w-2xl mx-auto shadow-lg">
+            <h3 className="text-2xl font-bold text-white mb-3 uppercase text-center">ОБСЛУЖИВАЕМ ДОМА</h3>
+            <p className="text-lg text-white text-center leading-relaxed">
+              <span className="font-bold">ВЫСОТНАЯ:</span> 2, 4, 6, 8, 10, 10/1, 12
+            </p>
+            <p className="text-lg text-white text-center leading-relaxed">
+              <span className="font-bold">ГАРАНЬКИНА:</span> 27, 25, 23, 21/1
+            </p>
+            <p className="text-lg text-white text-center leading-relaxed">
+              <span className="font-bold">ЕСИМОВА:</span> 13/2, 13/1, 13, 11, 9, 7, 3/2, 3/1, 3
+            </p>
+            <p className="text-lg text-white text-center leading-relaxed">
+              <span className="font-bold">КАРПОВА:</span> 1, 3, 5
+            </p>
+            <p className="text-lg text-white text-center leading-relaxed">
+              <span className="font-bold">ПОЛЯНИЧКО:</span> 4/1, 2, 1, 5, 8, 10, 10/1, 12
+            </p>
+            <p className="text-lg text-white text-center leading-relaxed">
+              <span className="font-bold">ПР-Д СЕВЕРНЫЙ:</span> 16, 16/1
+            </p>
+            <p className="text-lg text-white text-center leading-relaxed">
+              <span className="font-bold">САЛМЫШСКАЯ:</span> 76, 74, 72, 72/2, 72/1, 70, 70/1, 70/2, 68, 67/1, 67/2, 67/3, 67/4, 66, 64, 62, 58/1, 58, 56, 54/1, 52, 52/1, 52/2, 48, 46/2, 46, 44/2, 44/1, 44, 47/1, 47А, 47, 45/4, 45/3, 45/1, 45, 43/5, 43/3, 43/2, 43/1, 43
+            </p>
+            <p className="text-lg text-white text-center leading-relaxed">
+              <span className="font-bold">ТРАНСПОРТНАЯ:</span> 18, 18/2, 16, 16/1, 16/2, 16/3, 16/4, 16Б, 7
+            </p>
+            <p className="text-lg text-white text-center leading-relaxed">
+              <span className="font-bold">ФРОНТОВИКОВ:</span> 6, 6/1, 8/1, 8/2, 8/3
+            </p>
+            <div className="text-sm text-black font-semibold text-center mt-4 uppercase">
+              <p>информация обновляется</p>
+              <p>раз в неделю</p>
+            </div>
+          </div>
 
           <Button 
             size="lg" 
