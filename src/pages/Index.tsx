@@ -350,19 +350,27 @@ const Index = () => {
               href="https://t.me/+79033901093" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-14 h-14 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+              className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
               aria-label="Telegram"
             >
-              <Icon name="Send" size={28} className="text-white" />
+              <img 
+                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/47d3685e-76f7-4d89-9eab-159d33b9a447.jpg" 
+                alt="Telegram" 
+                className="w-full h-full object-cover"
+              />
             </a>
             <a 
               href="https://wa.me/+79033901093" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+              className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
               aria-label="WhatsApp"
             >
-              <Icon name="MessageCircle" size={28} className="text-white" />
+              <img 
+                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/02fd315a-23bf-480e-96c4-582a7c71fafa.jpg" 
+                alt="WhatsApp" 
+                className="w-full h-full object-cover"
+              />
             </a>
             <a 
               href="tel:+79033901093" 
