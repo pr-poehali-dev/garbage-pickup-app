@@ -219,6 +219,17 @@ const Index = () => {
               </a>
               <a 
                 href="tel:+79033901093" 
+                className="w-10 h-10 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
+                aria-label="Телефон"
+              >
+                <img 
+                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/02fd315a-23bf-480e-96c4-582a7c71fafa.jpg" 
+                  alt="Телефон" 
+                  className="w-full h-full object-cover"
+                />
+              </a>
+              <a 
+                href="tel:+79033901093" 
                 className="w-10 h-10 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
                 aria-label="Max"
               >
@@ -265,6 +276,17 @@ const Index = () => {
                 <img 
                   src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/47d3685e-76f7-4d89-9eab-159d33b9a447.jpg" 
                   alt="Telegram" 
+                  className="w-full h-full object-cover"
+                />
+              </a>
+              <a 
+                href="tel:+79033901093" 
+                className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
+                aria-label="Телефон"
+              >
+                <img 
+                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/02fd315a-23bf-480e-96c4-582a7c71fafa.jpg" 
+                  alt="Телефон" 
                   className="w-full h-full object-cover"
                 />
               </a>
@@ -334,6 +356,17 @@ const Index = () => {
               <img 
                 src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/47d3685e-76f7-4d89-9eab-159d33b9a447.jpg" 
                 alt="Telegram" 
+                className="w-full h-full object-cover"
+              />
+            </a>
+            <a 
+              href="tel:+79033901093" 
+              className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
+              aria-label="Телефон"
+            >
+              <img 
+                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/02fd315a-23bf-480e-96c4-582a7c71fafa.jpg" 
+                alt="Телефон" 
                 className="w-full h-full object-cover"
               />
             </a>
