@@ -61,30 +61,32 @@ const Index = () => {
                 aria-label="Telegram"
               >
                 <img 
-                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/47d3685e-76f7-4d89-9eab-159d33b9a447.jpg" 
+                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
                   alt="Telegram" 
                   className="w-full h-full object-cover"
                 />
               </a>
               <a 
-                href="tel:+79033901093" 
+                href="https://wa.me/79033901093" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
-                aria-label="Телефон"
+                aria-label="WhatsApp"
               >
                 <img 
-                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/02fd315a-23bf-480e-96c4-582a7c71fafa.jpg" 
-                  alt="Телефон" 
+                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
+                  alt="WhatsApp" 
                   className="w-full h-full object-cover"
                 />
               </a>
               <a 
                 href="tel:+79033901093" 
                 className="w-10 h-10 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
-                aria-label="Max"
+                aria-label="VK Мессенджер"
               >
                 <img 
-                  src="https://cdn.poehali.dev/files/1000018995.png" 
-                  alt="Max" 
+                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
+                  alt="VK" 
                   className="w-full h-full object-cover"
                 />
               </a>
@@ -124,30 +126,32 @@ const Index = () => {
                 aria-label="Telegram"
               >
                 <img 
-                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/47d3685e-76f7-4d89-9eab-159d33b9a447.jpg" 
+                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
                   alt="Telegram" 
                   className="w-full h-full object-cover"
                 />
               </a>
               <a 
-                href="tel:+79033901093" 
+                href="https://wa.me/79033901093" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
-                aria-label="Телефон"
+                aria-label="WhatsApp"
               >
                 <img 
-                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/02fd315a-23bf-480e-96c4-582a7c71fafa.jpg" 
-                  alt="Телефон" 
+                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
+                  alt="WhatsApp" 
                   className="w-full h-full object-cover"
                 />
               </a>
               <a 
                 href="tel:+79033901093" 
                 className="w-12 h-12 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
-                aria-label="Max"
+                aria-label="VK Мессенджер"
               >
                 <img 
-                  src="https://cdn.poehali.dev/files/1000018995.png" 
-                  alt="Max" 
+                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
+                  alt="VK" 
                   className="w-full h-full object-cover"
                 />
               </a>
@@ -200,30 +204,32 @@ const Index = () => {
               aria-label="Telegram"
             >
               <img 
-                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/47d3685e-76f7-4d89-9eab-159d33b9a447.jpg" 
+                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
                 alt="Telegram" 
                 className="w-full h-full object-cover"
               />
             </a>
             <a 
-              href="tel:+79033901093" 
+              href="https://wa.me/79033901093" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-12 h-12 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
-              aria-label="Телефон"
+              aria-label="WhatsApp"
             >
               <img 
-                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/02fd315a-23bf-480e-96c4-582a7c71fafa.jpg" 
-                alt="Телефон" 
+                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
+                alt="WhatsApp" 
                 className="w-full h-full object-cover"
               />
             </a>
             <a 
               href="tel:+79033901093" 
               className="w-12 h-12 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
-              aria-label="Max"
+              aria-label="VK Мессенджер"
             >
               <img 
-                src="https://cdn.poehali.dev/files/1000018995.png" 
-                alt="Max" 
+                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
+                alt="VK" 
                 className="w-full h-full object-cover"
               />
             </a>
@@ -355,13 +361,9 @@ const Index = () => {
           
           <div className="bg-white rounded-lg border-2 border-[#90C850] p-6 mb-6 inline-block">
             <img 
-              src="https://cdn.poehali.dev/files/qr-payment.png" 
+              src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/96c559a0-1578-496b-903b-61e0d8ab25e0.png" 
               alt="QR код для оплаты" 
               className="w-56 h-56 mx-auto"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2Y1ZjVmNSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiM5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5RUiBrb2Q8L3RleHQ+PC9zdmc+';
-              }}
             />
           </div>
           
@@ -440,18 +442,20 @@ const Index = () => {
               className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
             >
               <img 
-                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/47d3685e-76f7-4d89-9eab-159d33b9a447.jpg" 
+                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
                 alt="Telegram" 
                 className="w-full h-full object-cover"
               />
             </a>
             <a 
-              href="tel:+79033901093" 
+              href="https://wa.me/79033901093" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
             >
               <img 
-                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/02fd315a-23bf-480e-96c4-582a7c71fafa.jpg" 
-                alt="Телефон" 
+                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
+                alt="WhatsApp" 
                 className="w-full h-full object-cover"
               />
             </a>
@@ -460,8 +464,8 @@ const Index = () => {
               className="w-14 h-14 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
             >
               <img 
-                src="https://cdn.poehali.dev/files/1000018995.png" 
-                alt="Max" 
+                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
+                alt="VK" 
                 className="w-full h-full object-cover"
               />
             </a>
