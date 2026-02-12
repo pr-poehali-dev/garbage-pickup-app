@@ -223,7 +223,7 @@ const Index = () => {
                 aria-label="Телефон"
               >
                 <img 
-                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/77d955e7-e61a-4fdf-b5d8-f631ead376f9.jpg" 
+                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/02fd315a-23bf-480e-96c4-582a7c71fafa.jpg" 
                   alt="Телефон" 
                   className="w-full h-full object-cover"
                 />
@@ -285,7 +285,7 @@ const Index = () => {
                 aria-label="Телефон"
               >
                 <img 
-                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/77d955e7-e61a-4fdf-b5d8-f631ead376f9.jpg" 
+                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/02fd315a-23bf-480e-96c4-582a7c71fafa.jpg" 
                   alt="Телефон" 
                   className="w-full h-full object-cover"
                 />
