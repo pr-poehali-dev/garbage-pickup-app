@@ -208,19 +208,27 @@ const Index = () => {
                 href="https://t.me/+79033901093" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+                className="w-10 h-10 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
                 aria-label="Telegram"
               >
-                <Icon name="Send" size={20} className="text-white" />
+                <img 
+                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/43c1f1bf-6ab8-4c0f-93c5-a179b7cd4462.jpg" 
+                  alt="Telegram" 
+                  className="w-full h-full object-cover object-left"
+                />
               </a>
               <a 
                 href="https://wa.me/+79033901093" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+                className="w-10 h-10 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
                 aria-label="WhatsApp"
               >
-                <Icon name="MessageCircle" size={20} className="text-white" />
+                <img 
+                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/43c1f1bf-6ab8-4c0f-93c5-a179b7cd4462.jpg" 
+                  alt="WhatsApp" 
+                  className="w-full h-full object-cover object-center"
+                />
               </a>
               <a 
                 href="tel:+79033901093" 
@@ -264,19 +272,27 @@ const Index = () => {
                 href="https://t.me/+79033901093" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-14 h-14 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+                className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
                 aria-label="Telegram"
               >
-                <Icon name="Send" size={28} className="text-white" />
+                <img 
+                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/43c1f1bf-6ab8-4c0f-93c5-a179b7cd4462.jpg" 
+                  alt="Telegram" 
+                  className="w-full h-full object-cover object-left"
+                />
               </a>
               <a 
                 href="https://wa.me/+79033901093" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+                className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
                 aria-label="WhatsApp"
               >
-                <Icon name="MessageCircle" size={28} className="text-white" />
+                <img 
+                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/43c1f1bf-6ab8-4c0f-93c5-a179b7cd4462.jpg" 
+                  alt="WhatsApp" 
+                  className="w-full h-full object-cover object-center"
+                />
               </a>
               <a 
                 href="tel:+79033901093" 
