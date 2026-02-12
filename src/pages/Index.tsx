@@ -393,6 +393,71 @@ const Index = () => {
             <p>РАБОТАЕМ</p>
             <p>ТОЛЬКО В ОРЕНБУРГЕ</p>
           </div>
+
+          <div className="bg-[#90C850] rounded-lg p-8 mb-6 max-w-4xl mx-auto shadow-lg">
+            <h2 className="text-3xl font-bold text-white mb-6 text-center">ОБСЛУЖИВАЕМ ДОМА</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-white">
+              <div>
+                <p className="font-bold mb-2">ВЫСОТНАЯ:</p>
+                <p className="mb-4">2, 4, 6, 8, 10, 10/1, 12</p>
+                
+                <p className="font-bold mb-2">ГАРАНЬКИНА:</p>
+                <p className="mb-4">27, 25, 23, 21/1</p>
+                
+                <p className="font-bold mb-2">ЕСИМОВА:</p>
+                <p className="mb-4">13/2, 13/1, 13, 11, 9, 7, 3/2, 3/1, 3</p>
+                
+                <p className="font-bold mb-2">КАРПОВА:</p>
+                <p className="mb-4">1, 3, 5</p>
+                
+                <p className="font-bold mb-2">ПОЛЯНИЧКО:</p>
+                <p className="mb-4">4/1, 2, 1, 5, 8, 10, 10/1, 12</p>
+              </div>
+              <div>
+                <p className="font-bold mb-2">ПР-Д СЕВЕРНЫЙ:</p>
+                <p className="mb-4">16, 16/1</p>
+                
+                <p className="font-bold mb-2">САЛМЫШСКАЯ:</p>
+                <p className="mb-4">76, 74, 72, 72/2, 72/1, 70, 70/1, 70/2, 68, 67/1, 67/2, 67/3, 67/4, 66, 64, 62, 58/1, 58, 56, 54/1, 52, 52/1, 52/2, 48, 46/2, 46, 44/2, 44/1, 44, 47/1, 47А, 47, 45/4, 45/3, 45/1, 45, 43/5, 43/3, 43/2, 43/1, 43</p>
+                
+                <p className="font-bold mb-2">ТРАНСПОРТНАЯ:</p>
+                <p className="mb-4">18, 18/2, 16, 16/1, 16/2, 16/3, 16/4, 16Б, 7</p>
+                
+                <p className="font-bold mb-2">ФРОНТОВИКОВ:</p>
+                <p className="mb-4">6, 6/1, 8/1, 8/2, 8/3</p>
+              </div>
+            </div>
+            <p className="text-center mt-6 font-bold">ИНФОРМАЦИЯ ОБНОВЛЯЕТСЯ<br />РАЗ В НЕДЕЛЮ</p>
+          </div>
+
+          <Button 
+            onClick={() => scrollToSection('tariffs')} 
+            className="bg-[#90C850] hover:bg-[#7AB840] text-white text-lg px-8 py-6 mb-8 mx-auto block"
+          >
+            Посмотреть тарифы ↓
+          </Button>
+
+          <div className="mb-12">
+            <h2 className="text-4xl font-bold text-center mb-8">Почему выбирают нас</h2>
+            <p className="text-center text-gray-600 mb-12 text-lg">Мы делаем вашу жизнь комфортнее, избавляя от рутинной задачи выноса мусора</p>
+            
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div className="text-center">
+                <div className="w-20 h-20 bg-[#90C850]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Clock" size={40} className="text-[#90C850]" />
+                </div>
+                <h3 className="text-2xl font-bold mb-3">Экономия времени</h3>
+                <p className="text-gray-600">Не тратьте время на походы к баку — мы всё сделаем за вас без лишних хлопот</p>
+              </div>
+              <div className="text-center">
+                <div className="w-20 h-20 bg-[#90C850]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Sparkles" size={40} className="text-[#90C850]" />
+                </div>
+                <h3 className="text-2xl font-bold mb-3">Чистота в подъезде</h3>
+                <p className="text-gray-600">Вынесем мусор, не оставляя следов</p>
+              </div>
+            </div>
+          </div>
           
           <div className="bg-[#90C850] rounded-lg p-6 mb-6 max-w-2xl mx-auto shadow-lg">
             <h2 className="text-3xl font-bold text-white mb-6 flex items-center justify-center gap-2">
