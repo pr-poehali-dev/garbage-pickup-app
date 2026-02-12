@@ -212,19 +212,8 @@ const Index = () => {
                 aria-label="Telegram"
               >
                 <img 
-                  src="https://cdn.poehali.dev/files/bc16bdb8-1dc7-4852-88e9-c5dbd0b4ecb3.png" 
+                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/47d3685e-76f7-4d89-9eab-159d33b9a447.jpg" 
                   alt="Telegram" 
-                  className="w-full h-full object-cover"
-                />
-              </a>
-              <a 
-                href="tel:+79033901093" 
-                className="w-10 h-10 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
-                aria-label="Телефон"
-              >
-                <img 
-                  src="https://cdn.poehali.dev/files/969cf06a-b23c-4a97-b19f-71e26c9f1b46.png" 
-                  alt="Телефон" 
                   className="w-full h-full object-cover"
                 />
               </a>
@@ -274,19 +263,8 @@ const Index = () => {
                 aria-label="Telegram"
               >
                 <img 
-                  src="https://cdn.poehali.dev/files/bc16bdb8-1dc7-4852-88e9-c5dbd0b4ecb3.png" 
+                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/files/47d3685e-76f7-4d89-9eab-159d33b9a447.jpg" 
                   alt="Telegram" 
-                  className="w-full h-full object-cover"
-                />
-              </a>
-              <a 
-                href="tel:+79033901093" 
-                className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
-                aria-label="Телефон"
-              >
-                <img 
-                  src="https://cdn.poehali.dev/files/969cf06a-b23c-4a97-b19f-71e26c9f1b46.png" 
-                  alt="Телефон" 
                   className="w-full h-full object-cover"
                 />
               </a>
