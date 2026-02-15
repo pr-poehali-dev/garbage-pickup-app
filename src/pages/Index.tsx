@@ -5,6 +5,17 @@ import Icon from '@/components/ui/icon';
 
 const SEND_CONTRACT_URL = 'https://functions.poehali.dev/8f3c5a51-eb00-4694-b4fd-0d5f889f4ecc';
 
+const formatPhone = (value: string): string => {
+  const digits = value.replace(/\D/g, '').slice(0, 11);
+  if (!digits) return '';
+  let result = '+7';
+  if (digits.length > 1) result += ' (' + digits.slice(1, 4);
+  if (digits.length >= 4) result += ') ' + digits.slice(4, 7);
+  if (digits.length >= 7) result += '-' + digits.slice(7, 9);
+  if (digits.length >= 9) result += '-' + digits.slice(9, 11);
+  return result;
+};
+
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [orderModalOpen, setOrderModalOpen] = useState(false);
@@ -517,7 +528,7 @@ const Index = () => {
                       placeholder="+7 (___) ___-__-__"
                       className="w-full border rounded-md px-3 py-2 text-base outline-none focus:ring-2 focus:ring-[#90C850]"
                       value={formData.phone}
-                      onChange={(e) => setFormData(p => ({ ...p, phone: e.target.value }))}
+                      onChange={(e) => setFormData(p => ({ ...p, phone: formatPhone(e.target.value) }))}
                     />
                   </div>
                   {formStatus === 'error' && (
