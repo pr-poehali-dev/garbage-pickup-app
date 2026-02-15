@@ -60,11 +60,7 @@ const Index = () => {
                 className="w-10 h-10 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
                 aria-label="Telegram"
               >
-                <img 
-                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
-                  alt="Telegram" 
-                  className="w-full h-full object-cover"
-                />
+                <div className="w-full h-full" style={{backgroundImage: `url(https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg)`, backgroundSize: '300% 100%', backgroundPosition: '0% 50%'}} />
               </a>
               <a 
                 href="https://wa.me/79033901093" 
@@ -73,22 +69,14 @@ const Index = () => {
                 className="w-10 h-10 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
                 aria-label="WhatsApp"
               >
-                <img 
-                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
-                  alt="WhatsApp" 
-                  className="w-full h-full object-cover"
-                />
+                <div className="w-full h-full" style={{backgroundImage: `url(https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg)`, backgroundSize: '300% 100%', backgroundPosition: '50% 50%'}} />
               </a>
               <a 
                 href="tel:+79033901093" 
                 className="w-10 h-10 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
                 aria-label="VK Мессенджер"
               >
-                <img 
-                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
-                  alt="VK" 
-                  className="w-full h-full object-cover"
-                />
+                <div className="w-full h-full" style={{backgroundImage: `url(https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg)`, backgroundSize: '300% 100%', backgroundPosition: '100% 50%'}} />
               </a>
             </div>
             <Button 
@@ -125,11 +113,7 @@ const Index = () => {
                 className="w-12 h-12 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
                 aria-label="Telegram"
               >
-                <img 
-                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
-                  alt="Telegram" 
-                  className="w-full h-full object-cover"
-                />
+                <div className="w-full h-full" style={{backgroundImage: `url(https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg)`, backgroundSize: '300% 100%', backgroundPosition: '0% 50%'}} />
               </a>
               <a 
                 href="https://wa.me/79033901093" 
@@ -138,22 +122,14 @@ const Index = () => {
                 className="w-12 h-12 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
                 aria-label="WhatsApp"
               >
-                <img 
-                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
-                  alt="WhatsApp" 
-                  className="w-full h-full object-cover"
-                />
+                <div className="w-full h-full" style={{backgroundImage: `url(https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg)`, backgroundSize: '300% 100%', backgroundPosition: '50% 50%'}} />
               </a>
               <a 
                 href="tel:+79033901093" 
                 className="w-12 h-12 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
                 aria-label="VK Мессенджер"
               >
-                <img 
-                  src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
-                  alt="VK" 
-                  className="w-full h-full object-cover"
-                />
+                <div className="w-full h-full" style={{backgroundImage: `url(https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg)`, backgroundSize: '300% 100%', backgroundPosition: '100% 50%'}} />
               </a>
             </div>
             <Button 
@@ -203,11 +179,7 @@ const Index = () => {
               className="w-12 h-12 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
               aria-label="Telegram"
             >
-              <img 
-                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
-                alt="Telegram" 
-                className="w-full h-full object-cover"
-              />
+              <div className="w-full h-full" style={{backgroundImage: `url(https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg)`, backgroundSize: '300% 100%', backgroundPosition: '0% 50%'}} />
             </a>
             <a 
               href="https://wa.me/79033901093" 
@@ -216,22 +188,14 @@ const Index = () => {
               className="w-12 h-12 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
               aria-label="WhatsApp"
             >
-              <img 
-                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
-                alt="WhatsApp" 
-                className="w-full h-full object-cover"
-              />
+              <div className="w-full h-full" style={{backgroundImage: `url(https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg)`, backgroundSize: '300% 100%', backgroundPosition: '50% 50%'}} />
             </a>
             <a 
               href="tel:+79033901093" 
               className="w-12 h-12 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
               aria-label="VK Мессенджер"
             >
-              <img 
-                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
-                alt="VK" 
-                className="w-full h-full object-cover"
-              />
+              <div className="w-full h-full" style={{backgroundImage: `url(https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg)`, backgroundSize: '300% 100%', backgroundPosition: '100% 50%'}} />
             </a>
           </div>
           
@@ -441,11 +405,7 @@ const Index = () => {
               rel="noopener noreferrer"
               className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
             >
-              <img 
-                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
-                alt="Telegram" 
-                className="w-full h-full object-cover"
-              />
+              <div className="w-full h-full" style={{backgroundImage: `url(https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg)`, backgroundSize: '300% 100%', backgroundPosition: '0% 50%'}} />
             </a>
             <a 
               href="https://wa.me/79033901093" 
@@ -453,21 +413,13 @@ const Index = () => {
               rel="noopener noreferrer"
               className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
             >
-              <img 
-                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
-                alt="WhatsApp" 
-                className="w-full h-full object-cover"
-              />
+              <div className="w-full h-full" style={{backgroundImage: `url(https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg)`, backgroundSize: '300% 100%', backgroundPosition: '50% 50%'}} />
             </a>
             <a 
               href="tel:+79033901093" 
               className="w-14 h-14 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
             >
-              <img 
-                src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg" 
-                alt="VK" 
-                className="w-full h-full object-cover"
-              />
+              <div className="w-full h-full" style={{backgroundImage: `url(https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg)`, backgroundSize: '300% 100%', backgroundPosition: '100% 50%'}} />
             </a>
           </div>
 
