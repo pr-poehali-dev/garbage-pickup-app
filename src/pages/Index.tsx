@@ -3,8 +3,46 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 
+const SEND_CONTRACT_URL = 'https://functions.poehali.dev/8f3c5a51-eb00-4694-b4fd-0d5f889f4ecc';
+
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [orderModalOpen, setOrderModalOpen] = useState(false);
+  const [selectedTariff, setSelectedTariff] = useState('');
+  const [formData, setFormData] = useState({ name: '', address: '', phone: '' });
+  const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+
+  const openOrderModal = (tariffName: string) => {
+    setSelectedTariff(tariffName);
+    setFormData({ name: '', address: '', phone: '' });
+    setFormStatus('idle');
+    setOrderModalOpen(true);
+  };
+
+  const submitOrder = async () => {
+    if (!formData.name.trim() || !formData.address.trim() || !formData.phone.trim()) return;
+    setFormStatus('sending');
+    try {
+      const res = await fetch(SEND_CONTRACT_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name.trim(),
+          phone: formData.phone.trim(),
+          address: formData.address.trim(),
+          tariff: selectedTariff,
+          telegram: formData.phone.trim(),
+        }),
+      });
+      if (res.ok) {
+        setFormStatus('success');
+      } else {
+        setFormStatus('error');
+      }
+    } catch {
+      setFormStatus('error');
+    }
+  };
 
   const tariffs = [
     {
@@ -306,6 +344,7 @@ const Index = () => {
                 <CardContent>
                   <Button 
                     className="w-full bg-[#90C850] hover:bg-[#7AB840] text-white"
+                    onClick={() => openOrderModal(`${tariff.name} — ${tariff.price}${tariff.period || ''}`)}
                   >
                     <Icon name="ShoppingCart" size={16} className="mr-2" />
                     Оформить заказ
@@ -426,6 +465,80 @@ const Index = () => {
           <p className="text-lg font-semibold underline">Служба поддержки</p>
         </div>
       </footer>
+
+      {orderModalOpen && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50" onClick={() => formStatus !== 'sending' && setOrderModalOpen(false)}>
+          <Card className="w-full max-w-md" onClick={(e) => e.stopPropagation()}>
+            <CardHeader>
+              <CardTitle className="text-xl text-center">
+                {formStatus === 'success' ? 'Заявка отправлена!' : 'Оформление заказа'}
+              </CardTitle>
+              {formStatus !== 'success' && (
+                <p className="text-center text-sm text-gray-500">{selectedTariff}</p>
+              )}
+            </CardHeader>
+            <CardContent>
+              {formStatus === 'success' ? (
+                <div className="text-center space-y-4">
+                  <div className="w-16 h-16 bg-[#90C850]/10 rounded-full flex items-center justify-center mx-auto">
+                    <Icon name="CheckCircle" size={32} className="text-[#90C850]" />
+                  </div>
+                  <p className="text-gray-600">Мы свяжемся с вами в ближайшее время</p>
+                  <Button className="w-full bg-[#90C850] hover:bg-[#7AB840] text-white" onClick={() => setOrderModalOpen(false)}>
+                    Закрыть
+                  </Button>
+                </div>
+              ) : (
+                <div className="space-y-4">
+                  <div>
+                    <label className="block text-sm font-medium mb-1">ФИО</label>
+                    <input
+                      type="text"
+                      placeholder="Иванов Иван Иванович"
+                      className="w-full border rounded-md px-3 py-2 text-base outline-none focus:ring-2 focus:ring-[#90C850]"
+                      value={formData.name}
+                      onChange={(e) => setFormData(p => ({ ...p, name: e.target.value }))}
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-1">Адрес</label>
+                    <input
+                      type="text"
+                      placeholder="ул. Салмышская, д. 43, кв. 1"
+                      className="w-full border rounded-md px-3 py-2 text-base outline-none focus:ring-2 focus:ring-[#90C850]"
+                      value={formData.address}
+                      onChange={(e) => setFormData(p => ({ ...p, address: e.target.value }))}
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-1">Номер телефона (привязанный к Telegram)</label>
+                    <input
+                      type="tel"
+                      placeholder="+7 (___) ___-__-__"
+                      className="w-full border rounded-md px-3 py-2 text-base outline-none focus:ring-2 focus:ring-[#90C850]"
+                      value={formData.phone}
+                      onChange={(e) => setFormData(p => ({ ...p, phone: e.target.value }))}
+                    />
+                  </div>
+                  {formStatus === 'error' && (
+                    <p className="text-red-500 text-sm text-center">Ошибка отправки. Попробуйте ещё раз.</p>
+                  )}
+                  <Button
+                    className="w-full bg-[#90C850] hover:bg-[#7AB840] text-white"
+                    disabled={!formData.name.trim() || !formData.address.trim() || !formData.phone.trim() || formStatus === 'sending'}
+                    onClick={submitOrder}
+                  >
+                    {formStatus === 'sending' ? 'Отправка...' : 'Отправить заявку'}
+                  </Button>
+                  <Button variant="outline" className="w-full" onClick={() => setOrderModalOpen(false)} disabled={formStatus === 'sending'}>
+                    Отмена
+                  </Button>
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        </div>
+      )}
     </div>
   );
 };
