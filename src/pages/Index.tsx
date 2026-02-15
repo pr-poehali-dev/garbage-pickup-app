@@ -367,52 +367,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* QR Payment Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="container mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold mb-3">Оплата по QR-коду</h2>
-          <p className="text-gray-600 mb-6 text-base">Быстрая и удобная оплата через приложение банка</p>
-          
-          <div className="bg-white rounded-lg border-2 border-[#90C850] p-6 mb-6 inline-block">
-            <img 
-              src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/96c559a0-1578-496b-903b-61e0d8ab25e0.png" 
-              alt="QR код для оплаты" 
-              className="w-56 h-56 mx-auto"
-            />
-          </div>
-          
-          <Button className="bg-[#90C850] hover:bg-[#7AB840] text-white mb-6 text-base">
-            <Icon name="Download" size={16} className="mr-2" />
-            Скачать QR-код
-          </Button>
 
-          <div className="bg-white rounded-lg p-6 text-left border border-gray-200">
-            <h3 className="text-xl font-bold mb-5">Как оплатить:</h3>
-            <ol className="space-y-2.5 text-base">
-              <li className="flex gap-2.5">
-                <span className="flex-shrink-0 w-7 h-7 bg-[#90C850] text-white rounded-full flex items-center justify-center font-bold text-sm">1</span>
-                <span>В приложении вашего банка выберите способ оплатить QR-кодом</span>
-              </li>
-              <li className="flex gap-2.5">
-                <span className="flex-shrink-0 w-7 h-7 bg-[#90C850] text-white rounded-full flex items-center justify-center font-bold text-sm">2</span>
-                <span>Наведите камеру на QR-код</span>
-              </li>
-              <li className="flex gap-2.5">
-                <span className="flex-shrink-0 w-7 h-7 bg-[#90C850] text-white rounded-full flex items-center justify-center font-bold text-sm">3</span>
-                <span>Нажмите кнопку "ВСЕ ВЕРНО"</span>
-              </li>
-              <li className="flex gap-2.5">
-                <span className="flex-shrink-0 w-7 h-7 bg-[#90C850] text-white rounded-full flex items-center justify-center font-bold text-sm">4</span>
-                <span>Далее нажмите "ОПЛАТИТЬ" и введите сумму перевода</span>
-              </li>
-              <li className="flex gap-2.5">
-                <span className="flex-shrink-0 w-7 h-7 bg-[#90C850] text-white rounded-full flex items-center justify-center font-bold text-sm">5</span>
-                <span>Подтвердите оплату</span>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </section>
 
       {/* Important Info */}
       <section className="py-10 px-4 bg-white border-t">
