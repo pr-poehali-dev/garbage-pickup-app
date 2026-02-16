@@ -62,6 +62,7 @@ const Index = () => {
       id: 'one-time',
       name: 'Разовый вынос',
       price: '100 ₽',
+      period: '/в любой день',
       icon: 'Package',
     },
     {
