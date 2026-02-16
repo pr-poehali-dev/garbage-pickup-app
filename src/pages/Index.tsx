@@ -369,6 +369,48 @@ const Index = () => {
 
 
 
+      {/* Payment Info */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="container mx-auto max-w-2xl text-center">
+          <h2 className="text-3xl font-bold mb-3">Способ оплаты</h2>
+          <p className="text-gray-600 mb-8 text-base">Быстрый перевод по номеру телефона</p>
+
+          <div className="bg-white rounded-lg p-8 border border-gray-200 text-left">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 bg-[#90C850]/10 rounded-full flex items-center justify-center">
+                <Icon name="Phone" size={24} className="text-[#90C850]" />
+              </div>
+              <div>
+                <p className="text-sm text-gray-500">Номер для перевода</p>
+                <p className="text-2xl font-bold text-gray-900">+7 (XXX) XXX-XX-XX</p>
+              </div>
+            </div>
+
+            <div className="border-t pt-5">
+              <h3 className="text-lg font-bold mb-4">Как оплатить:</h3>
+              <ol className="space-y-3 text-base">
+                <li className="flex gap-3">
+                  <span className="flex-shrink-0 w-7 h-7 bg-[#90C850] text-white rounded-full flex items-center justify-center font-bold text-sm">1</span>
+                  <span>Откройте приложение вашего банка</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="flex-shrink-0 w-7 h-7 bg-[#90C850] text-white rounded-full flex items-center justify-center font-bold text-sm">2</span>
+                  <span>Выберите «Перевод по номеру телефона»</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="flex-shrink-0 w-7 h-7 bg-[#90C850] text-white rounded-full flex items-center justify-center font-bold text-sm">3</span>
+                  <span>Введите номер и сумму согласно выбранному тарифу</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="flex-shrink-0 w-7 h-7 bg-[#90C850] text-white rounded-full flex items-center justify-center font-bold text-sm">4</span>
+                  <span>Подтвердите перевод</span>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Important Info */}
       <section className="py-10 px-4 bg-white border-t">
         <div className="container mx-auto max-w-3xl">
