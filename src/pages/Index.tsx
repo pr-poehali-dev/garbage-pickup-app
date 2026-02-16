@@ -250,6 +250,29 @@ const Index = () => {
               <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/ef0f5011-6ebe-4ac2-8a95-8ae56e1bb641.jpg" alt="Макс" className="w-full h-full object-cover" />
             </a>
           </div>
+
+          {/* Social Networks */}
+          <p className="text-sm text-black mb-2 text-center">мы в соцсетях</p>
+          <div className="flex items-center justify-center gap-3 mb-5">
+            <a 
+              href="https://vk.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-11 h-11 rounded-xl shadow-lg hover:scale-110 transition-all overflow-hidden"
+              aria-label="ВКонтакте"
+            >
+              <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/2dff705f-f480-49cc-91f4-3a4bcebd8ebe.jpg" alt="ВКонтакте" className="w-full h-full object-cover" />
+            </a>
+            <a 
+              href="https://ok.ru/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-11 h-11 rounded-xl shadow-lg hover:scale-110 transition-all overflow-hidden"
+              aria-label="Одноклассники"
+            >
+              <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/6d4ca94d-dd09-40aa-a2b9-5e41ef9e2111.jpg" alt="Одноклассники" className="w-full h-full object-cover" />
+            </a>
+          </div>
           
           {/* Schedule Info */}
           <div className="bg-white/90 backdrop-blur-sm border-2 border-[#90C850] rounded-lg p-5 max-w-md mx-auto text-center shadow-lg mb-5">
