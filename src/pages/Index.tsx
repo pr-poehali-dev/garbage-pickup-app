@@ -358,21 +358,21 @@ const Index = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                  <Button 
-                    className="w-full bg-[#90C850] hover:bg-[#7AB840] text-white"
-                    onClick={() => openOrderModal(`${tariff.name} — ${tariff.price}${tariff.period || ''}`)}
-                  >
-                    <Icon name="ShoppingCart" size={16} className="mr-2" />
-                    Оформить заказ
-                  </Button>
-                  {tariff.id === 'monthly' && (
-                    <Button
-                      variant="outline"
-                      className="w-full border-[#90C850] text-[#90C850] hover:bg-[#90C850]/10"
+                  {tariff.id === 'monthly' ? (
+                    <Button 
+                      className="w-full bg-[#90C850] hover:bg-[#7AB840] text-white"
                       onClick={() => navigate('/contract')}
                     >
                       <Icon name="FileText" size={16} className="mr-2" />
                       Оформить договор
+                    </Button>
+                  ) : (
+                    <Button 
+                      className="w-full bg-[#90C850] hover:bg-[#7AB840] text-white"
+                      onClick={() => openOrderModal(`${tariff.name} — ${tariff.price}${tariff.period || ''}`)}
+                    >
+                      <Icon name="ShoppingCart" size={16} className="mr-2" />
+                      Оформить заказ
                     </Button>
                   )}
                 </CardContent>
