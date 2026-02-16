@@ -231,23 +231,23 @@ const Index = () => {
               className="w-12 h-12 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
               aria-label="Telegram"
             >
-              <div className="w-full h-full" style={{backgroundImage: `url(https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg)`, backgroundSize: 'auto 100%', backgroundPosition: '0% 50%'}} />
-            </a>
-            <a 
-              href="https://wa.me/79033901093" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
-              aria-label="WhatsApp"
-            >
-              <div className="w-full h-full" style={{backgroundImage: `url(https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg)`, backgroundSize: 'auto 100%', backgroundPosition: '50% 50%'}} />
+              <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/8b95d9ce-670b-4efd-a10d-24d6e567a620.jpg" alt="Telegram" className="w-full h-full object-cover" />
             </a>
             <a 
               href="tel:+79033901093" 
-              className="w-12 h-12 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
-              aria-label="VK Мессенджер"
+              className="w-12 h-12 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
+              aria-label="Позвонить"
             >
-              <div className="w-full h-full" style={{backgroundImage: `url(https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/38804d19-d8cf-4add-b0fa-c821b483e696.jpg)`, backgroundSize: 'auto 100%', backgroundPosition: '100% 50%'}} />
+              <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/67b58e15-5d6f-47fc-8cae-a5e77acec0b8.jpg" alt="Позвонить" className="w-full h-full object-cover" />
+            </a>
+            <a 
+              href="https://max.ru/u/f9LHodD0cOL1XpJZ8sBgf8NICtI1BN_HjxQp298nVnCW2YVwmsvaRx8PRkU" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
+              aria-label="Макс"
+            >
+              <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/ef0f5011-6ebe-4ac2-8a95-8ae56e1bb641.jpg" alt="Макс" className="w-full h-full object-cover" />
             </a>
           </div>
           
