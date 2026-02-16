@@ -382,7 +382,7 @@ const Index = () => {
               </div>
               <div>
                 <p className="text-sm text-gray-500">Номер для перевода</p>
-                <p className="text-2xl font-bold text-gray-900">+7 (XXX) XXX-XX-XX</p>
+                <p className="text-2xl font-bold text-gray-900">+7 (961) 929-67-28</p>
               </div>
             </div>
 
