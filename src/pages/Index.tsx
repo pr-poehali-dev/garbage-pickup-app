@@ -355,6 +355,13 @@ const Index = () => {
                   <div className="text-center">
                     <p className="text-3xl font-bold text-[#90C850]">{tariff.price}</p>
                     {tariff.period && <p className="text-gray-600 text-sm">{tariff.period}</p>}
+                    {tariff.id === 'monthly' && (
+                      <div className="bg-[#90C850]/10 text-[#90C850] text-sm font-semibold px-4 py-2 rounded-lg mt-2 text-left">
+                        <p>— вынос мусора еженедельно</p>
+                        <p>— пн, ср, сб с 10.00 до 17.00</p>
+                        <p>— до 10 кг бытовой мусор</p>
+                      </div>
+                    )}
                     {tariff.id === 'weekly' && (
                       <div className="bg-[#90C850]/10 text-[#90C850] text-sm font-semibold px-4 py-2 rounded-lg mt-2 text-left">
                         <p>— пн, ср, сб с 10.00 до 17.00</p>
