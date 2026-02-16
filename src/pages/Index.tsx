@@ -529,7 +529,7 @@ const Index = () => {
             </a>
           </div>
 
-          <p className="text-lg font-semibold underline">Служба поддержки</p>
+          <a href="https://t.me/+79619246475" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold underline hover:text-[#90C850] transition-colors">Служба поддержки</a>
         </div>
       </footer>
 
