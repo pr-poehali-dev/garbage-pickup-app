@@ -75,7 +75,50 @@ const Contract = () => {
     setHasSigned(false);
   };
 
+  const [sendStatus, setSendStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+
+  const SEND_CONTRACT_URL = 'https://functions.poehali.dev/32d01596-bea3-4369-8220-59664e79a98d';
+
   const isFormValid = clientName.trim() && clientAddress.trim() && clientPhone.trim() && hasSigned && agreed;
+
+  const submitContract = async () => {
+    if (!isFormValid || sendStatus === 'sending') return;
+    setSendStatus('sending');
+
+    const canvas = canvasRef.current;
+    const signatureData = canvas ? canvas.toDataURL('image/png').split(',')[1] : '';
+
+    const contractText = [
+      `Договор от ${formatDate(today)}`,
+      `Заказчик: ${clientName.trim()}`,
+      `Адрес: ${clientAddress.trim()}`,
+      `Телефон: ${clientPhone.trim()}`,
+      `Услуга: вынос мусора 3 раза/нед (пн, ср, сб)`,
+      `Срок: ${formatDate(today)} — ${formatDate(endDate)}`,
+      `Стоимость: 850 ₽`,
+    ].join('\n');
+
+    try {
+      const res = await fetch(SEND_CONTRACT_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          pdf_base64: signatureData,
+          client_name: clientName.trim(),
+          client_phone: clientPhone.trim(),
+          client_address: clientAddress.trim(),
+          contract_text: contractText,
+        }),
+      });
+      if (res.ok) {
+        setSendStatus('success');
+      } else {
+        setSendStatus('error');
+      }
+    } catch {
+      setSendStatus('error');
+    }
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -235,16 +278,36 @@ const Contract = () => {
           </span>
         </label>
 
-        <Button
-          disabled={!isFormValid}
-          className="w-full bg-[#90C850] hover:bg-[#7AB840] text-white text-base py-6 disabled:opacity-50"
-          onClick={() => {
-            window.print();
-          }}
-        >
-          <Icon name="FileCheck" size={18} className="mr-2" />
-          Подписать договор
-        </Button>
+        {sendStatus === 'success' ? (
+          <div className="text-center py-6 bg-green-50 border border-green-200 rounded-lg">
+            <Icon name="CheckCircle" size={40} className="text-[#90C850] mx-auto mb-2" />
+            <p className="text-lg font-bold text-gray-900">Договор подписан и отправлен!</p>
+            <p className="text-sm text-gray-500 mt-1">Мы свяжемся с вами для подтверждения</p>
+            <Button variant="outline" className="mt-4" onClick={() => navigate('/')}>
+              Вернуться на главную
+            </Button>
+          </div>
+        ) : (
+          <Button
+            disabled={!isFormValid || sendStatus === 'sending'}
+            className="w-full bg-[#90C850] hover:bg-[#7AB840] text-white text-base py-6 disabled:opacity-50"
+            onClick={submitContract}
+          >
+            {sendStatus === 'sending' ? (
+              <>Отправка...</>
+            ) : sendStatus === 'error' ? (
+              <>
+                <Icon name="RefreshCw" size={18} className="mr-2" />
+                Попробовать снова
+              </>
+            ) : (
+              <>
+                <Icon name="FileCheck" size={18} className="mr-2" />
+                Подписать договор
+              </>
+            )}
+          </Button>
+        )}
       </main>
     </div>
   );
