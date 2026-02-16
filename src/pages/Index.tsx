@@ -552,6 +552,28 @@ const Index = () => {
             </a>
           </div>
 
+          <p className="text-sm text-gray-300 mb-2">мы в соцсетях</p>
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <a 
+              href="https://vk.com/musorok56" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-11 h-11 rounded-xl shadow-lg hover:scale-110 transition-all overflow-hidden"
+              aria-label="ВКонтакте"
+            >
+              <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/2dff705f-f480-49cc-91f4-3a4bcebd8ebe.jpg" alt="ВКонтакте" className="w-full h-full object-cover" />
+            </a>
+            <a 
+              href="https://ok.ru/profile/910436100866" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-11 h-11 rounded-xl shadow-lg hover:scale-110 transition-all overflow-hidden"
+              aria-label="Одноклассники"
+            >
+              <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/6d4ca94d-dd09-40aa-a2b9-5e41ef9e2111.jpg" alt="Одноклассники" className="w-full h-full object-cover" />
+            </a>
+          </div>
+
           <a href="https://t.me/+79619246475" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold underline hover:text-[#90C850] transition-colors">Служба поддержки</a>
         </div>
       </footer>
