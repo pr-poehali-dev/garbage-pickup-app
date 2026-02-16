@@ -381,7 +381,7 @@ const Index = () => {
                 <Icon name="Phone" size={24} className="text-[#90C850]" />
               </div>
               <div>
-                <p className="text-sm text-gray-500">Номер для перевода</p>
+                <p className="text-sm text-gray-500">Номер для перевода · Альфа-Банк</p>
                 <div className="flex items-center gap-2">
                   <p className="text-2xl font-bold text-gray-900">+7 (961) 929-67-28</p>
                   <button
@@ -400,6 +400,7 @@ const Index = () => {
                     <Icon name="Check" size={18} className="text-[#90C850] hidden group-data-[copied=true]:block" />
                   </button>
                 </div>
+                <p className="text-sm text-gray-500 mt-1">Получатель: Дарья Игоревна А.</p>
               </div>
             </div>
 
