@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
@@ -22,6 +23,7 @@ const Index = () => {
   const [selectedTariff, setSelectedTariff] = useState('');
   const [formData, setFormData] = useState({ name: '', address: '', phone: '' });
   const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const navigate = useNavigate();
 
   const openOrderModal = (tariffName: string) => {
     setSelectedTariff(tariffName);
@@ -352,7 +354,7 @@ const Index = () => {
                     {tariff.period && <p className="text-gray-600 text-sm">{tariff.period}</p>}
                   </div>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="space-y-2">
                   <Button 
                     className="w-full bg-[#90C850] hover:bg-[#7AB840] text-white"
                     onClick={() => openOrderModal(`${tariff.name} — ${tariff.price}${tariff.period || ''}`)}
@@ -360,6 +362,16 @@ const Index = () => {
                     <Icon name="ShoppingCart" size={16} className="mr-2" />
                     Оформить заказ
                   </Button>
+                  {tariff.id === 'monthly' && (
+                    <Button
+                      variant="outline"
+                      className="w-full border-[#90C850] text-[#90C850] hover:bg-[#90C850]/10"
+                      onClick={() => navigate('/contract')}
+                    >
+                      <Icon name="FileText" size={16} className="mr-2" />
+                      Оформить договор
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}
