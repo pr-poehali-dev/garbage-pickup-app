@@ -382,7 +382,24 @@ const Index = () => {
               </div>
               <div>
                 <p className="text-sm text-gray-500">Номер для перевода</p>
-                <p className="text-2xl font-bold text-gray-900">+7 (961) 929-67-28</p>
+                <div className="flex items-center gap-2">
+                  <p className="text-2xl font-bold text-gray-900">+7 (961) 929-67-28</p>
+                  <button
+                    onClick={() => {
+                      navigator.clipboard.writeText('+79619296728');
+                      const btn = document.getElementById('copy-phone-btn');
+                      if (btn) btn.dataset.copied = 'true';
+                      setTimeout(() => { if (btn) btn.dataset.copied = 'false'; }, 2000);
+                    }}
+                    id="copy-phone-btn"
+                    data-copied="false"
+                    className="p-1.5 rounded hover:bg-gray-100 transition-colors group"
+                    title="Скопировать номер"
+                  >
+                    <Icon name="Copy" size={18} className="text-gray-400 group-hover:text-[#90C850] hidden group-data-[copied=false]:block" />
+                    <Icon name="Check" size={18} className="text-[#90C850] hidden group-data-[copied=true]:block" />
+                  </button>
+                </div>
               </div>
             </div>
 
