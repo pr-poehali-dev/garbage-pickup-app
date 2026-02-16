@@ -2,6 +2,7 @@ import json
 import os
 import urllib.request
 import base64
+import psycopg2
 from typing import Dict, Any
 
 CORS_HEADERS = {
@@ -11,8 +12,24 @@ CORS_HEADERS = {
     'Access-Control-Max-Age': '86400'
 }
 
+def save_to_db(client_name, client_phone, client_address, contract_text, signature_base64, client_ip):
+    """Сохраняет подписанный договор в базу данных"""
+    dsn = os.environ.get('DATABASE_URL')
+    conn = psycopg2.connect(dsn)
+    cur = conn.cursor()
+    cur.execute(
+        "INSERT INTO signed_contracts (client_name, client_phone, client_address, contract_text, signature_base64, client_ip) "
+        "VALUES (%s, %s, %s, %s, %s, %s) RETURNING id",
+        (client_name, client_phone, client_address, contract_text, signature_base64, client_ip)
+    )
+    contract_id = cur.fetchone()[0]
+    conn.commit()
+    cur.close()
+    conn.close()
+    return contract_id
+
 def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
-    """Отправляет подписанный договор (текст + изображение подписи) в Telegram"""
+    """Отправляет подписанный договор в Telegram и сохраняет в базу данных"""
     method = event.get('httpMethod', 'POST')
 
     if method == 'OPTIONS':
@@ -40,17 +57,26 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             'body': json.dumps({'error': 'Missing required fields'})
         }
 
+    client_ip = ''
+    request_context = event.get('requestContext', {})
+    if request_context:
+        identity = request_context.get('identity', {})
+        if identity:
+            client_ip = identity.get('sourceIp', '')
+
+    contract_id = save_to_db(client_name, client_phone, client_address, contract_text, signature_base64, client_ip)
+
     bot_token = os.environ.get('TELEGRAM_BOT_TOKEN')
     chat_id = os.environ.get('TELEGRAM_CHAT_ID')
 
     if not bot_token or not chat_id:
         return {
-            'statusCode': 500,
+            'statusCode': 200,
             'headers': {'Content-Type': 'application/json', **CORS_HEADERS},
-            'body': json.dumps({'error': 'Bot configuration missing'})
+            'body': json.dumps({'success': True, 'message': 'Contract saved', 'contract_id': contract_id})
         }
 
-    caption = f"📝 Подписанный договор\n\n👤 {client_name}\n📞 {client_phone}\n📍 {client_address}\n\n{contract_text}"
+    caption = f"📝 Договор #{contract_id}\n\n👤 {client_name}\n📞 {client_phone}\n📍 {client_address}\n\n{contract_text}"
 
     if len(caption) > 1024:
         caption = caption[:1020] + '...'
@@ -81,11 +107,11 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             return {
                 'statusCode': 200,
                 'headers': {'Content-Type': 'application/json', **CORS_HEADERS},
-                'body': json.dumps({'success': True, 'message': 'Contract sent'})
+                'body': json.dumps({'success': True, 'message': 'Contract sent and saved', 'contract_id': contract_id})
             }
 
         return {
-            'statusCode': 500,
+            'statusCode': 200,
             'headers': {'Content-Type': 'application/json', **CORS_HEADERS},
-            'body': json.dumps({'error': 'Telegram API error'})
+            'body': json.dumps({'success': True, 'message': 'Contract saved, Telegram notification failed', 'contract_id': contract_id})
         }
