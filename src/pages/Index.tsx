@@ -520,7 +520,9 @@ const Index = () => {
               <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/67b58e15-5d6f-47fc-8cae-a5e77acec0b8.jpg" alt="Позвонить" className="w-full h-full object-cover" />
             </a>
             <a 
-              href="tel:+79033901093" 
+              href="https://max.im/79033901093" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-14 h-14 rounded-2xl shadow-lg hover:scale-110 transition-all flex-shrink-0 overflow-hidden"
             >
               <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/ef0f5011-6ebe-4ac2-8a95-8ae56e1bb641.jpg" alt="Макс" className="w-full h-full object-cover" />
