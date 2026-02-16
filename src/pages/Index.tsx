@@ -264,7 +264,7 @@ const Index = () => {
               <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/2dff705f-f480-49cc-91f4-3a4bcebd8ebe.jpg" alt="ВКонтакте" className="w-full h-full object-cover" />
             </a>
             <a 
-              href="https://ok.ru/" 
+              href="https://ok.ru/profile/910436100866" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-11 h-11 rounded-xl shadow-lg hover:scale-110 transition-all overflow-hidden"
