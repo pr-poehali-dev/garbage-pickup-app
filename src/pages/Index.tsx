@@ -355,6 +355,9 @@ const Index = () => {
                   <div className="text-center">
                     <p className="text-3xl font-bold text-[#90C850]">{tariff.price}</p>
                     {tariff.period && <p className="text-gray-600 text-sm">{tariff.period}</p>}
+                    {tariff.id === 'one-time' && (
+                      <p className="inline-block bg-[#90C850]/10 text-[#90C850] text-sm font-semibold px-3 py-1 rounded-full mt-2">быстрый вынос</p>
+                    )}
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-2">
