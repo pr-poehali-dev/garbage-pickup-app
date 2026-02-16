@@ -266,8 +266,8 @@ const Index = () => {
 
           {/* Addresses Block */}
           <div className="bg-[#90C850] rounded-lg p-6 mb-5 max-w-5xl mx-auto shadow-lg">
-            <h2 className="text-2xl font-bold text-white mb-5 text-center">ОБСЛУЖИВАЕМ ДОМА</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-white text-left text-base">
+            <h2 className="text-3xl font-bold text-white mb-5 text-center">ОБСЛУЖИВАЕМ ДОМА</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-white text-left text-xl">
               <div>
                 <p className="font-bold mb-1.5">ВЫСОТНАЯ:</p>
                 <p className="mb-3">2, 4, 6, 8, 10, 10/1, 12</p>
