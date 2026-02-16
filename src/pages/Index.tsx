@@ -255,7 +255,7 @@ const Index = () => {
           <p className="text-sm text-black mb-2 text-center">мы в соцсетях</p>
           <div className="flex items-center justify-center gap-3 mb-5">
             <a 
-              href="https://vk.com/" 
+              href="https://vk.com/musorok56" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-11 h-11 rounded-xl shadow-lg hover:scale-110 transition-all overflow-hidden"
