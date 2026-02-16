@@ -509,24 +509,24 @@ const Index = () => {
               href="https://t.me/+79033901093" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden flex-shrink-0"
-            >
-              <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/60b92aa9-1f2c-4672-b290-32f3b22fe150.jpg" alt="Telegram" className="h-full w-auto max-w-none" style={{marginLeft: '0'}} />
-            </a>
+              className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-all flex-shrink-0"
+              style={{backgroundImage: `url(https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/60b92aa9-1f2c-4672-b290-32f3b22fe150.jpg)`, backgroundSize: '300% 100%', backgroundPosition: '0% center'}}
+              aria-label="Telegram"
+            />
             <a 
               href="https://wa.me/79033901093" 
               target="_blank"
               rel="noopener noreferrer"
-              className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden flex-shrink-0 flex items-center justify-center"
-            >
-              <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/60b92aa9-1f2c-4672-b290-32f3b22fe150.jpg" alt="WhatsApp" className="h-full w-auto max-w-none" style={{marginLeft: '-56px'}} />
-            </a>
+              className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-all flex-shrink-0"
+              style={{backgroundImage: `url(https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/60b92aa9-1f2c-4672-b290-32f3b22fe150.jpg)`, backgroundSize: '300% 100%', backgroundPosition: '50% center'}}
+              aria-label="WhatsApp"
+            />
             <a 
               href="tel:+79033901093" 
-              className="w-14 h-14 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden flex-shrink-0 flex items-center justify-center"
-            >
-              <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/60b92aa9-1f2c-4672-b290-32f3b22fe150.jpg" alt="Мессенджер" className="h-full w-auto max-w-none" style={{marginLeft: '-112px'}} />
-            </a>
+              className="w-14 h-14 rounded-2xl shadow-lg hover:scale-110 transition-all flex-shrink-0"
+              style={{backgroundImage: `url(https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/60b92aa9-1f2c-4672-b290-32f3b22fe150.jpg)`, backgroundSize: '300% 100%', backgroundPosition: '100% center'}}
+              aria-label="Мессенджер"
+            />
           </div>
 
           <a href="https://t.me/+79619246475" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold underline hover:text-[#90C850] transition-colors">Служба поддержки</a>
