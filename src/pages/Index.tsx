@@ -308,6 +308,9 @@ const Index = () => {
                 <p className="font-bold mb-1.5">ЕСИМОВА:</p>
                 <p className="mb-3">3, 3/1, 3/2, 7, 9, 11, 13, 13/1, 13/2</p>
                 
+                <p className="font-bold mb-1.5">ЛИПОВАЯ:</p>
+                <p className="mb-3">20</p>
+                
                 <p className="font-bold mb-1.5">КАРПОВА:</p>
                 <p className="mb-3">1, 3, 5</p>
                 
