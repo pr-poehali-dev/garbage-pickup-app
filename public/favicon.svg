@@ -1,10 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect width="64" height="64" rx="14" fill="#90C850"/>
-  <g transform="translate(12, 8)" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M4 12h32"/>
-    <path d="M8 12V44a4 4 0 004 4h16a4 4 0 004-4V12"/>
-    <path d="M14 6V4a2 2 0 012-2h8a2 2 0 012 2v2"/>
-    <line x1="16" y1="20" x2="16" y2="38"/>
-    <line x1="24" y1="20" x2="24" y2="38"/>
+  <g fill="#fff" stroke="none">
+    <circle cx="24" cy="10" r="5"/>
+    <rect x="20" y="16" width="8" height="16" rx="2"/>
+    <rect x="12" y="20" width="8" height="3" rx="1.5" transform="rotate(-30 16 21.5)"/>
+    <rect x="28" y="17" width="10" height="3" rx="1.5" transform="rotate(30 33 18.5)"/>
+    <rect x="18" y="32" width="5" height="18" rx="2" transform="rotate(5 20.5 41)"/>
+    <rect x="25" y="32" width="5" height="18" rx="2" transform="rotate(-5 27.5 41)"/>
+    <path d="M33 12c3-2 8-2 10 2l2 10c0 3-2 5-5 5l-4-1-1-8z" opacity="0.9"/>
+    <rect x="35" y="28" width="7" height="2" rx="1"/>
   </g>
 </svg>
