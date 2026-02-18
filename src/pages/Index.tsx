@@ -296,6 +296,9 @@ const Index = () => {
                 <p className="font-bold mb-1.5">АВТОМОБИЛИСТОВ:</p>
                 <p className="mb-3">2/1, 2/2, 2д, 13, 15</p>
                 
+                <p className="font-bold mb-1.5">БР. ХУСАИНОВЫХ:</p>
+                <p className="mb-3">2, 2/1, 2/2, 4, 4/1, 4/2, 6, 8</p>
+                
                 <p className="font-bold mb-1.5">ВЫСОТНАЯ:</p>
                 <p className="mb-3">2, 4, 6, 8, 10, 10/1, 12</p>
                 
@@ -315,7 +318,7 @@ const Index = () => {
                 <p className="mb-3">1, 3, 5</p>
                 
                 <p className="font-bold mb-1.5">ПОЛЯНИЧКО:</p>
-                <p className="mb-3">1, 2, 2а, 3, 4, 4/1, 5, 7, 8, 9, 10, 10/1, 11, 12</p>
+                <p className="mb-3">1, 2, 2а, 3, 4, 4/1, 5, 7, 7/1, 8, 9, 10, 10/1, 11, 12</p>
               </div>
               <div>
                 <p className="font-bold mb-1.5">ПР-Д СЕВЕРНЫЙ:</p>
