@@ -293,6 +293,9 @@ const Index = () => {
             <h2 className="text-3xl font-bold text-white mb-5 text-center">ОБСЛУЖИВАЕМ ДОМА</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-white text-left text-xl">
               <div>
+                <p className="font-bold mb-1.5">АВТОМОБИЛИСТОВ:</p>
+                <p className="mb-3">2/1, 2/2, 2д, 13, 15</p>
+                
                 <p className="font-bold mb-1.5">ВЫСОТНАЯ:</p>
                 <p className="mb-3">2, 4, 6, 8, 10, 10/1, 12</p>
                 
