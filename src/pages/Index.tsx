@@ -296,11 +296,17 @@ const Index = () => {
                 <p className="font-bold mb-1.5">АВТОМОБИЛИСТОВ:</p>
                 <p className="mb-3">2/1, 2/2, 2д, 13, 15</p>
                 
+                <p className="font-bold mb-1.5">АЛЕКСАНДРОВА:</p>
+                <p className="mb-3">1, 5</p>
+                
                 <p className="font-bold mb-1.5">БР. ХУСАИНОВЫХ:</p>
                 <p className="mb-3">2, 2/1, 2/2, 4, 4/1, 4/2, 6, 8</p>
                 
                 <p className="font-bold mb-1.5">ВЫСОТНАЯ:</p>
                 <p className="mb-3">2, 4, 6, 8, 10, 10/1, 12</p>
+                
+                <p className="font-bold mb-1.5">ГАРАНЬКИНА:</p>
+                <p className="mb-3">21/1, 23, 25, 27</p>
                 
                 <p className="font-bold mb-1.5">ДИАГНОСТИКИ:</p>
                 <p className="mb-3">3, 3/1, 5, 9, 9/1, 17, 17/1, 19, 21</p>
@@ -308,14 +314,14 @@ const Index = () => {
                 <p className="font-bold mb-1.5">ДЖАНГИЛЬДИНА:</p>
                 <p className="mb-3">1к1, 3, 9, 9/1, 10, 11, 12/1, 13, 14, 14/1, 16, 16/1, 18, 18/2, 18/3, 20, 20/1, 20/2, 20/3, 22, 22/1</p>
                 
-                <p className="font-bold mb-1.5">ГАРАНЬКИНА:</p>
-                <p className="mb-3">21/1, 23, 25, 27</p>
+                <p className="font-bold mb-1.5">ДОРОФЕЕВА:</p>
+                <p className="mb-3">3, 5, 7</p>
                 
                 <p className="font-bold mb-1.5">ЕСИМОВА:</p>
                 <p className="mb-3">3, 3/1, 3/2, 7, 9, 11, 13, 13/1, 13/2</p>
                 
                 <p className="font-bold mb-1.5">ЛИПОВАЯ:</p>
-                <p className="mb-3">20</p>
+                <p className="mb-3">20, 21</p>
                 
                 <p className="font-bold mb-1.5">КАРПОВА:</p>
                 <p className="mb-3">1, 3, 5</p>
