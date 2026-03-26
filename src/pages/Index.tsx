@@ -61,7 +61,7 @@ const Index = () => {
     {
       id: 'one-time',
       name: 'Разовый вынос',
-      price: '100 ₽',
+      price: '100 ₽/150 ₽',
       period: '/в любой день',
       icon: 'Package',
     },
@@ -420,7 +420,7 @@ const Index = () => {
                     {tariff.id === 'one-time' && (
                       <div className="bg-[#90C850]/10 text-[#90C850] text-sm font-semibold px-4 py-2 rounded-lg mt-2 text-left">
                         <p>— быстрый вынос</p>
-                        <p>— до 10 кг</p>
+                        <p>— 5 кг/10 кг</p>
                         <p>— только бытовой мусор</p>
                       </div>
                     )}
