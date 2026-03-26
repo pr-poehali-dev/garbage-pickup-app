@@ -465,12 +465,12 @@ const Index = () => {
                 <Icon name="Phone" size={24} className="text-[#90C850]" />
               </div>
               <div>
-                <p className="text-sm text-gray-500">Номер для перевода · Альфа-Банк</p>
+                <p className="text-sm text-gray-500">Номер для перевода · ВТБ банк</p>
                 <div className="flex items-center gap-2">
-                  <p className="text-2xl font-bold text-gray-900">+7 (961) 929-67-28</p>
+                  <p className="text-2xl font-bold text-gray-900">+7 (903) 390-10-93</p>
                   <button
                     onClick={() => {
-                      navigator.clipboard.writeText('+79619296728');
+                      navigator.clipboard.writeText('+79033901093');
                       const btn = document.getElementById('copy-phone-btn');
                       if (btn) btn.dataset.copied = 'true';
                       setTimeout(() => { if (btn) btn.dataset.copied = 'false'; }, 2000);
