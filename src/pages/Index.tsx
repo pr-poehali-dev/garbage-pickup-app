@@ -68,14 +68,14 @@ const Index = () => {
     {
       id: 'weekly',
       name: 'Неделя',
-      price: '250 ₽',
+      price: '300 ₽',
       period: '/неделя',
       icon: 'Calendar',
     },
     {
       id: 'monthly',
       name: 'Месяц',
-      price: '850 ₽',
+      price: '1000 ₽',
       period: '/месяц',
       icon: 'CalendarCheck',
     }
