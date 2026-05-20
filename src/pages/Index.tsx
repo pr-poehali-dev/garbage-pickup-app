@@ -112,14 +112,14 @@ const Index = () => {
                 className="w-10 h-10 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
                 aria-label="Telegram"
               >
-                <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/8b95d9ce-670b-4efd-a10d-24d6e567a620.jpg" alt="Telegram" className="w-full h-full object-cover" />
+                <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/a1fb7083-dd71-4a5f-bbe9-b697b4fe15c4.png" alt="Telegram" className="w-full h-full object-cover" />
               </a>
               <a 
                 href="tel:+79033901093" 
                 className="w-10 h-10 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
                 aria-label="Позвонить"
               >
-                <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/67b58e15-5d6f-47fc-8cae-a5e77acec0b8.jpg" alt="Позвонить" className="w-full h-full object-cover" />
+                <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/a5f7310e-f12b-44f1-98cc-4d8ff13ad936.png" alt="Позвонить" className="w-full h-full object-cover" />
               </a>
               <a 
                 href="https://max.ru/u/f9LHodD0cOL1XpJZ8sBgf8NICtI1BN_HjxQp298nVnCW2YVwmsvaRx8PRkU" 
@@ -128,7 +128,25 @@ const Index = () => {
                 className="w-10 h-10 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
                 aria-label="Макс"
               >
-                <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/ef0f5011-6ebe-4ac2-8a95-8ae56e1bb641.jpg" alt="Макс" className="w-full h-full object-cover" />
+                <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/e7a80c3d-8d02-4e71-a901-d1d79b244d8e.png" alt="Макс" className="w-full h-full object-cover" />
+              </a>
+              <a 
+                href="https://vk.com" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
+                aria-label="ВКонтакте"
+              >
+                <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/a33b9ad0-0b18-4c38-9099-734b20cdb0cc.jpg" alt="ВКонтакте" className="w-full h-full object-cover" />
+              </a>
+              <a 
+                href="https://ok.ru" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
+                aria-label="Одноклассники"
+              >
+                <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/77e506a1-36f3-4efb-8de9-e3312fc933dc.jpg" alt="Одноклассники" className="w-full h-full object-cover" />
               </a>
             </div>
             <Button 
@@ -165,14 +183,14 @@ const Index = () => {
                 className="w-12 h-12 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
                 aria-label="Telegram"
               >
-                <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/8b95d9ce-670b-4efd-a10d-24d6e567a620.jpg" alt="Telegram" className="w-full h-full object-cover" />
+                <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/a1fb7083-dd71-4a5f-bbe9-b697b4fe15c4.png" alt="Telegram" className="w-full h-full object-cover" />
               </a>
               <a 
                 href="tel:+79033901093" 
                 className="w-12 h-12 rounded-full shadow-lg hover:scale-110 transition-all overflow-hidden"
                 aria-label="Позвонить"
               >
-                <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/67b58e15-5d6f-47fc-8cae-a5e77acec0b8.jpg" alt="Позвонить" className="w-full h-full object-cover" />
+                <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/a5f7310e-f12b-44f1-98cc-4d8ff13ad936.png" alt="Позвонить" className="w-full h-full object-cover" />
               </a>
               <a 
                 href="https://max.ru/u/f9LHodD0cOL1XpJZ8sBgf8NICtI1BN_HjxQp298nVnCW2YVwmsvaRx8PRkU" 
@@ -181,7 +199,25 @@ const Index = () => {
                 className="w-12 h-12 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
                 aria-label="Макс"
               >
-                <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/ef0f5011-6ebe-4ac2-8a95-8ae56e1bb641.jpg" alt="Макс" className="w-full h-full object-cover" />
+                <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/e7a80c3d-8d02-4e71-a901-d1d79b244d8e.png" alt="Макс" className="w-full h-full object-cover" />
+              </a>
+              <a 
+                href="https://vk.com" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
+                aria-label="ВКонтакте"
+              >
+                <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/a33b9ad0-0b18-4c38-9099-734b20cdb0cc.jpg" alt="ВКонтакте" className="w-full h-full object-cover" />
+              </a>
+              <a 
+                href="https://ok.ru" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
+                aria-label="Одноклассники"
+              >
+                <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/77e506a1-36f3-4efb-8de9-e3312fc933dc.jpg" alt="Одноклассники" className="w-full h-full object-cover" />
               </a>
             </div>
             <Button 
