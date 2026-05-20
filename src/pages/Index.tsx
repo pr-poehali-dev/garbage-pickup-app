@@ -140,7 +140,7 @@ const Index = () => {
                 <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/a33b9ad0-0b18-4c38-9099-734b20cdb0cc.jpg" alt="ВКонтакте" className="w-full h-full object-cover" />
               </a>
               <a 
-                href="https://ok.ru" 
+                href="https://ok.ru/profile/910436100866" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
@@ -211,7 +211,7 @@ const Index = () => {
                 <img src="https://cdn.poehali.dev/projects/dffe596b-1f66-4561-b818-4d13ccf46520/bucket/a33b9ad0-0b18-4c38-9099-734b20cdb0cc.jpg" alt="ВКонтакте" className="w-full h-full object-cover" />
               </a>
               <a 
-                href="https://ok.ru" 
+                href="https://ok.ru/profile/910436100866" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-2xl shadow-lg hover:scale-110 transition-all overflow-hidden"
