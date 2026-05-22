@@ -363,7 +363,7 @@ const Index = () => {
                 <p className="mb-3">20, 21</p>
                 
                 <p className="font-bold mb-1.5">КАРПОВА:</p>
-                <p className="mb-3">1, 3, 5</p>
+                <p className="mb-3">1, 1/1, 3</p>
                 
                 <p className="font-bold mb-1.5">ПОЛЯНИЧКО:</p>
                 <p className="mb-3">1, 2, 2а, 3, 4, 4/1, 5, 7, 7/1, 8, 9, 10, 10/1, 11, 12</p>
