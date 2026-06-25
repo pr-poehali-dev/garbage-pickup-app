@@ -8,7 +8,7 @@
         "name": "Иван Петров",
         "phone": "+79991234567",
         "address": "ул. Ленина, 10, кв. 5",
-        "tariff": "Месяц — 650 ₽/месяц"
+        "tariff": "ТЕСТ"
       },
       "expectedStatus": 200,
       "expectedBody": {
