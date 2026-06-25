@@ -77,7 +77,7 @@ const Contract = () => {
 
   const [sendStatus, setSendStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
 
-  const SEND_CONTRACT_URL = 'https://functions.poehali.dev/32d01596-bea3-4369-8220-59664e79a98d';
+  const SEND_CONTRACT_URL = 'https://functions.poehali.dev/c318de87-cdea-4fb2-94bc-ac6123a3e1c9';
 
   const isFormValid = clientName.trim() && clientAddress.trim() && clientPhone.trim() && hasSigned && agreed;
 
