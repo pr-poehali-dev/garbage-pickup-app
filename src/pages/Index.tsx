@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 
-const SEND_CONTRACT_URL = 'https://functions.poehali.dev/8f3c5a51-eb00-4694-b4fd-0d5f889f4ecc';
+const SEND_CONTRACT_URL = 'https://functions.poehali.dev/edfa5f79-0f98-458a-a1c3-f20e69f8f4bc';
 
 const formatPhone = (value: string): string => {
   const digits = value.replace(/\D/g, '').slice(0, 11);
