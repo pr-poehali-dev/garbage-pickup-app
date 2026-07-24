@@ -66,13 +66,6 @@ const Index = () => {
       icon: 'Package',
     },
     {
-      id: 'weekly',
-      name: 'Неделя',
-      price: '350 ₽',
-      period: '/неделя',
-      icon: 'Calendar',
-    },
-    {
       id: 'monthly',
       name: 'Месяц',
       price: '1000 ₽',
@@ -447,13 +440,6 @@ const Index = () => {
                         <p>— вынос мусора еженедельно</p>
                         <p>— пн, ср, сб с 10.00 до 17.00</p>
                         <p>— до 10 кг бытовой мусор</p>
-                      </div>
-                    )}
-                    {tariff.id === 'weekly' && (
-                      <div className="bg-[#90C850]/10 text-[#90C850] text-sm font-semibold px-4 py-2 rounded-lg mt-2 text-left">
-                        <p>— пн, ср, сб с 10.00 до 17.00</p>
-                        <p>— до 10 кг за раз</p>
-                        <p>— только бытовой мусор</p>
                       </div>
                     )}
                     {tariff.id === 'one-time' && (
