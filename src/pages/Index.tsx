@@ -68,7 +68,7 @@ const Index = () => {
     {
       id: 'monthly',
       name: 'Месяц',
-      price: '1000 ₽',
+      price: '1200 ₽',
       period: '/месяц',
       icon: 'CalendarCheck',
     }
